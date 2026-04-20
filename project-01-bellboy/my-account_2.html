@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بل بوی</title>
+    <meta name="title" content="بل بوی" />
+    <meta name="description" content="بل بوی" />
+    <meta name="keywords" content="بل بوی" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="/بل بوی" />
+    <meta property="og:title" content="بل بوی" />
+    <meta property="og:description" content="بل بوی" />
+    <meta property="og:image" content="[esprit:page-image]" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="/بل بوی" />
+    <meta property="twitter:title" content="بل بوی" />
+    <meta property="twitter:description" content="بل بوی" />
+    <meta property="twitter:image" content="[esprit:page-image]" />
+    <link rel="shortcut icon" href="uploads/bellboy/img/fav-icon.svg" type="image/x-icon">
+    <link rel="icon" href="uploads/bellboy/img/fav-icon.svg" type="image/x-icon">
+    <!--Fonts-->
+    <link rel="preload" href="uploads/bellboy/fonts/YekanBakhFaNum-VF.ttf" as="font" type="font/woff" crossorigin />
+    <style>
+        @font-face {
+            font-family: Yekan;
+            src: url('uploads/bellboy/fonts/YekanBakhFaNum-VF.ttf');
+        }
+
+        @font-face {
+            font-family: 'Lobster';
+            font-style: normal;
+            font-weight: normal;
+            src: local('Lobster'), url('uploads/bellboy/fonts/Lobster-Regular.woff') format('woff');
+        }
+    </style>
+
+</head>
+
+<body dir="rtl">
+    <div class="wrapper admin-page">
+        <div class="admin__menu admin-menu">
+            <div class="admin-menu__top">
+                <div class="admin-menu__logo">
+                    <img src="uploads/bellboy/img/logo.svg" alt="">
+                </div>
+                <div class="admin-menu__menu">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <div class="icon-item">
+                                    <img class="icon-item__default" src="uploads/bellboy/img/b-orders.svg" alt="">
+                                    <img class="icon-item__hover" src="uploads/bellboy/img/ico-order.svg" alt="">
+                                </div>
+                                <span class="text__14">سفارش‌ها</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="icon-item">
+                                    <img class="icon-item__default" src="uploads/bellboy/img/b-bellguide.svg" alt="">
+                                    <img class="icon-item__hover" src="uploads/bellboy/img/ico-bellguide.svg" alt="">
+                                </div> <span class="text__14">بل‌گاید</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="icon-item">
+                                    <img class="icon-item__default" src="uploads/bellboy/img/b-ico-basket.svg" alt="">
+                                    <img class="icon-item__hover" src="uploads/bellboy/img/ico-basket.svg" alt="">
+                                </div> <span class="text__14">کالا‌ها</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="active">
+                                <div class="icon-item">
+                                    <img class="icon-item__default" src="uploads/bellboy/img/b-ico-users.svg" alt="">
+                                    <img class="icon-item__hover" src="uploads/bellboy/img/w-ico-users.svg" alt="">
+                                </div> <span class="text__14">کاربران</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="admin-menu__bottom">
+                <div class="admin-menu__menu">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <div class="icon-item">
+                                    <img class="icon-item__default" src="uploads/bellboy/img/b-ico-account.svg" alt="">
+                                    <img class="icon-item__hover" src="uploads/bellboy/img/ico-account.svg" alt="">
+                                </div> <span class="text__14">مریم آقاجانی</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="icon-item">
+                                    <img class="icon-item__default" src="uploads/bellboy/img/ico-exit.svg" alt="">
+                                    <img class="icon-item__hover" src="uploads/bellboy/img/h-ico-exit.svg" alt="">
+                                </div> <span class="text__14">خروج</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="admin__content-container">
+            <div class="admin__content">
+                <div class="admin__filters">
+                    <div class="right">
+                        <a href="" class="filter">
+                            <img src="uploads/bellboy/img/ico-filter.svg" alt="">
+                        </a>
+                        <div class="search">
+                            <input class="text__14" type="text" placeholder="جستجو">
+                            <button><img src="uploads/bellboy/img/ico-search.svg" alt=""></button>
+                        </div>
+                    </div>
+
+                    <div class="left">
+                        <a href="" class="add text__16" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            افزودن کالا
+                        </a>
+                    </div>
+                </div>
+                <div class="admin__main-table admin-table">
+                    <div class="admin-table__header text__20 text__bold">
+                        کالا‌ها
+                    </div>
+                    <div class="admin-table__table">
+                        <table class="users">
+                            <thead>
+                                <tr>
+                                    <th >
+                                        <span>
+                                            <span class="text__12 phone-hide">شناسه کالا</span>
+                                            <span class="text__12 only-phone">شناسه کالا / عنوان / دسته‌بندی </span>
+                                        </span>
+                                    </th>
+                                    <th class="phone-hide">
+                                        <span class="text__12">عنوان کالا</span>
+                                    </th>
+                                    <th>
+                                        <span class="text__12">قیمت (تومان)</span>
+                                    </th>
+                                    <th class="phone-hide">
+                                        <span class="text__12">موجودی</span>
+                                    </th>
+                                    <th class="phone-hide">
+                                        <span class="text__12">سرویس</span>
+                                    </th>
+                                    <th class="phone-hide">
+                                        <span class="text__12">دسته بندی</span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <td>
+                                        <span>
+                                            <span class="text__12 d-flex">۱۲۴۵۳ <span class="text__gray only-phone text__gray" style="font-size: 10px;">×۱۰۰</span></span>
+                                            <span class="only-phone text__12">لیوان یکبار مصرف </span>
+                                            <span class="only-phone text__10 " style="color: #6D767D;">بل‌شاپ / لوازم یکبار مصرف </span>
+                                        </span>
+                                    </td>
+                                    <td class="phone-hide">
+                                        <span class="text__12">لیوان یکبار مصرف </span>
+                                    </td>
+                                    <td>
+                                        <span class="text__12">۲۴٬۰۰۰</span>
+                                    </td>
+                                    <td class="phone-hide">
+                                        <span class="text__12 status-red">اتمام موجودی</span>
+                                    </td>
+                                    <td class="phone-hide">
+                                        <span class="text__12">بل مزه</span>
+                                    </td>
+                                    <td class="phone-hide">
+                                        <span class="text__12 status-blue">غذای آماده طبخ</span>
+                                        <!-- <span class="text__12 status-yellow">درحال تأمین </span>
+                                        <span class="text__12 status-red">درحال تأمین </span>
+                                        <span class="text__12 status-green">درحال تأمین </span> -->
+                                    </td>
+                                </tr>
+                                <tr data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <td>
+                                        <span>
+                                            <span class="text__12 d-flex">۱۲۴۵۳ <span class="text__gray only-phone text__gray" style="font-size: 10px;">×۱۰۰</span></span>
+                                            <span class="only-phone text__12">لیوان یکبار مصرف </span>
+                                            <span class="only-phone text__10 " style="color: #6D767D;">بل‌شاپ / لوازم یکبار مصرف </span>
+                                        </span>
+                                    </td>
+                                    <td class="phone-hide">
+                                        <span class="text__12">لیوان یکبار مصرف </span>
+                                    </td>
+                                    <td>
+                                        <span class="text__12">۲۴٬۰۰۰</span>
+                                    </td>
+                                    <td class="phone-hide">
+                                        <span class="text__12 status-red">اتمام موجودی</span>
+                                    </td>
+                                    <td class="phone-hide">
+                                        <span class="text__12">بل مزه</span>
+                                    </td>
+                                    <td class="phone-hide">
+                                        <span class="text__12 status-blue">غذای آماده طبخ</span>
+                                        <!-- <span class="text__12 status-yellow">درحال تأمین </span>
+                                        <span class="text__12 status-red">درحال تأمین </span>
+                                        <span class="text__12 status-green">درحال تأمین </span> -->
+                                    </td>
+                                </tr>
+                                <tr data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <td>
+                                        <span>
+                                            <span class="text__12 d-flex">۱۲۴۵۳ <span class="text__gray only-phone text__gray" style="font-size: 10px;">×۱۰۰</span></span>
+                                            <span class="only-phone text__12">لیوان یکبار مصرف </span>
+                                            <span class="only-phone text__10 " style="color: #6D767D;">بل‌شاپ / لوازم یکبار مصرف </span>
+                                        </span>
+                                    </td>
+                                    <td class="phone-hide">
+                                        <span class="text__12">لیوان یکبار مصرف </span>
+                                    </td>
+                                    <td>
+                                        <span class="text__12">۲۴٬۰۰۰</span>
+                                    </td>
+                                    <td class="phone-hide">
+                                        <span class="text__12 status-red">اتمام موجودی</span>
+                                    </td>
+                                    <td class="phone-hide">
+                                        <span class="text__12">بل مزه</span>
+                                    </td>
+                                    <td class="phone-hide">
+                                        <span class="text__12 status-blue">غذای آماده طبخ</span>
+                                        <!-- <span class="text__12 status-yellow">درحال تأمین </span>
+                                        <span class="text__12 status-red">درحال تأمین </span>
+                                        <span class="text__12 status-green">درحال تأمین </span> -->
+                                    </td>
+                                </tr>
+                                <tr data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <td>
+                                        <span>
+                                            <span class="text__12 d-flex">۱۲۴۵۳ <span class="text__gray only-phone text__gray" style="font-size: 10px;">×۱۰۰</span></span>
+                                            <span class="only-phone text__12">لیوان یکبار مصرف </span>
+                                            <span class="only-phone text__10 " style="color: #6D767D;">بل‌شاپ / لوازم یکبار مصرف </span>
+                                        </span>
+                                    </td>
+                                    <td class="phone-hide">
+                                        <span class="text__12">لیوان یکبار مصرف </span>
+                                    </td>
+                                    <td>
+                                        <span class="text__12">۲۴٬۰۰۰</span>
+                                    </td>
+                                    <td class="phone-hide">
+                                        <span class="text__12 status-red">اتمام موجودی</span>
+                                    </td>
+                                    <td class="phone-hide">
+                                        <span class="text__12">بل مزه</span>
+                                    </td>
+                                    <td class="phone-hide">
+                                        <span class="text__12 status-blue">غذای آماده طبخ</span>
+                                        <!-- <span class="text__12 status-yellow">درحال تأمین </span>
+                                        <span class="text__12 status-red">درحال تأمین </span>
+                                        <span class="text__12 status-green">درحال تأمین </span> -->
+                                    </td>
+                                </tr>
+                                <tr data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <td>
+                                        <span>
+                                            <span class="text__12 d-flex">۱۲۴۵۳ <span class="text__gray only-phone text__gray" style="font-size: 10px;">×۱۰۰</span></span>
+                                            <span class="only-phone text__12">لیوان یکبار مصرف </span>
+                                            <span class="only-phone text__10 " style="color: #6D767D;">بل‌شاپ / لوازم یکبار مصرف </span>
+                                        </span>
+                                    </td>
+                                    <td class="phone-hide">
+                                        <span class="text__12">لیوان یکبار مصرف </span>
+                                    </td>
+                                    <td>
+                                        <span class="text__12">۲۴٬۰۰۰</span>
+                                    </td>
+                                    <td class="phone-hide">
+                                        <span class="text__12 status-red">اتمام موجودی</span>
+                                    </td>
+                                    <td class="phone-hide">
+                                        <span class="text__12">بل مزه</span>
+                                    </td>
+                                    <td class="phone-hide">
+                                        <span class="text__12 status-blue">غذای آماده طبخ</span>
+                                        <!-- <span class="text__12 status-yellow">درحال تأمین </span>
+                                        <span class="text__12 status-red">درحال تأمین </span>
+                                        <span class="text__12 status-green">درحال تأمین </span> -->
+                                    </td>
+                                </tr>
+                                <tr data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <td>
+                                        <span>
+                                            <span class="text__12 d-flex">۱۲۴۵۳ <span class="text__gray only-phone text__gray" style="font-size: 10px;">×۱۰۰</span></span>
+                                            <span class="only-phone text__12">لیوان یکبار مصرف </span>
+                                            <span class="only-phone text__10 " style="color: #6D767D;">بل‌شاپ / لوازم یکبار مصرف </span>
+                                        </span>
+                                    </td>
+                                    <td class="phone-hide">
+                                        <span class="text__12">لیوان یکبار مصرف </span>
+                                    </td>
+                                    <td>
+                                        <span class="text__12">۲۴٬۰۰۰</span>
+                                    </td>
+                                    <td class="phone-hide">
+                                        <span class="text__12 status-red">اتمام موجودی</span>
+                                    </td>
+                                    <td class="phone-hide">
+                                        <span class="text__12">بل مزه</span>
+                                    </td>
+                                    <td class="phone-hide">
+                                        <span class="text__12 status-blue">غذای آماده طبخ</span>
+                                        <!-- <span class="text__12 status-yellow">درحال تأمین </span>
+                                        <span class="text__12 status-red">درحال تأمین </span>
+                                        <span class="text__12 status-green">درحال تأمین </span> -->
+                                    </td>
+                                </tr>
+                                <tr data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <td>
+                                        <span>
+                                            <span class="text__12 d-flex">۱۲۴۵۳ <span class="text__gray only-phone text__gray" style="font-size: 10px;">×۱۰۰</span></span>
+                                            <span class="only-phone text__12">لیوان یکبار مصرف </span>
+                                            <span class="only-phone text__10 " style="color: #6D767D;">بل‌شاپ / لوازم یکبار مصرف </span>
+                                        </span>
+                                    </td>
+                                    <td class="phone-hide">
+                                        <span class="text__12">لیوان یکبار مصرف </span>
+                                    </td>
+                                    <td>
+                                        <span class="text__12">۲۴٬۰۰۰</span>
+                                    </td>
+                                    <td class="phone-hide">
+                                        <span class="text__12 status-red">اتمام موجودی</span>
+                                    </td>
+                                    <td class="phone-hide">
+                                        <span class="text__12">بل مزه</span>
+                                    </td>
+                                    <td class="phone-hide">
+                                        <span class="text__12 status-blue">غذای آماده طبخ</span>
+                                        <!-- <span class="text__12 status-yellow">درحال تأمین </span>
+                                        <span class="text__12 status-red">درحال تأمین </span>
+                                        <span class="text__12 status-green">درحال تأمین </span> -->
+                                    </td>
+                                </tr>
+                                <tr data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <td>
+                                        <span>
+                                            <span class="text__12 d-flex">۱۲۴۵۳ <span class="text__gray only-phone text__gray" style="font-size: 10px;">×۱۰۰</span></span>
+                                            <span class="only-phone text__12">لیوان یکبار مصرف </span>
+                                            <span class="only-phone text__10 " style="color: #6D767D;">بل‌شاپ / لوازم یکبار مصرف </span>
+                                        </span>
+                                    </td>
+                                    <td class="phone-hide">
+                                        <span class="text__12">لیوان یکبار مصرف </span>
+                                    </td>
+                                    <td>
+                                        <span class="text__12">۲۴٬۰۰۰</span>
+                                    </td>
+                                    <td class="phone-hide">
+                                        <span class="text__12 status-red">اتمام موجودی</span>
+                                    </td>
+                                    <td class="phone-hide">
+                                        <span class="text__12">بل مزه</span>
+                                    </td>
+                                    <td class="phone-hide">
+                                        <span class="text__12 status-blue">غذای آماده طبخ</span>
+                                        <!-- <span class="text__12 status-yellow">درحال تأمین </span>
+                                        <span class="text__12 status-red">درحال تأمین </span>
+                                        <span class="text__12 status-green">درحال تأمین </span> -->
+                                    </td>
+                                </tr>
+                                <tr data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <td>
+                                        <span>
+                                            <span class="text__12 d-flex">۱۲۴۵۳ <span class="text__gray only-phone text__gray" style="font-size: 10px;">×۱۰۰</span></span>
+                                            <span class="only-phone text__12">لیوان یکبار مصرف </span>
+                                            <span class="only-phone text__10 " style="color: #6D767D;">بل‌شاپ / لوازم یکبار مصرف </span>
+                                        </span>
+                                    </td>
+                                    <td class="phone-hide">
+                                        <span class="text__12">لیوان یکبار مصرف </span>
+                                    </td>
+                                    <td>
+                                        <span class="text__12">۲۴٬۰۰۰</span>
+                                    </td>
+                                    <td class="phone-hide">
+                                        <span class="text__12 status-red">اتمام موجودی</span>
+                                    </td>
+                                    <td class="phone-hide">
+                                        <span class="text__12">بل مزه</span>
+                                    </td>
+                                    <td class="phone-hide">
+                                        <span class="text__12 status-blue">غذای آماده طبخ</span>
+                                        <!-- <span class="text__12 status-yellow">درحال تأمین </span>
+                                        <span class="text__12 status-red">درحال تأمین </span>
+                                        <span class="text__12 status-green">درحال تأمین </span> -->
+                                    </td>
+                                </tr>
+                                <tr data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <td>
+                                        <span>
+                                            <span class="text__12 d-flex">۱۲۴۵۳ <span class="text__gray only-phone text__gray" style="font-size: 10px;">×۱۰۰</span></span>
+                                            <span class="only-phone text__12">لیوان یکبار مصرف </span>
+                                            <span class="only-phone text__10 " style="color: #6D767D;">بل‌شاپ / لوازم یکبار مصرف </span>
+                                        </span>
+                                    </td>
+                                    <td class="phone-hide">
+                                        <span class="text__12">لیوان یکبار مصرف </span>
+                                    </td>
+                                    <td>
+                                        <span class="text__12">۲۴٬۰۰۰</span>
+                                    </td>
+                                    <td class="phone-hide">
+                                        <span class="text__12 status-red">اتمام موجودی</span>
+                                    </td>
+                                    <td class="phone-hide">
+                                        <span class="text__12">بل مزه</span>
+                                    </td>
+                                    <td class="phone-hide">
+                                        <span class="text__12 status-blue">غذای آماده طبخ</span>
+                                        <!-- <span class="text__12 status-yellow">درحال تأمین </span>
+                                        <span class="text__12 status-red">درحال تأمین </span>
+                                        <span class="text__12 status-green">درحال تأمین </span> -->
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="admin-table__actions">
+                        <a href="" class="text__12">بیشتر</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="phone-menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="phone-menu__close">
+                        <button>
+                            <img src="uploads/bellboy/img/v-close.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="phone-menu__actions">
+                        <a href="" class="button button--full button--green text__16">
+                            ورود به حساب / ثبت نام
+                        </a>
+                    </div>
+                    <div class="phone-menu__menu">
+                        <ul>
+                            <li>
+                                <a href="" class="text__16">پرسش‌های شما</a>
+                            </li>
+                            <li>
+                                <a href="" class="text__16">شعبه‌های ما</a>
+                            </li>
+                            <li>
+                                <a href="" class="text__16">درباره بل‌بوی</a>
+                            </li>
+                            <li>
+                                <a href="" class="text__16">قوانین و شرایط استفاده</a>
+                            </li>
+                            <li>
+                                <a href="" class="text__16">حریم خصوصی</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="phone-menu__social">
+                        <span class="text__16">
+                            ما را دنبال کنید
+                        </span>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <img src="uploads/bellboy/img/ico-instagram.svg" alt="" class="icon-item__default">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="uploads/bellboy/img/ico-telegram.svg" alt="" class="icon-item__default">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="uploads/bellboy/img/ico-whatsapp.svg" alt="" class="icon-item__default">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="uploads/bellboy/img/ico-linkedin.svg" alt="" class="icon-item__default">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="uploads/bellboy/img/ico-twitter.svg" alt="" class="icon-item__default">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu-service">
+        <div class="menu-service__container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="menu-service__list">
+                            <ul>
+                                <li>
+                                    <a href="" class="">
+                                        <div class="icon-item">
+                                            <img src="uploads/bellboy/img/ico-bellshop.svg" alt=""
+                                                class="icon-item__default">
+                                            <img src="uploads/bellboy/img/h-ico-bellshop.svg" alt=""
+                                                class="icon-item__hover">
+                                        </div>
+                                        <span class="text__white text__14">بِل‌شاپ</span>
+                                        <span class="lobster text__o-half text__white text__19">Bell
+                                            Shop</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="">
+                                        <div class="icon-item">
+                                            <img src="uploads/bellboy/img/ico-bellmaze.svg" alt=""
+                                                class="icon-item__default">
+                                            <img src="uploads/bellboy/img/h-ico-bellmaze.svg" alt=""
+                                                class="icon-item__hover">
+                                        </div>
+                                        <span class="text__white text__14">بِل‌مزه</span>
+                                        <span class="lobster text__o-half text__white text__19">Bell
+                                            Mazeh</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="">
+                                        <div class="icon-item">
+                                            <img src="uploads/bellboy/img/ico-bellclean.svg" alt=""
+                                                class="icon-item__default">
+                                            <img src="uploads/bellboy/img/h-ico-bellclean.svg" alt=""
+                                                class="icon-item__hover">
+                                        </div>
+                                        <span class="text__white text__14">بِل‌کلین</span>
+                                        <span class="lobster text__o-half text__white text__19">Bell
+                                            Clean</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="">
+                                        <div class="icon-item">
+                                            <img src="uploads/bellboy/img/ico-bellservice.svg" alt=""
+                                                class="icon-item__default">
+                                            <img src="uploads/bellboy/img/h-ico-bellservice.svg" alt=""
+                                                class="icon-item__hover">
+                                        </div>
+                                        <span class="text__white text__14">بِل‌سرویس</span>
+                                        <span class="lobster text__o-half text__white text__19">Bell
+                                            Service</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="">
+                                        <div class="icon-item">
+                                            <img src="uploads/bellboy/img/ico-bellguide.svg" alt=""
+                                                class="icon-item__default">
+                                            <img src="uploads/bellboy/img/h-ico-bellguide.svg" alt=""
+                                                class="icon-item__hover">
+                                        </div>
+                                        <span class="text__white text__14">بِل‌گاید</span>
+                                        <span class="lobster text__o-half text__white text__19">Bell
+                                            Guide</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menu-service__close">
+                            <button>
+                                <img src="uploads/bellboy/img/v-close.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="main-menu text__white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="main-menu__list">
+                        <div class="main-menu__item p-relative ">
+                            <a href="" class="cover-link"></a>
+                            <div class="main-menu__icon icon-item">
+                                <img class="icon-item__default" src="uploads/bellboy/img/ico-service.svg" alt="">
+                                <img class="icon-item__hover" src="uploads/bellboy/img/h-ico-home.svg" alt="">
+                            </div>
+                            <div class="main-menu__title text__12 text__bold">سفارش‌ها</div>
+                        </div>
+                        <div class="main-menu__item p-relative">
+                            <a href="" class="cover-link "></a>
+                            <div class="main-menu__icon icon-item">
+                                <img class="icon-item__default" src="uploads/bellboy/img/ico-service.svg" alt="">
+                                <img class="icon-item__hover" src="uploads/bellboy/img/ico-activity.svg" alt="">
+                            </div>
+                            <div class="main-menu__title  text__12 text__bold ">بل‌گاید</div>
+                        </div>
+                        <div class="main-menu__item p-relative">
+                            <a href="" class="cover-link"></a>
+                            <div class="main-menu__icon icon-item">
+                                <img class="icon-item__default" src="uploads/bellboy/img/ico-guide.svg" alt="">
+                                <img class="icon-item__hover" src="uploads/bellboy/img/ico-support.svg" alt="">
+                            </div>
+                            <div class="main-menu__title  text__12 text__bold ">کالا‌ها</div>
+                        </div>
+                        <div class="main-menu__item p-relative active">
+                            <a href="" class="cover-link"></a>
+                            <div class="main-menu__icon icon-item">
+                                <img class="icon-item__default" src="uploads/bellboy/img/ico-users.svg" alt="">
+                                <img class="icon-item__hover" src="uploads/bellboy/img/h-ico-users.svg" alt="">
+                            </div>
+                            <div class="main-menu__title  text__12 text__bold desktop">کاربران</div>
+                        </div>
+                        <div class="main-menu__item p-relative">
+                            <a href="" class="cover-link"></a>
+                            <div class="main-menu__icon icon-item">
+                                <img class="icon-item__default" src="uploads/bellboy/img/ico-account.svg" alt="">
+                                <img class="icon-item__hover" src="uploads/bellboy/img/h-ico-account.svg" alt="">
+                            </div>
+                            <div class="main-menu__title  text__12 text__bold desktop">حساب من</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal modal--full fade show" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered admin-modal modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header ">
+                    <div class="admin-modal__header">
+                        <span>افزودن کالا</span>
+                        <a href="" class="close">
+                            <img src="uploads/bellboy/img/v-close.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="scrollbar">
+                        <div class="add-product__content">
+                            <form class="form">
+                                <div class="form__input-row select">
+                                    <label for="" class="text__12 ">
+                                        سرویس
+                                    </label>
+                                    <select name="" id="" class="text__14">
+                                        <option value="">انتخاب کنید</option>
+                                        <option value="" selected>بل‌شاپ</option>
+                                        <option value="">موضوع دوم</option>
+                                    </select>
+                                </div>
+                                <div class="form__input-row select">
+                                    <label for="" class="text__12 ">
+                                        دسته بندی
+                                    </label>
+                                    <select name="" id="" class="text__14">
+                                        <option value="">انتخاب کنید</option>
+                                        <option value="" selected>لوازم یکبار مصرف</option>
+                                        <option value="">موضوع دوم</option>
+                                    </select>
+                                </div>
+                                <div class="form__input-row input">
+                                    <label for="" class="text__12 ">
+                                        عنوان کالا
+                                    </label>
+                                    <input type="text" class="text__14" value="لیوان یکبار مصرف">
+                                </div>
+                                <div class="form__input-row textarea">
+                                    <label for="" class="text__12 ">
+                                        توضیحات کالا
+                                    </label>
+                                    <textarea name="" id="" class="text__14" rows="3">۶ عدد لیوان</textarea>
+                                </div>
+                                <div class="form__input-row input">
+                                    <label for="" class="text__12">
+                                        موجودی
+                                    </label>
+                                    <input type="text" class="text__14" value="۱۰۰">
+                                </div>
+                                <div class="price">
+                                    <div class="form__input-row input">
+                                        <label for="" class="text__12">
+                                            قیمت (تومان)
+                                        </label>
+                                        <input type="text" class="text__14" value="۲۴٬۰۰۰">
+                                    </div>
+                                    <div class="form__input-row input">
+                                        <label for="" class="text__12">
+                                            تحفیف
+                                        </label>
+                                        <div class="p-relative">
+                                            <input type="text" class="text__14" value="۱۰">
+                                            <span class="percent">%</span>
+                                        </div>
+                                    </div>
+                                    <div class="form__input-row input" style="margin-top:auto">
+                                        <label for="" class="text__12">
+
+                                        </label>
+                                        <div class="p-relative text__left">
+                                            <span class="text__14">
+                                                <span class="off">۲۴٬۰۰۰</span>
+                                                <span>21٬۶۰۰</span>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="form__input-row uploader">
+                                    <div class="uploader__top">
+                                        <label for="" class="text__12">
+                                            بارگذاری تصاویر کالا
+                                        </label>
+                                        <div class="uploader__upload">
+                                            <input type="file" class="text__14">
+                                            <div class="text__14">انتخاب فایل</div>
+                                        </div>
+                                    </div>
+                                    <div class="uploader-list">
+                                        <div class="item">
+                                            <div class="pic">
+                                                <img src="uploads/bellboy/img/sample.jpg" alt="">
+                                            </div>
+                                            <div class="content">
+                                                <span class="title text__12">file name.jpeg</span>
+                                                <span class="size text__10">456 kb</span>
+                                            </div>
+                                            <div class="actions">
+                                                <a href="">
+                                                    <img src="uploads/bellboy/img/ico-trash-2.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer add-product__actions ">
+                    <a href="" class="cancel">انصراف</a>
+                    <a href="" class="green">ذخیره</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="uploads/bellboy/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="uploads/bellboy/css/OverlayScrollbars.min.css">
+    <link rel="stylesheet" href="uploads/bellboy/css/flickity.min.css">
+    <link rel="stylesheet" href="uploads/bellboy/css/plyr.css">
+    <link rel="stylesheet" href="uploads/bellboy/scss/main.css">
+    <link rel="stylesheet" href="uploads/bellboy/scss/inpage.css">
+    <link rel="stylesheet" href="uploads/bellboy/scss/admin.css">
+
+    <script src="uploads/bellboy/js/jquery-3.5.1.min.js"></script>
+    <script src="uploads/bellboy/js/bootstrap.min.js"></script>
+    <script src="uploads/bellboy/js/plyr.js"></script>
+    <script src="uploads/bellboy/js/OverlayScrollbars.min.js"></script>
+    <script src="uploads/bellboy/js/flickity.pkgd.min.js"></script>
+    <script src="uploads/bellboy/js/main.js"></script>
+
+</body>
+
+</html>
