@@ -1,0 +1,78 @@
+i.sanjabak,
+span.sanjabak {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "sanjabak" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.sanjabak-arrow-up:before {
+  content: "\e90e";
+  color: #a1a1a1;
+}
+.sanjabak-arrow-bottom:before {
+  content: "\e90f";
+  color: #a1a1a1;
+}
+.sanjabak-pishkhan:before {
+  content: "\e900";
+  color: #fff;
+}
+.sanjabak-receipt-search:before {
+  content: "\e901";
+  color: #32a7e2;
+}
+.sanjabak-sales:before {
+  content: "\e902";
+  color: #fff;
+}
+.sanjabak-search:before {
+  content: "\e903";
+  color: #32a7e2;
+}
+.sanjabak-table-arrow:before {
+  content: "\e904";
+  color: #a1a1a1;
+}
+.sanjabak-user:before {
+  content: "\e905";
+  color: #707070;
+}
+.sanjabak-arrow-down:before {
+  content: "\e906";
+  color: #707070;
+}
+.sanjabak-arrow-full:before {
+  content: "\e907";
+}
+.sanjabak-card-tick:before {
+  content: "\e908";
+  color: #32a7e2;
+}
+.sanjabak-comments:before {
+  content: "\e909";
+  color: #fff;
+}
+.sanjabak-credit:before {
+  content: "\e90a";
+  color: #fff;
+}
+.sanjabak-mail:before {
+  content: "\e90b";
+}
+.sanjabak-open-book:before {
+  content: "\e90c";
+  color: #fff;
+}
+.sanjabak-password:before {
+  content: "\e90d";
+}

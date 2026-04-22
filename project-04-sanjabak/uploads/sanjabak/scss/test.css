@@ -1,0 +1,75 @@
+/*.online-visits {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0;
+        width: 70%;
+        height: 1px;
+        background-color: rgba($color: #fff, $alpha: 0.2);
+    }
+    &__content {
+        margin-right: 0px;
+        display: flex;
+        align-items: center;
+        margin-top: 0;
+        margin-bottom: 0;
+        div {
+            margin-top: 0;
+            &:not(:last-child) {
+                margin-left: 20px;
+            }
+        }
+    }
+}
+*/
+body .footer__col:nth-child(4n + 1) {
+  margin-right: 0;
+}
+
+body .footer__col:nth-child(4n) {
+  margin-left: 0;
+}
+
+body .footer__col:nth-child(n + 5) {
+  margin-top: 24px;
+}
+
+body .footer__col.not-link ul li {
+  padding-right: 21px;
+  position: relative;
+}
+
+body .footer__col.not-link ul li::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  top: 7px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+body .contact-us__map {
+  position: relative;
+  height: 150px;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+body .contact-us .item {
+  margin-top: 10px;
+}
+/*# sourceMappingURL=test.css.map */
