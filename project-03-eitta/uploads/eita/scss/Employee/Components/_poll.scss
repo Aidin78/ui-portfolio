@@ -1,0 +1,34 @@
+.poll {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    &__title {
+    }
+    &__answers {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    &__answer {
+      min-width: 50px;
+      height: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: none;
+      border: 1px solid #dbe8f2;
+      border-radius: 16px;
+      padding: 2px 6px;
+      padding-bottom: 3px;
+      cursor: pointer;
+      transition: all 0.2s ease-in;
+      &:hover {
+        border-color: var(--orange);
+      }
+      &.active {
+        border-color: var(--orange);
+      }
+    }
+  }
+  

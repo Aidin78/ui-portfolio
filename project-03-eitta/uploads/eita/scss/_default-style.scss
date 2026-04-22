@@ -1,0 +1,110 @@
+:root {
+  --primary-color: #000;
+  --secondary-color: #fff;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  font-family: Yekan Bakh;
+}
+input,
+input::placeholder,
+button,
+textarea {
+  font-family: Yekan Bakh FaNum;
+}
+input::placeholder{
+  font-family: Yekan Bakh FaNum;
+}
+body {
+  font-family: Yekan Bakh FaNum;
+  font-weight: normal;
+  margin: 0;
+  overflow-x: hidden;
+  position: relative;
+  text-align: right;
+  font-size: 100%;
+  color: #30373d;
+  background-color: #f6f6f6;
+}
+.wrapper {
+  font-size: 100%;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s linear;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+img {
+  border: 0;
+}
+
+img:not([src]) {
+  visibility: hidden;
+}
+/* Fixes Firefox anomaly during image load */
+@-moz-document url-prefix() {
+  img:-moz-loading {
+    visibility: hidden;
+  }
+}
+.wrapper {
+  overflow: hidden;
+  position: relative;
+  min-height: 100vh;
+}
+a {
+  span {
+    pointer-events: none;
+  }
+  transition: all 0.2s linear;
+  &:hover {
+    color: var(--green);
+  }
+}
+
+.eita-star {
+  background: -webkit-linear-gradient(#ffac58 0%, #ff8100 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.align-flex-start{
+  align-items: flex-start !important;
+}
+.align-flex-center{
+  align-items: center !important;
+}
+
+
+th{
+  font-weight: normal;
+}
+
+input{
+  outline: unset !important;
+}

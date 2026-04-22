@@ -1,0 +1,10 @@
+<svg id="counter-3" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <rect id="Rectangle_6667" data-name="Rectangle 6667" width="64" height="64" fill="none"/>
+  <g id="vuesax_linear_flag" data-name="vuesax/linear/flag" transform="translate(-236 -380)">
+    <g id="flag" transform="translate(236 380)">
+      <path id="Vector" d="M0,0V53.333" transform="translate(13.733 5.333)" fill="none" stroke="red" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="Vector-2" data-name="Vector" d="M0,0H29.867c7.2,0,8.8,4,3.733,9.067l-3.2,3.2a5.153,5.153,0,0,0,0,7.467l3.2,3.2C38.667,28,36.8,32,29.867,32H0" transform="translate(13.733 10.667)" fill="none" stroke="red" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="Vector-3" data-name="Vector" d="M0,0H64V64H0Z" fill="none" opacity="0"/>
+    </g>
+  </g>
+</svg>

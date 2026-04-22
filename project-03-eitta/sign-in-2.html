@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[esprit:site-title] | [esprit:page-title]</title>
+    <meta name="title" content="[esprit:page-title]" />
+    <meta name="description" content="[esprit:page-description]" />
+    <meta name="keywords" content="[esprit:page-keywords]" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="/[esprit:page-title]" />
+    <meta property="og:title" content="[esprit:page-title]" />
+    <meta property="og:description" content="[esprit:page-description]" />
+    <meta property="og:image" content="[esprit:page-image]" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="/[esprit:page-title]" />
+    <meta property="twitter:title" content="[esprit:page-title]" />
+    <meta property="twitter:description" content="[esprit:page-description]" />
+    <meta property="twitter:image" content="[esprit:page-image]" />
+    <link rel="shortcut icon" href="uploads/eita/img/fav-icon.svg" type="image/x-icon">
+    <link rel="icon" href="uploads/eita/img/fav-icon.svg" type="image/x-icon">
+
+</head>
+
+<body dir="rtl">
+    <div class="wrapper">
+        <header class="header header--center">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="header__container">
+                            <div class="header__menu">
+                                <div class="pop-menu">
+                                    <a href="" class="pop-menu__ham">
+                                        <b></b>
+                                        <b></b>
+                                        <b></b>
+                                    </a>
+                                    <div class="pop-menu__menu">
+                                        <ul>
+                                            <li>
+                                                <a href="" class="text__14">خانه</a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="text__14">سؤالات متداول</a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="text__14">پشتیبانی (تیکت)</a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="text__14">وب سایت ایتا</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__logo">
+                                <img src="uploads/eita/img/logo.svg" alt="">
+                                <a href="" aria-label="logo" target="_self" class="cover-link"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="sign-in">
+                            <form class="sign-in__form">
+                                <div class="sign-in__header">
+                                    <a href="" class="sign-in__prev">
+                                        <i class="eita eita-arrow-right text__24"></i>
+                                    </a>
+                                </div>
+                                <div class="sign-in__content">
+                                    <div class="sign-in__code-text">
+                                        <span class="text text__semibold text__16">
+                                            کد تأیید را وارد کنید
+                                            <span class="timer text__14 text__orange">۱۱۵</span>
+                                        </span>
+                                        <a href="" class="sign-in__send-text text__14 text__gray">ارسال با پیامک</a>
+                                    </div>
+                                    <div class="sign-in__row sign-in__code">
+                                        <div class="otpCode">
+                                            <input class="otpCode__digit text__20 text__center" type="tel" pattern="[0-9]*"
+                                                maxlength="1" required="" placeholder="" />
+                                            <input class="otpCode__digit text__20 text__center" type="tel" pattern="[0-9]*"
+                                                maxlength="1" required="" placeholder="" />
+                                            <input class="otpCode__digit text__20 text__center" type="tel" pattern="[0-9]*"
+                                                maxlength="1" required="" placeholder="" />
+                                            <input class="otpCode__digit text__20 text__center" type="tel" pattern="[0-9]*"
+                                                maxlength="1" required="" placeholder="" />
+                                                <input class="otpCode__digit text__20 text__center" type="tel" pattern="[0-9]*"
+                                                    maxlength="1" required="" placeholder="" />
+                                        </div>
+                                    </div>
+
+                                    <div class="sign-in__error d-none text__16 text__semibold text__center text__red">
+                                        کد تأیید اشتباه است
+                                    </div>
+                                </div>
+                                <div class="sign-in__button">
+                                    <button class=" text__20 text__medium text__white"><span> ورود</span></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <link rel="stylesheet" href="uploads/eita/css/bootstrap-grid.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="uploads/eita/scss/signin.css">
+
+    <script src="uploads/eita/js/jquery-3.5.1.min.js"></script>
+    <script src="uploads/eita/js/bootstrap.min.js"></script>
+    <script src="uploads/eita/js/main.js"></script>
+    <script> let optCode = document.querySelectorAll(".otpCode__digit");
+        optCode.forEach(function (elem) {
+            elem.addEventListener("keypress", (evt) => {
+                evt.preventDefault();
+            });
+
+            elem.addEventListener("keyup", (evt) => {
+                if (evt.keyCode != 8) {
+
+                    evt.currentTarget.value = String.fromCharCode(evt.keyCode);
+                    focusNext(elem);
+                }
+            });
+
+            elem.addEventListener("keydown", (evt) => {
+                switch (evt.keyCode) {
+                    case 8:
+                        handleBackspace(evt.currentTarget);
+                        break;
+                    case 37:
+                        focusPrev(evt.currentTarget);
+                        break;
+                    case 39:
+                        focusNext(elem);
+                        break;
+                    default:
+                        return;
+                }
+            });
+        });
+
+        // Functions
+        function focusNext(currEle) {
+            const next = currEle.nextElementSibling;
+            if (next !== null) {
+                next.focus();
+            }
+        }
+
+        function handleBackspace(currEle) {
+            if (currEle.value === "") {
+                focusPrev(currEle);
+            } else {
+                console.log('ere')
+                currEle.value = " ";
+            }
+        }
+        function focusPrev(currEle) {
+            const prev = currEle.previousElementSibling;
+            if (prev !== null) {
+                prev.focus();
+            }
+        }
+    </script>
+</body>
+
+</html>

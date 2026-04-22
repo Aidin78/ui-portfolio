@@ -1,0 +1,266 @@
+// Variables
+:root {
+  --black-text-color: #000;
+  --white-text-color: #fff;
+
+  --orange: #ff8100;
+  --green: #0a9b94;
+}
+
+@mixin lineclamp($num) {
+  display: -webkit-box;
+  -webkit-line-clamp: $num;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+%cover-link {
+  position: relative;
+  .cover-link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+  }
+}
+// Icons from Iconmoon
+@import "fonts";
+// Icons from Iconmoon
+@import "icons";
+// Style for Body and serch
+@import "default-style";
+// Font sizes and colors ...
+@import "snippets";
+
+///Components
+// Header
+@import "User/Components/header";
+//Pop-up menu
+@import "User/Components/popMenu";
+//Accordion
+@import "User/Components/accordion";
+
+//Structure
+.container {
+  max-width: 830px;
+  &-fluid {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+@media (max-width: 991.98px) and (min-width: 576px) {
+  .container {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+}
+@media (max-width: 575.98px) {
+  .container {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+
+// Start Sign In Styles
+.sign-in {
+  margin-top: 80px;
+  &__header {
+    margin-top: -18px;
+  }
+  &__prev {
+    margin-bottom: 32px;
+    margin-right: -5px;
+  }
+  &__form {
+    padding: 48px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 449px;
+    max-width: 100%;
+    min-height: 416px;
+    border-radius: 28px;
+    background: #fff;
+
+    display: flex;
+    flex-direction: column;
+  }
+  &__send-text {
+    color: #6b7885;
+  }
+  &__row {
+  }
+  &__code-text {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    .text {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+  &__input {
+    margin-top: 52px;
+    input {
+      width: 100%;
+      text-align: center;
+      border: none;
+      border-bottom: 1px solid #dbe8f2;
+      padding-bottom: 8px;
+      background: unset;
+      outline: unset !important;
+      &::placeholder {
+        color: #c6d0d9;
+        font-family: Yekan Bakh FaNum;
+      }
+    }
+  }
+  &__code {
+    margin-top: 52px;
+    .otpCode {
+      direction: ltr;
+      display: flex;
+      gap: 18px;
+      align-items: center;
+      justify-content: center;
+      &.error {
+        .otpCode {
+          &__digit {
+            background-color: #fff1ee !important;
+          }
+        }
+      }
+      &__digit {
+        display: flex;
+        justify-content: center;
+        outline: unset !important;
+        align-items: center;
+        color: #000;
+        width: 56px;
+        border: none;
+        height: 56px;
+        border-radius: 12px;
+        background: #f6f6f6;
+        &::placeholder {
+          color: #000;
+          opacity: 1;
+        }
+      }
+    }
+  }
+  &__error {
+    margin-top: 24px;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+  }
+  &__button {
+    flex-shrink: 0;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    button {
+      cursor: pointer;
+      padding: 5px 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 56px;
+      border-radius: 28px;
+      background: linear-gradient(90deg, #ffac58 0%, #ff8100 100%);
+      box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.16);
+      border: none;
+      color: #fff;
+      position: relative;
+
+      &:hover {
+        color: white;
+        &::before {
+          opacity: 1;
+        }
+      }
+      * {
+        position: relative;
+        z-index: 2;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+        border-radius: 28px;
+        background: linear-gradient(90deg, #ffa123 0%, #e06100 100%);
+        opacity: 0;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+  }
+}
+@media (max-width: 575.98px) {
+  .header {
+    &__container {
+      height: 72px;
+      position: relative;
+    }
+    &__logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .sign-in {
+    &__header {
+      margin-bottom: 20px;
+    }
+    &__form {
+      background-color: unset;
+      padding: 0;
+      height: auto;
+      width: 312px;
+      max-width: 100%;
+      min-height: auto;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    &__input {
+      max-width: 264px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    &__code {
+      width: 312px;
+      max-width: 100%;
+      margin-right: auto;
+      margin-left: auto;
+      .otpCode {
+        width: 100%;
+        gap: 0;
+        justify-content: space-between;
+        &__digit {
+        }
+      }
+    }
+    &__button {
+      display: flex;
+      justify-content: center;
+      margin-top: 60px;
+      button {
+        max-width: 264px;
+      }
+    }
+  }
+  body {
+    background-color: #fff;
+  }
+}
+// End Sign In Styles

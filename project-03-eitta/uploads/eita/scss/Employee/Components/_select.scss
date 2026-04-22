@@ -1,0 +1,87 @@
+.select {
+  position: relative;
+  &.active {
+    .select {
+      &__active {
+        border-bottom-left-radius: 0;
+        border-bottom: none;
+        border-bottom-right-radius: 0;
+      }
+      &__menu {
+        top: 100%;
+        opacity: 1;
+        pointer-events: all;
+      }
+    }
+  }
+  &__main {
+    display: none !important;
+  }
+  &__active {
+    width: 100%;
+    border-radius: 28px;
+    background: #fff;
+    border: 1px solid #dbe8f2;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: unset !important;
+    font-size: 16px;
+    font-family: Yekan Bakh FaNum;
+    resize: none;
+    &::placeholder {
+      color: rgba($color: #30373d, $alpha: 0.5);
+    }
+    i {
+      margin-right: 10px;
+      font-size: 1.5rem;
+    }
+    &:hover {
+      color: inherit;
+    }
+  }
+  &__menu {
+    width: 100%;
+    border-radius: 28px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    background-color: #fff;
+    border: 1px solid #dbe8f2;
+    border-top: unset;
+    position: absolute;
+    transition: all 0.2s ease-in;
+    opacity: 0;
+    pointer-events: none;
+    top: 70px;
+    right: 0;
+
+    ul {
+      padding: 10px 15px;
+      width: 100%;
+      list-style: none;
+    }
+    li {
+    }
+    a {
+      padding: 9px 20px;
+      border-radius: 12px;
+      display: block;
+      transition: all 0.2s ease-in;
+      &.active {
+        background-color: #f2fafa;
+      }
+      &:hover {
+        background-color: #f2fafa;
+        color: inherit;
+      }
+    }
+  }
+}
+@media (max-width: 575.98px) {
+  .select {
+    &__active {
+      padding: 15px 20px;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+<svg id="tick" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56" height="56" viewBox="0 0 56 56">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#16caca"/>
+      <stop offset="1" stop-color="#0a9b94"/>
+    </linearGradient>
+  </defs>
+  <path id="Path_5247" data-name="Path 5247" d="M0,0H56V56H0Z" fill="none"/>
+  <path id="Path_108962" data-name="Path 108962" d="M183.6,182.346a3.7,3.7,0,1,1,4.993,5.472q-11.1,10.168-22.19,20.336a3.718,3.718,0,0,1-5.053-.108q-5.564-5.549-11.117-11.112a3.7,3.7,0,1,1,5.159-5.31q4.33,4.32,8.655,8.648Q173.825,191.308,183.6,182.346Z" transform="translate(-141.857 -170.028)" fill="url(#linear-gradient)"/>
+</svg>

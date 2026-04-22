@@ -1,0 +1,107 @@
+.services {
+    padding-top: 10px;
+    &__container {
+    }
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    &__item {
+      flex-basis: calc(50% - 12px);
+      position: relative;
+      border-radius: 16px;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      border: 1px solid transparent;
+      &:nth-child(2n) {
+        margin-right: 12px;
+      }
+      &:nth-child(2n + 1) {
+        margin-left: 12px;
+      }
+      &:nth-child(n + 3) {
+        margin-top: 32px;
+      }
+      transition: all 0.2s ease-in;
+      &:hover {
+        transform: translateY(-3px);
+        .services {
+          &__arrow {
+            color: var(--orange);
+          }
+        }
+      }
+    }
+    &__icon {
+      width: 120px;
+      flex-shrink: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__content {
+      display: flex;
+      flex-direction: column;
+      padding: 24px;
+      padding-right: 0;
+    }
+    &__title {
+      margin-bottom: 8px;
+    }
+    &__detail {
+      max-width: 176px;
+      p {
+        margin-bottom: 4px;
+      }
+    }
+    &__arrow {
+      position: absolute;
+      left: 24px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5em;
+      transition: all 0.2s ease-in;
+      color: #6b7885;
+    }
+  }
+  @media (max-width: 991.98px) and (min-width: 576px) {
+    .services {
+      &__content {
+        padding-left: 32px;
+      }
+      &__arrow {
+        left: 10px;
+      }
+      &__icon {
+        width: 100px;
+      }
+    }
+  }
+  @media (max-width: 575.98px) {
+    .services {
+      &__list {
+        gap: 16px;
+      }
+      &__item {
+        flex-basis: 100%;
+        margin-top: 0 !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+      }
+      &__content {
+        padding-left: 32px;
+        max-width: unset;
+      }
+      &__arrow {
+        left: 10px;
+      }
+      &__icon {
+        width: 100px;
+      }
+    }
+  }

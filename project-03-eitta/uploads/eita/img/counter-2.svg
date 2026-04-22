@@ -1,0 +1,20 @@
+<svg id="counter-2" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <rect id="Rectangle_6667" data-name="Rectangle 6667" width="64" height="64" fill="none"/>
+  <g id="Component_557_3" data-name="Component 557 – 3">
+    <rect id="Rectangle_6668" data-name="Rectangle 6668" width="64" height="64" fill="none"/>
+    <g id="Component_370_4" data-name="Component 370 – 4">
+      <g id="Symbol_165_515" data-name="Symbol 165 – 515">
+        <path id="Path_5247" data-name="Path 5247" d="M0,0H64V64H0Z" fill="none"/>
+      </g>
+      <g id="vuesax_linear_message" data-name="vuesax/linear/message">
+        <g id="message">
+          <path id="Vector" d="M17.333,45.333H16c-10.667,0-16-2.667-16-16V16Q0,0,16,0H37.333q16,0,16,16V29.333q0,16-16,16H36A2.7,2.7,0,0,0,33.867,46.4l-4,5.333a3.789,3.789,0,0,1-6.4,0l-4-5.333A3.014,3.014,0,0,0,17.333,45.333Z" transform="translate(5.333 5.333)" fill="none" stroke="#0a9b94" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <path id="Vector-2" data-name="Vector" d="M.495.5H.518" transform="translate(42.163 28.833)" fill="none" stroke="#0a9b94" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          <path id="Vector-3" data-name="Vector" d="M.495.5H.518" transform="translate(31.493 28.833)" fill="none" stroke="#0a9b94" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          <path id="Vector-4" data-name="Vector" d="M.495.5H.518" transform="translate(20.824 28.833)" fill="none" stroke="#0a9b94" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          <path id="Vector-5" data-name="Vector" d="M0,0H64V64H0Z" fill="none" opacity="0"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

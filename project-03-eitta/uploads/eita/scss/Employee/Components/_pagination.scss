@@ -1,0 +1,65 @@
+.pagination {
+  list-style: none;
+  width: 100%;
+  color: #000;
+  margin-top: 32px;
+  padding-bottom: 32px;
+  font-family: Yekan Bakh FaNum;
+  display: flex;
+  justify-content: center;
+  .deactivated {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  li {
+    margin: 0 10px;
+
+    &:hover,
+    &.active__page {
+      a {
+        background-color: #f2fafa;
+        color: #0a9b94;
+      }
+    }
+    a {
+      border-radius: 50%;
+      width: 33px;
+      aspect-ratio: 1/1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &:first-child {
+      font-size: 1em;
+      margin-left: 25px;
+      &:hover {
+        background-color: transparent;
+        border: none;
+      }
+    }
+    &:last-child {
+      font-size: 1em;
+      margin-right: 25px;
+    }
+    &.first {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      &::after {
+        content: "...";
+      }
+    }
+    &.last {
+      &::before {
+        content: "...";
+        margin-left: 15px;
+      }
+    }
+    &:first-child a,
+    &:last-child a {
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+}

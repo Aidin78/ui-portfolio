@@ -1,0 +1,56 @@
+// Variables
+:root {
+  --black-text-color: #000;
+  --white-text-color: #fff;
+
+  --orange: #ff8100;
+  --green: #0a9b94;
+}
+
+@mixin lineclamp($num) {
+  display: -webkit-box;
+  -webkit-line-clamp: $num;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+%cover-link {
+  position: relative;
+  .cover-link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+  }
+}
+// Icons from Iconmoon
+@import "fonts";
+// Icons from Iconmoon
+@import "icons";
+// Style for Body and serch
+@import "default-style";
+// Font sizes and colors ...
+@import "snippets";
+
+///Components
+// Header
+@import "User/Components/header";
+//Pop-up menu
+@import "User/Components/popMenu";
+//select
+@import "User/Components/select";
+//Accordion
+@import "User/Components/accordion";
+//Structure
+@import "User/Components/structure";
+//table
+@import "User/Components/table";
+//alerts
+@import "User/Components/alerts";
+//modal
+@import "User/Components/modal";
+//ticketInfo
+@import "User/Components/ticketInfo";
+//pagination
+@import "Employee/Components/pagination";

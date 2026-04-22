@@ -1,0 +1,9 @@
+<svg id="Component_556_10" data-name="Component 556 – 10" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <rect id="Rectangle_6667" data-name="Rectangle 6667" width="64" height="64" fill="none"/>
+  <g id="vuesax_linear_timer" data-name="vuesax/linear/timer" transform="translate(-108 -188)">
+    <g id="timer" transform="translate(108 188)">
+      <path id="Vector" d="M26,0H8.717C-1.31,0-2.083,9.013,3.33,13.92L31.384,39.413C36.8,44.32,36.024,53.333,26,53.333H8.717c-10.027,0-10.8-9.013-5.387-13.92L31.384,13.92C36.8,9.013,36.024,0,26,0Z" transform="translate(14.643 5.333)" fill="none" stroke="#ff8100" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="Vector-2" data-name="Vector" d="M0,0H64V64H0Z" fill="none" opacity="0"/>
+    </g>
+  </g>
+</svg>

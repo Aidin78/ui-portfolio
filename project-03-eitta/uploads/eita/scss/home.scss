@@ -1,0 +1,96 @@
+// Variables
+:root {
+  --black-text-color: #000;
+  --white-text-color: #fff;
+
+  --orange: #ff8100;
+  --green: #0a9b94;
+}
+
+@mixin lineclamp($num) {
+  display: -webkit-box;
+  -webkit-line-clamp: $num;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+%cover-link {
+  position: relative;
+  .cover-link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+  }
+}
+// Icons from Iconmoon
+@import "fonts";
+// Icons from Iconmoon
+@import "icons";
+// Style for Body and serch
+@import "default-style";
+// Font sizes and colors ...
+@import "snippets";
+
+///Components
+// Header
+@import "User/Components/header";
+//Pop-up menu
+@import "User/Components/popMenu";
+//Accordion
+@import "User/Components/accordion";
+//Search Box
+@import "User/Components/searchBox";
+//Services
+@import "User/Components/services";
+//Support
+@import "User/Components/support";
+//Questions
+@import "User/Components/questions";
+//poll
+@import "User/Components/poll";
+//list
+@import "User/Components/linkList";
+
+//Structure
+.container {
+  max-width: 830px;
+  &-fluid {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+.home-pgae {
+  min-height: calc(100vh - 160px);
+  display: flex;
+  flex-direction: column;
+  .support {
+    margin-top: auto;
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 991.98px) and (min-width: 576px) {
+  .container {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+}
+@media (max-width: 659.98px){
+  .home-pgae {
+    .support {
+      padding-bottom: 0px;
+    }
+  }
+  .support{
+    &__text{
+      margin-bottom: -10px;
+    }
+  }
+}
+@media (max-width: 575.98px) {
+  .container {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
