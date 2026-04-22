@@ -1,0 +1,37 @@
+<svg id="Component_288_9" data-name="Component 288 – 9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="0.996" x2="0.5" y2="0.05" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#42a3f2"/>
+      <stop offset="1" stop-color="#42a4eb"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#11408a"/>
+      <stop offset="1" stop-color="#103f8f"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.5" y1="-3.384" x2="0.5" y2="-3.391" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3079d6"/>
+      <stop offset="1" stop-color="#297cd2"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1d59b3"/>
+      <stop offset="1" stop-color="#195bbc"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-5" x1="0.037" y1="0.037" x2="0.975" y2="0.975" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#256ac2"/>
+      <stop offset="1" stop-color="#1247ad"/>
+    </linearGradient>
+  </defs>
+  <rect id="rectangle" width="40" height="40" fill="none"/>
+  <rect id="rectangle-2" data-name="rectangle" width="40" height="40" fill="none"/>
+  <g id="icons8-microsoft-word-2019" transform="translate(-3 -3.8)">
+    <path id="Path_13337" data-name="Path 13337" d="M39.25,6H13.95A1.949,1.949,0,0,0,12,7.95v6.828H41.2V7.95A1.949,1.949,0,0,0,39.25,6Z" transform="translate(-0.2)" fill="url(#linear-gradient)"/>
+    <path id="Path_13338" data-name="Path 13338" d="M12,33.054v6.772a1.949,1.949,0,0,0,1.95,1.95h25.3a1.949,1.949,0,0,0,1.95-1.95V33.054Z" transform="translate(-0.2 -0.676)" fill="url(#linear-gradient-2)"/>
+    <path id="Path_13339" data-name="Path 13339" d="M12,15H41.2V23.78H12Z" transform="translate(-0.2 -0.225)" fill="url(#linear-gradient-3)"/>
+    <path id="Path_13340" data-name="Path 13340" d="M12,24H41.2v8.824H12Z" transform="translate(-0.2 -0.45)" fill="url(#linear-gradient-4)"/>
+    <path id="Path_13341" data-name="Path 13341" d="M22.061,13H12V36.4H22.061a3.589,3.589,0,0,0,3.589-3.589V16.589A3.589,3.589,0,0,0,22.061,13Z" transform="translate(-0.2 -0.175)" opacity="0.05"/>
+    <path id="Path_13342" data-name="Path 13342" d="M21.958,35.433H12v-22.1h9.958A3.043,3.043,0,0,1,25,16.376V32.39A3.044,3.044,0,0,1,21.958,35.433Z" transform="translate(-0.2 -0.183)" opacity="0.07"/>
+    <path id="Path_13343" data-name="Path 13343" d="M21.853,34.467H12v-20.8h9.853a2.5,2.5,0,0,1,2.5,2.5V31.971A2.5,2.5,0,0,1,21.853,34.467Z" transform="translate(-0.2 -0.192)" opacity="0.09"/>
+    <path id="Path_13344" data-name="Path 13344" d="M21.55,33.5H5.95A1.949,1.949,0,0,1,4,31.55V15.95A1.949,1.949,0,0,1,5.95,14h15.6a1.949,1.949,0,0,1,1.95,1.95v15.6A1.949,1.949,0,0,1,21.55,33.5Z" transform="translate(0 -0.2)" fill="url(#linear-gradient-5)"/>
+    <path id="Path_13345" data-name="Path 13345" d="M18.134,19l-1.507,7.082L14.956,19H12.824L11.1,26.3,9.548,19H7.641l2.285,9.75H12.22l1.67-7.5,1.671,7.5h2.195L20.041,19Z" transform="translate(-0.091 -0.325)" fill="#fff"/>
+  </g>
+</svg>

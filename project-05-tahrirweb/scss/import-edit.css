@@ -1,0 +1,452 @@
+.text__dark {
+  color: #444 !important;
+}
+
+.text__semi-bold {
+  font-weight: 450;
+}
+
+.delete-tab {
+  background-color: rgba(27, 39, 51, 0.1);
+}
+
+.delete-tab .tab__header {
+  margin-bottom: 30px;
+}
+
+.delete-tab .tab__content {
+  min-height: 205px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.delete-tab .tab__content > span {
+  margin-top: auto;
+}
+
+.delete-tab .modal-dialog {
+  width: 356px;
+  margin-top: auto;
+  margin-bottom: auto;
+  -webkit-transform: translateY(-50%) !important;
+          transform: translateY(-50%) !important;
+  top: 50%;
+}
+
+.delete-tab .elem__box-list {
+  height: unset;
+}
+
+.delete-tab .tab__footer {
+  margin-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.delete-tab .tab__footer .popUp-tab__submit {
+  margin-right: 32px;
+}
+
+.delete-tab .tab__footer .popUp-tab__clear {
+  padding: 0;
+  margin: 0;
+}
+
+.delete-tab .elem__box-list {
+  border-bottom: none;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.delete-tab .elem__box-list .icon {
+  width: 40px;
+}
+
+.delete-tab .elem__box-list .icon i {
+  font-size: 40px;
+}
+
+.delete-tab .elem__box-list .icon span {
+  font-size: 32px;
+}
+
+.delete-tab .elem__box-list .icon .path1::before {
+  color: #b8ecff;
+}
+
+.delete-tab .elem__box-list .icon .path2::before {
+  color: #00b6e3;
+}
+
+.delete-tab .elem__box-list .title {
+  font-size: 16px;
+}
+
+.import-tab {
+  background-color: rgba(27, 39, 51, 0.1);
+}
+
+.import-tab .tab__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.import-tab .tab__header a {
+  padding-left: 5px;
+}
+
+.import-tab__save {
+  padding-right: 22px;
+  padding-left: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top: 1px solid #f1f1f1;
+}
+
+.import-tab__save > span {
+  margin-left: 32px;
+}
+
+.import-tab__save a {
+  font-weight: 450;
+}
+
+.import-tab__save ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 27px;
+}
+
+.import-tab__save li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.import-tab__save li i.niafam-Component-25--1 {
+  margin-top: 4px;
+  padding-right: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.import-tab__save li:not(:last-child) {
+  margin-left: 4px;
+}
+
+.import-tab__save .icon {
+  margin-left: 12px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.import-tab__accord button {
+  background: none;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  outline: unset !important;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.import-tab__accord button i {
+  font-size: 18px;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.import-tab__accord button[aria-expanded="true"] i {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.import-tab .modal-content {
+  padding: 0;
+}
+
+.import-tab .modal-content .close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: auto;
+  font-size: 13px;
+  padding-left: 5px;
+}
+
+.import-tab .tab__header {
+  margin-bottom: 30px;
+  padding: 32px 44px 0 44px;
+}
+
+.import-tab .tab__content {
+  min-height: 205px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.import-tab .tab__content > span {
+  margin-top: auto;
+}
+
+.import-tab .modal-content {
+  height: 100%;
+}
+
+.import-tab .modal-dialog {
+  width: 720px;
+  max-width: calc(100% - 30px);
+  height: 528px !important;
+  max-height: unset;
+  margin-top: auto;
+  margin-bottom: auto;
+  -webkit-transform: translateY(-50%) !important;
+          transform: translateY(-50%) !important;
+  top: 50%;
+}
+
+.import-tab .os-scrollbar-vertical {
+  left: 24px;
+  padding-bottom: 20px;
+}
+
+.import-tab .os-scrollbar-track-off {
+  background-color: #f1f1f1 !important;
+  width: 1px;
+}
+
+.import-tab .os-scrollbar-handle {
+  background-color: #bac4ce !important;
+}
+
+.import-tab .elem__box-list {
+  height: unset;
+  margin-bottom: 22px;
+}
+
+.import-tab .elem__box-list .buttons {
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 4px;
+}
+
+.import-tab .elem__box-list .buttons a {
+  font-weight: 450;
+}
+
+.import-tab .elem__box-list .buttons a:first-child {
+  margin-left: 32px;
+}
+
+.import-tab .scroll-needed {
+  padding: 0 44px;
+  height: 370px;
+  padding-bottom: 15px;
+}
+
+.import-tab .tab__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 20px 40px;
+  border-top: 1px solid #f1f1f1;
+}
+
+.import-tab .tab__footer .popUp-tab__submit {
+  margin-right: 32px;
+}
+
+.import-tab .tab__footer .popUp-tab__clear {
+  padding: 0;
+  margin: 0;
+}
+
+.import-tab .elem__box-list {
+  border-bottom: none;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.import-tab .elem__box-list .icon {
+  width: 40px;
+}
+
+.import-tab .elem__box-list .icon i {
+  font-size: 40px;
+}
+
+.import-tab .elem__box-list .icon span {
+  font-size: 32px;
+}
+
+.import-tab .elem__box-list .icon .path1::before {
+  color: #b8ecff;
+}
+
+.import-tab .elem__box-list .icon .path2::before {
+  color: #00b6e3;
+}
+
+.import-tab .elem__box-list .title {
+  font-size: 16px;
+}
+
+.import-tab--no-file {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.import-tab--no-file a {
+  margin-bottom: 20px;
+  background: #00b6e3;
+  color: white;
+  padding-right: 14px;
+  padding-left: 14px;
+  height: 32px;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+.import-tab--no-file span {
+  margin-top: 0 !important;
+}
+
+.import-modal--importing {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.import-modal--importing > span.loading-text {
+  font-size: 16px;
+  margin-top: unset !important;
+  text-align: center;
+}
+
+.import-modal--importing .number-count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 27px;
+}
+
+.import-modal--importing .number-line {
+  height: 1px;
+  background: #00b6e3;
+  position: absolute;
+  bottom: -1px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  right: 0;
+}
+/*# sourceMappingURL=import-edit.css.map */

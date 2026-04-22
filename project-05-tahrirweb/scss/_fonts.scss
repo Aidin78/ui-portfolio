@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'niafam';
+  src:  url('../fonts/niafam.eot');
+  src:  url('../fonts//niafam.eot?2cp7ya#iefix') format('embedded-opentype'),
+    url('../fonts/niafam.ttf?2cp7ya') format('truetype'),
+    url('../fonts/niafam.woff?2cp7ya') format('woff'),
+    url('../fonts/niafam.svg?2cp7ya#niafam') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: sahel;
+  src: url("../fonts/Sahel-FD.woff2");
+  font-display: swap;
+  font-weight: normal;
+ 
+}
+@font-face {
+  font-family: sahelFD;
+  src: url("../fonts/Sahel-FD.woff2");
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: sahel;
+  src: url("../fonts/Sahel-Bold-FD.ttf");
+  font-weight: bold;
+  font-display: swap;
+}
+@font-face {
+  font-family: sahel;
+  src: url("../fonts/Sahel-SemiBold-FD.ttf");
+  font-weight: 450;
+  font-display: swap;
+}

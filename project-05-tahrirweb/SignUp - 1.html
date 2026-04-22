@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تحریر</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="scss/main.css">
+    <link rel="stylesheet" href="scss/signup.css">
+</head>
+
+<body dir="rtl">
+    <div class="wrapper sign-up-page">
+        <header class="logo-header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="logo-header__logo">
+                            <a href="/"><img src="img/logowithtext.png" alt="تحریر"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="sign-up">
+                        <div class="sign-up__title">خوش آمدید</div>
+                        <div class="sign-up__text">لطفا کد کشور خود را تایید و شماره موبایل خود را وارد کنید</div>
+                        <div class="sign-up__form">
+                            <form action="">
+                                <div class="sign-up__form-row">
+                                    <select id="single" class="js-states form-control">
+                                        <option>ایران</option>
+                                        <option>آمریکا</option>
+                                        <option>انگلیس</option>
+                                    </select>
+                                </div>
+                                <div class="sign-up__form-row sign-up__number ">
+                                    <input onchange="dataChecker(this)" class="form-control" type="tel" name="" id=""
+                                        placeholder="۹۱۰۰۰۰۰۰۰۰">
+                                    <span>۹۸+</span>
+                                    <div class="error-text">این بخش اجباری است</div>
+                                </div>
+                                <div class="sign-up__btn-container">
+                                    <a href="###" class="sign-up__text text__gray">ورود با پست الکترونیک</a>
+                                    <button>تایید شماره</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-6">
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="footer__meta">
+                            <div class="footer__version"> نسخه ۲.۱۵</div>
+                            <div class="footer__social-media">
+                                <ul>
+                                    <li><a href=""><i class="niafam niafam-Instagram "></i></a></li>
+                                    <li><a href=""><i class="niafam niafam-telegram-logo "></i></a></li>
+                                    <li><a href=""><i class="niafam niafam-Union-41 "></i></a></li>
+                                </ul>
+                            </div>
+                            <a href="###" class="footer__app text__blue">tahrir.app</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script>
+        $("#single").select2({
+            placeholder: "کشور",
+            "language": {
+                "noResults": function () {
+                    return "موردی یافت نشد";
+                }
+            }
+        });
+        function dataChecker(elem) {
+            if (elem.value != '')
+                elem.parentElement.classList.remove("error-input");
+            else {
+                elem.parentElement.classList.add("error-input");
+            }
+        }
+        $(document).ready(function () {
+            console.log(document.querySelector('.select2-search__field'))
+            $('#single').one('select2:open', function (e) {
+                $('input.select2-search__field').prop('placeholder', 'جستجو');
+            });
+        })
+    </script>
+</body>
+
+</html>
