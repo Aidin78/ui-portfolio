@@ -1,0 +1,101 @@
+/*Styling Selectbox*/
+.dropdown {
+  width: max-content;
+  display: flex;
+  border-radius: 2px;
+  outline: unset;
+  transition: all .5s ease;
+  position: relative;
+  font-size: 14px;
+  color: #000000;
+  text-align: left
+}
+
+.dropdown .select {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  span {
+    order: 2;
+  }
+}
+
+.dropdown .select>i {
+  font-size: 10px;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  float: right;
+  line-height: 20px;
+  order: 1;
+
+}
+
+.dropdown:hover {
+  color: #328bd4;
+
+  i {
+    color: #328bd4;
+
+  }
+}
+
+.dropdown:active {
+  background-color: #f8f8f8
+}
+
+.dropdown.active:hover,
+.dropdown.active {
+  border-radius: 2px 2px 0 0;
+  background-color: #f8f8f8
+}
+
+
+
+.dropdown .dropdown-menu {
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  min-width: unset !important;
+ inset-inline-end: 0;
+  margin-top: 1px;
+  box-shadow: 0 1px 2px rgb(204, 204, 204);
+  border-radius: 0 1px 2px 2px;
+  overflow: hidden;
+  display: none;
+  max-height: 144px;
+  overflow-y: auto;
+  z-index: 9;
+  border-radius: 10px;
+  padding: 4px 10px !important;
+  padding-top: 8px !important;
+  min-width: 50px !important;
+}
+
+.dropdown .dropdown-menu li {
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 6px;
+  }
+}
+
+.dropdown .dropdown-menu {
+  padding: 0;
+  list-style: none
+}
+
+.dropdown .dropdown-menu li:hover {
+  background-color: #f2f2f2
+}
+
+.dropdown .dropdown-menu li:active {
+  background-color: #e2e2e2
+}

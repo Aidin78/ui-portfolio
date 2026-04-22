@@ -1,0 +1,410 @@
+:root {
+    --background-color: #fff;
+    --text-color: #1e1e1e;
+    --font-size: 1em;
+    --font-weight: normal;
+    --padding: 0px
+}
+
+.sm-simple.sm-rtl>li:last-child>a {
+    padding-inline-end: 0;
+    margin-inline-end: 0
+}
+
+.sm-simple {
+    background: #f2f5ff
+}
+
+.sm .niafam {
+    margin-inline-start: 7px;
+    font-size: .875em;
+    font-weight: bolder;
+    font-weight: 600;
+    margin-bottom: -3px
+}
+
+.sm .niafam::before {
+    content: '\e90a'
+}
+
+.sm-simple a {
+    padding: 13px 20px
+}
+
+.sm-simple ul a {
+    font-size: .875em !important
+}
+
+.sm-simple a,
+.sm-simple a:active,
+.sm-simple a:focus,
+.sm-simple a:hover {
+    color: #000;
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+    line-height: 17px;
+    text-decoration: none
+}
+
+.sm-simple a.current {
+    background: #555;
+    color: #fff
+}
+
+.sm-simple a.disabled {
+    color: #ccc
+}
+
+.sm-simple a .sub-arrow {
+    position: absolute;
+    top: 50%;
+    margin-top: -17px;
+    inset-inline-end:  auto;
+    inset-inline-start:  4px;
+    width: 34px;
+    height: 34px;
+    overflow: hidden;
+    font: bold 14px/34px monospace !important;
+    text-align: center;
+    text-shadow: none;
+    background: rgba(0, 0, 0, .08)
+}
+
+.sm-simple a .sub-arrow::before {
+    content: "+"
+}
+
+.sm-simple a.highlighted .sub-arrow::before {
+    content: "-"
+}
+
+.sm-simple>li:first-child {
+    border-top: 0
+}
+
+.sm-simple ul {
+    background: #fff
+}
+
+.sm-simple ul a,
+.sm-simple ul a:active,
+.sm-simple ul a:focus,
+.sm-simple ul a:hover {
+    font-size: var(--font-size)
+}
+
+@media (min-width:768px) {
+    .sm-simple ul {
+        position: absolute;
+        width: 12em
+    }
+
+    .sm-simple li {
+        float: left
+    }
+
+    .sm-simple.sm-rtl li {
+        float: right
+    }
+
+    .sm-simple ul li,
+    .sm-simple.sm-rtl ul li,
+    .sm-simple.sm-vertical li {
+        float: none
+    }
+
+    .sm-simple a {
+        white-space: nowrap
+    }
+
+    .sm-simple ul a,
+    .sm-simple.sm-vertical a {
+        white-space: normal
+    }
+
+    .sm-simple .sm-nowrap>li>:not(ul) a,
+    .sm-simple .sm-nowrap>li>a {
+        white-space: nowrap
+    }
+
+    .sm-simple {
+        background: 0 0
+    }
+
+    .sm-simple a {
+        padding: 11px 20px
+    }
+
+    .sm-simple a,
+    .sm-simple a.highlighted,
+    .sm-simple a:active,
+    .sm-simple a:focus,
+    .sm-simple a:hover {
+        padding-inline-start: 0;
+        padding-inline-end: 20px;
+        padding-inline-start: 20px;
+        color: var(--text-color)
+    }
+
+    .sm-simple ul a,
+    .sm-simple ul a.highlighted,
+    .sm-simple ul a:active,
+    .sm-simple ul a:focus,
+    .sm-simple ul a:hover {
+        color: #000;
+        width: 100%
+    }
+
+    .sm-simple ul a {
+        padding-inline-start: 10px
+    }
+
+    .sm-simple ul {
+        background-color: #fff
+    }
+
+    .sm-simple>li>a {
+        background: 0 0 !important
+    }
+
+    .sm-simple>li>a {
+        display: flex;
+        align-items: center;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-inline-start: 0;
+        margin-inline-end: 24px;
+        padding-inline-start: 0 !important;
+        padding-inline-end: 0 !important
+    }
+
+    .sm-simple li:last-child>a {
+         border-inline-end: none;
+        
+    }
+
+    .sm-simple a.current {
+        background: #555;
+        color: #fff
+    }
+
+    .sm-simple a.disabled {
+        background: #fff;
+        color: #ccc
+    }
+
+    .sm-simple li>a .sm-simple a .sub-arrow {
+        top: 50%;
+        margin-top: -8px;
+        inset-inline-start:  20px;
+        width: 8px;
+        height: 16px;
+        font: 14px/16px monospace !important;
+        background: 0 0
+    }
+
+    .sm-simple a.highlighted .sub-arrow::before {
+        content: "+"
+    }
+
+    .sm-simple>li {
+        border-top: 0
+    }
+
+    .sm-simple>li:first-child {
+         border-inline-end: 0
+    }
+
+    .sm-simple ul {
+        background: #fff;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .1)
+    }
+
+    .sm-simple ul a {
+        border: 0 !important
+    }
+
+    .sm-simple ul a .sub-arrow {
+        inset-inline-end:  8px;
+        inset-inline-start:  auto
+    }
+
+    .sm-simple ul>li {
+         border-inline-end: 0;
+        border-top: 1px solid rgba(255, 255, 255, .15)
+    }
+
+    .sm-simple ul>li:first-child {
+        border-top: 0
+    }
+
+    .sm-simple .scroll-down,
+    .sm-simple .scroll-up {
+        position: absolute;
+        display: none;
+        visibility: hidden;
+        overflow: hidden;
+        background: #023047;
+        height: 20px
+    }
+
+    .sm-simple .scroll-down-arrow,
+    .sm-simple .scroll-up-arrow {
+        position: absolute;
+        top: -2px;
+        inset-inline-end:  50%;
+        margin-inline-end: -8px;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        border-width: 8px;
+        border-style: dashed dashed solid dashed;
+        border-color: transparent transparent #555 transparent
+    }
+
+    .sm-simple .scroll-down-arrow {
+        top: 6px;
+        border-style: solid dashed dashed dashed;
+        border-color: #555 transparent transparent transparent
+    }
+
+    .sm-simple.sm-rtl a .sub-arrow {
+        position: unset;
+        margin-inline-start: 7px
+    }
+
+    .sm-simple.sm-rtl.sm-vertical a .sub-arrow {
+        inset-inline-end:  auto;
+        inset-inline-start:  8px
+    }
+
+    .sm-simple.sm-rtl>li:last-child {
+         border-inline-end: 0
+    }
+
+    .sm-simple.sm-rtl ul a .sub-arrow {
+        inset-inline-end:  auto;
+        inset-inline-start:  8px
+    }
+
+    .sm-simple.sm-vertical a .sub-arrow {
+        inset-inline-end:  8px;
+        inset-inline-start:  auto
+    }
+
+    .sm-simple.sm-vertical li {
+         border-inline-end: 0
+    }
+
+    .sm-simple.sm-vertical>li:first-child {
+        border-top: 0
+    }
+}
+
+.sm-simple ul a {
+    padding-top: 15px;
+    padding-bottom: 15px
+}
+
+.sm-simple ul {
+    inset-inline-end:  30px !important;
+    top: 100% !important
+}
+
+.sm-simple .niafam {
+    font-size: 8px;
+    font-weight: bold;
+    padding-inline-start: 0px;
+    margin-inline-start: 6px;
+    display: inline-block;
+    margin-top: 0;
+    font-weight: bold;
+}
+
+.sm-simple li li .niafam {
+    transform: rotate(90deg);
+    margin-inline-start: auto
+}
+
+.sm-simple li li,
+.sm-simple>li>a {
+    transition: all .2s linear
+}
+
+.sm-simple>li>a {
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+
+.sm-simple>li>a:hover {
+    color: #fff
+}
+
+.sm-simple>li>.highlighted {
+    color: #fff
+}
+
+.sm-simple>li>a {
+     border-inline-start: unset;
+}
+
+.highlighted,
+.sm-simple li li {
+     border-inline-start: 3px solid transparent;
+}
+
+.highlighted,
+.sm-simple li li:hover {
+     border-inline-start-color: #004a6e;
+}
+
+.highlighted>a,
+.sm-simple li li:hover>a {
+    color: #004a6e;
+}
+
+.sm-simple>li>a.highlighted {
+    color: #3f3f3f
+}
+
+.sm-simple>li>a:hover {
+    color: #000
+}
+
+.sm-simple li li a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline-end: 15px
+}
+
+.sm-simple ul {
+    border-radius: 10px
+}
+
+.sm-simple ul li:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px
+}
+
+.sm-simple ul li:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px
+}
+
+.sm-simple>li>a:hover {
+    color: #004a6e !important;
+}
+
+.sm-simple>li:hover>a {
+    color: #004a6e !important;
+}
+
+body[dir="ltr"] .sm-simple li li .niafam{
+    transform: rotate(-90deg);
+}
