@@ -1,0 +1,207 @@
+.rules {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+}
+.rules__side {
+  width: 280px;
+  -webkit-margin-end: 15px;
+          margin-inline-end: 15px;
+  flex-shrink: 0;
+}
+.rules__group {
+  padding: 30px 20px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+  border-radius: 15px;
+}
+.rules__group h4 {
+  background: #f5f5f5;
+  height: 49px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #00509d;
+  border-radius: 50px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.rules__group ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.rules__group li:not(:last-child) {
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgb(233, 233, 233);
+  padding-bottom: 10px;
+}
+.rules__group a {
+  font-weight: 500;
+  font-size: 14px;
+  color: #444;
+}
+.rules__group a.active {
+  color: #00509d;
+}
+.rules__content {
+  -webkit-margin-start: 15px;
+          margin-inline-start: 15px;
+  flex-grow: 1;
+}
+.rules__content table {
+  width: 100%;
+}
+.rules__content thead {
+  background-color: #f3f3f3;
+}
+.rules__content tr:not(:last-child) {
+  border-bottom: 1px solid #f3f3f3;
+}
+.rules__content td {
+  font-size: 14px;
+  vertical-align: middle;
+}
+.rules__content td.text__center span {
+  justify-content: center;
+}
+.rules__content td.text__center a {
+  justify-content: center;
+}
+.rules__content th {
+  height: 50px;
+  padding: 10px;
+}
+.rules__content th td {
+  font-size: 16px;
+  color: #444;
+}
+.rules__content span {
+  display: flex;
+  min-height: 50px;
+  padding: 10px;
+  vertical-align: middle;
+  align-items: center;
+}
+.rules__content a {
+  padding: 10px;
+}
+.rules__content a span {
+  padding: 10px;
+  vertical-align: middle;
+}
+.rules__filter {
+  width: 100%;
+}
+.rules__filter form {
+  display: flex;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.rules__filter input {
+  border: 1px solid transparent;
+  border-radius: 20px;
+  padding: 10px 15px;
+  margin-left: 20px;
+  height: 50px;
+  flex-grow: 1;
+  background-color: #f3f3f3;
+}
+.rules__filter button {
+  background: #e3000f;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 15px;
+  color: #fff;
+  min-width: 140px;
+  border: none;
+}
+
+.ma-pagination {
+  width: 100%;
+  font-weight: lighter;
+  list-style: none;
+  font-size: 1.125em;
+  margin-top: 52px;
+  display: flex;
+  justify-content: center;
+}
+.ma-pagination .deactivated {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.ma-pagination li {
+  margin: 0 10px;
+}
+@media (max-width: 640px) {
+  .ma-pagination li {
+    margin: 0;
+  }
+}
+.ma-pagination li:hover a, .ma-pagination li.active__page a {
+  background-color: #f3f7ff;
+  border-top: 6px solid #00509d;
+}
+.ma-pagination li a {
+  padding: 15px 11px;
+  display: inline-block;
+  border-top: 6px solid transparent;
+}
+@media (max-width: 640px) {
+  .ma-pagination li a {
+    font-size: 0.875rem;
+    padding: 15px 10px;
+  }
+}
+.ma-pagination li:first-child {
+  font-size: 1em;
+  margin-left: 25px;
+}
+.ma-pagination li:first-child:hover {
+  background-color: transparent;
+  border: none;
+}
+.ma-pagination li:last-child {
+  font-size: 1em;
+  margin-right: 25px;
+}
+.ma-pagination li.first::after {
+  content: "...";
+  margin-right: 15px;
+}
+.ma-pagination li.last::before {
+  content: "...";
+  margin-left: 15px;
+}
+.ma-pagination li:first-child a:hover, .ma-pagination li:last-child a:hover {
+  background-color: transparent;
+  border-top: 6px solid transparent;
+}
+
+.file-download {
+  margin-top: 20px;
+}
+.file-download a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00509d;
+  color: #fff;
+  min-width: 140px;
+  max-width: 220px;
+  margin-left: auto;
+  border-radius: 20px;
+  font-weight: 500;
+  height: 50px;
+}
+.file-download a:hover {
+  color: #fff;
+  opacity: 0.85;
+}/*# sourceMappingURL=rules.css.map */
