@@ -1,0 +1,102 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Pinar;
+  margin: 0;
+  overflow-x: hidden;
+  position: relative;
+  text-align: right;
+  font-size: 100%;
+}
+
+.wrapper {
+  font-size: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s linear;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+img {
+  border: 0;
+}
+
+img:not([src]) {
+  visibility: hidden;
+}
+
+/* Fixes Firefox anomaly during image load */
+@-moz-document url-prefix() {
+  img:-moz-loading {
+    visibility: hidden;
+  }
+}
+
+.wrapper {
+  overflow: hidden;
+  position: relative;
+  min-height: 100vh;
+}
+
+.go-top {
+  position: fixed;
+  inset-inline-start: 35px;
+  bottom: 50px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 550;
+  background: #A71B24;
+
+  i {
+    font-size: 18px;
+    color: var(--secondary-color);
+    font-weight: bolder;
+  }
+
+  &:hover {
+    box-shadow: 0 0 20px rgba($color: #000000, $alpha: 0.2);
+    background-color: #ec4040;
+    color: white;
+  }
+
+  &--show {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.p-relative {
+  position: relative;
+}
+
