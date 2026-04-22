@@ -1,0 +1,50 @@
+@font-face {
+    font-family: Borna;
+    src: url('../fonts/Borna-Light.woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Borna;
+    src: url('../fonts/Borna-Regular.woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Borna;
+    src: url('../fonts/Borna-Medium.woff2');
+    font-weight: 450;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Borna;
+    src: url('../fonts/Borna-Bold.woff2');
+    font-weight: bold;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'tootack';
+    src: url('../fonts/tootack.woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+i.tootack {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'tootack' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

@@ -1,0 +1,9 @@
+<svg id="tick-line" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <rect id="Rectangle_179" data-name="Rectangle 179" width="17.54" height="17.54" transform="translate(2.795 2.193)" fill="none"/>
+  <g id="Group_44146" data-name="Group 44146" transform="translate(6.895 4.426)">
+    <path id="Path_100232" data-name="Path 100232" d="M1.814.173l8.921-.638c1.327-.108,1.875.835,1.86,2.055s.181,2.867-1.146,2.975L2.706,5.5C1.379,5.608.476,3.63.375,2.587S.487.281,1.814.173Z" transform="translate(11.827 10.242) rotate(-178)" opacity="0.3"/>
+    <path id="Path_100230" data-name="Path 100230" d="M1.468.676,10.388.039c1.327-.108,1.875.835,1.86,2.055S12.43,4.961,11.1,5.069L2.36,6C1.033,6.111.13,4.133.029,3.09S.141.784,1.468.676Z" transform="translate(11.004 9.973) rotate(-178)" fill="#fff"/>
+    <path id="Path_100228" data-name="Path 100228" d="M1.146.654,8.467.028c1.081-.052,1.525.443,1.51,1.08s.168,1.145-.913,1.2l-7.977.809C.006,3.166.1,2.131.023,1.586S.065.706,1.146.654Z" transform="translate(9.91 8.573) rotate(-178)"/>
+  </g>
+  <rect id="Rectangle_5596" data-name="Rectangle 5596" width="24" height="24" fill="none"/>
+</svg>

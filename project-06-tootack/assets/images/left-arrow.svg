@@ -1,0 +1,13 @@
+<svg id="left-arrow" xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
+  <g id="Group_44147" data-name="Group 44147">
+    <rect id="Rectangle_179" data-name="Rectangle 179" width="32" height="32" transform="translate(5.099 4)" fill="none"/>
+    <rect id="Rectangle_5596" data-name="Rectangle 5596" width="44" height="44" fill="none"/>
+    <rect id="Rectangle_179-2" data-name="Rectangle 179" width="24" height="24" transform="translate(11 9)" fill="none"/>
+    <rect id="Rectangle_179-3" data-name="Rectangle 179" width="24" height="24" transform="translate(11 9)" fill="none"/>
+  </g>
+  <g id="Group_44152" data-name="Group 44152" transform="translate(35.259 42.122) rotate(180)">
+    <path id="Union_93" data-name="Union 93" d="M2.313,3.819C.471,6.168,1.154,8.874,3.458,10.545l7.466,6.347L.7,27.926c-2.014,2.5.643,3.806,3.936,6.6s6.741,3.574,8.754,1.068l9.7-13.126a11.2,11.2,0,0,0,1.868-2.216c1.906-2.891,3.867-4.932,1.563-6.6L8.446.53A2.5,2.5,0,0,0,6.962,0C5.27,0,3.748,1.989,2.313,3.819Z" opacity="0.3"/>
+    <path id="Union_92" data-name="Union 92" d="M2.313,3.819C.471,6.168,1.154,8.874,3.458,10.545l7.466,6.347L.7,27.926c-2.014,2.5.643,3.806,3.936,6.6s6.741,3.574,8.754,1.068l9.7-13.126a11.2,11.2,0,0,0,1.868-2.216c1.906-2.891,3.867-4.932,1.563-6.6L8.446.53A2.5,2.5,0,0,0,6.962,0C5.27,0,3.748,1.989,2.313,3.819Z" transform="translate(0.953 3.142)" fill="#fff"/>
+    <path id="Union_91" data-name="Union 91" d="M.338,1.377c-.878.976.025,2.544,1.868,3.811l9.708,7.3L1.1,24.426c-1.613,1.923-.3,2.282,1.121,3.467s3.284,1.083,4.9-.841L16.54,15.033a2.509,2.509,0,0,0,1.909-1.214c.833-1.259,1.842-2.05,0-3.316L3.992.571A2.733,2.733,0,0,0,2.464,0C1.553,0,.933.716.338,1.377Z" transform="translate(5.3 7.121)"/>
+  </g>
+</svg>
