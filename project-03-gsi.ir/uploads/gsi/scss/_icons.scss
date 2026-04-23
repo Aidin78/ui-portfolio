@@ -1,0 +1,341 @@
+i.niafam,
+span.niafam {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "niafam" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.niafam-user-1::before {
+  content: "\e948";
+  color: rgb(43, 45, 66);
+  opacity: 0.991;
+}
+
+.niafam-user-1::after {
+  content: "\e949";
+  margin-inline-end: -1em;
+  color: rgb(43, 45, 66);
+  opacity: 0.994;
+}
+
+.niafam-eye:before {
+  content: "\e941";
+  color: #424874;
+}
+
+.niafam-ticket:before {
+  content: "\e942";
+  color: #424874;
+}
+
+.niafam-mic:before {
+  content: "\e943";
+  color: #e7002a;
+}
+
+.niafam-link:before {
+  content: "\e944";
+  color: #dcd6f7;
+}
+
+.niafam-fast-link:before {
+  content: "\e945";
+  color: #ff9b18;
+}
+
+.niafam-home:before {
+  content: "\e946";
+  color: #fff;
+}
+
+.niafam-email1:before {
+  content: "\e903";
+  color: #fff;
+}
+
+.niafam-ico-1:before {
+  content: "\e912";
+  color: #bfbfbf;
+}
+
+.niafam-ico-2:before {
+  content: "\e933";
+  color: #bfbfbf;
+}
+
+.niafam-ico-3:before {
+  content: "\e934";
+  color: #bfbfbf;
+}
+
+.niafam-ico-4:before {
+  content: "\e935";
+  color: #bfbfbf;
+}
+
+.niafam-ico-5:before {
+  content: "\e936";
+  color: #424874;
+}
+
+.niafam-ico-6:before {
+  content: "\e937";
+  color: #bfbfbf;
+}
+
+.niafam-ico-8:before {
+  content: "\e938";
+  color: #7286d3;
+}
+
+.niafam-ico-9:before {
+  content: "\e939";
+  color: #7286d3;
+}
+
+.niafam-ico-10:before {
+  content: "\e93a";
+  color: #fff;
+}
+
+.niafam-ico-11:before {
+  content: "\e93b";
+  color: #7286d3;
+}
+
+.niafam-ico-12:before {
+  content: "\e93c";
+  color: #424874;
+}
+
+.niafam-ico-13:before {
+  content: "\e93d";
+  color: #232b66;
+}
+
+.niafam-ico-14:before {
+  content: "\e93e";
+  color: #ff9b18;
+}
+
+.niafam-ico-15:before {
+  content: "\e93f";
+  color: #424874;
+}
+
+.niafam-whatsapp1:before {
+  content: "\e940";
+  color: #fff;
+}
+
+.niafam-accessibility:before {
+  content: "\e900";
+}
+
+.niafam-add:before {
+  content: "\e901";
+}
+
+.niafam-aparat:before {
+  content: "\e902";
+}
+
+.niafam-bale:before {
+  content: "\e904";
+}
+
+.niafam-bisphon:before {
+  content: "\e905";
+}
+
+.niafam-calendar:before {
+  content: "\e906";
+}
+
+.niafam-Callsums:before {
+  content: "\e907";
+  color: #1bbde4;
+}
+
+.niafam-camerasums:before {
+  content: "\e908";
+  color: #fff;
+}
+
+.niafam-down-arrow:before {
+  content: "\e909";
+}
+
+.niafam-eita:before {
+  content: "\e90b";
+}
+
+.niafam-email:before {
+  content: "\e90c";
+}
+
+.niafam-envelope:before {
+  content: "\e90d";
+}
+
+.niafam-envelope-2:before {
+  content: "\e90e";
+}
+
+.niafam-facebook:before {
+  content: "\e90f";
+}
+
+.niafam-fax:before {
+  content: "\e910";
+}
+
+.niafam-gap:before {
+  content: "\e911";
+}
+
+.niafam-handshake:before {
+  content: "\e913";
+}
+
+.niafam-instagram:before {
+  content: "\e914";
+}
+
+.niafam-instagram-2:before {
+  content: "\e915";
+}
+
+.niafam-left-arrow:before {
+  content: "\e916";
+}
+
+.niafam-left-arrow-2:before {
+  content: "\e917";
+}
+
+.niafam-linkedin:before {
+  content: "\e918";
+}
+
+.niafam-Locationsums:before {
+  content: "\e919";
+  color: #1bbde4;
+}
+
+.niafam-Messagesums:before {
+  content: "\e91a";
+  color: #1bbde4;
+}
+
+.niafam-miniarrowsums:before {
+  content: "\e91b";
+  color: #fff;
+}
+
+.niafam-minus:before {
+  content: "\e91c";
+}
+
+.niafam-mobile-app:before {
+  content: "\e91d";
+}
+
+.niafam-phone-call:before {
+  content: "\e91e";
+}
+
+.niafam-photo-camera:before {
+  content: "\e91f";
+}
+
+.niafam-pin:before {
+  content: "\e920";
+}
+
+.niafam-play:before {
+  content: "\e921";
+}
+
+.niafam-play-button:before {
+  content: "\e922";
+}
+
+.niafam-Playsums:before {
+  content: "\e923";
+  color: #fff;
+}
+
+.niafam-right-arrow:before {
+  content: "\e924";
+}
+
+.niafam-right-arrow-2:before {
+  content: "\e925";
+}
+
+.niafam-rss:before {
+  content: "\e926";
+}
+
+.niafam-rubika:before {
+  content: "\e927";
+}
+
+.niafam-search:before {
+  content: "\e928";
+}
+
+.niafam-sitemap:before {
+  content: "\e929";
+}
+
+.niafam-sms:before {
+  content: "\e92a";
+}
+
+.niafam-soroush:before {
+  content: "\e92b";
+}
+
+.niafam-telegram:before {
+  content: "\e92c";
+}
+
+.niafam-twitter:before {
+  content: "\e92d";
+}
+
+.niafam-up-arrow-2:before {
+  content: "\e92e";
+}
+
+.niafam-video-camera:before {
+  content: "\e92f";
+}
+
+.niafam-voting:before {
+  content: "\e930";
+}
+
+.niafam-whatsapp:before {
+  content: "\e931";
+}
+
+.niafam-world-wide-web-on-grid:before {
+  content: "\e932";
+}
+
+.niafam-microphone:before {
+  content: "\e947";
+}
