@@ -1,0 +1,159 @@
+body[dir="ltr"] {
+  text-align: left;
+  direction: ltr;
+  .modern-slider {
+    &__section {
+      &.light {
+        left: 0;
+        right: unset;
+      }
+      &.dark {
+        left: unset;
+        right: 0;
+      }
+    }
+  }
+  .infinite-slider {
+    &__cell {
+      direction: ltr;
+    }
+  }
+  .news-item {
+    &__pic {
+      .news-item {
+        &__date {
+          right: unset;
+          left: 15px;
+        }
+      }
+    }
+    &__border {
+      &::before {
+        left: 0;
+        right: unset;
+      }
+    }
+    &__more {
+      .niafam-left-arrow {
+        transform: scale(-1);
+      }
+    }
+  }
+  .niafam-Vector {
+    transform: scale(-1);
+  }
+  nav.mega-menu > ul > li.drop-down > ul {
+    right: unset;
+    left: -20px;
+  }
+  .movies {
+    &__more {
+      left: unset;
+      right: 20px;
+    }
+  }
+  .scrollbar {
+    &__more {
+      i {
+        left: unset;
+        right: 0px;
+      }
+
+      &:hover {
+        i {
+          left: unset;
+          right: 15px;
+        }
+      }
+    }
+  }
+  .flickity-button.previous {
+    left: unset;
+  }
+  .ad {
+    &__more {
+      i {
+        left: unset;
+        right: 0px;
+      }
+
+      &:hover {
+        i {
+          left: unset;
+          right: 35px;
+        }
+      }
+    }
+  }
+  .news-group {
+    &__scrollbar {
+      .os-scrollbar-vertical {
+        left: unset;
+        right: 12px;
+      }
+      .scrollbar{
+        &__more{
+            left: unset;
+            right: 20px;
+        }
+      }
+    }
+  }
+  .box-link{
+    &__background{
+        left: unset;
+        right: 0;
+    }
+  }
+  .footer{
+    &__title{
+        &::before{
+            right: unset;
+            left: 0;
+        }
+    }
+    &__list{
+        i{
+            transform: scale(-1);
+            padding-top: 0;
+            padding-bottom: 4px;
+        }
+    }
+  }
+  .footer__visits li:not(:last-child)::before{
+    left: unset;
+    right: 0;
+  }
+  .section--bigger{
+    transform: translateX(-30px);
+  }
+  .top-bar__date::before {
+    left: unset;
+    right: 0;
+  }
+  .header__meta-links li:not(:first-child)::before {
+    right: unset;
+    left: 0;
+  }
+  .mega-drop__col li a::before{
+    left: 0px;
+    right: unset;
+  }
+  .mm-listitem::after{
+    left: 0;
+    right: 20px;
+  }
+  .mega-drop__col ul ul a::before {
+    right: 20px;
+    left: unset !important;
+  }
+  .mm-btn_next::after{
+    left: unset !important;
+    transform: scale(-1) !important;
+  }
+  .news-gallery__content .news-item__number{
+    right: 40px;
+    left: unset;
+    color: #dcdcdc;
+  }
+}

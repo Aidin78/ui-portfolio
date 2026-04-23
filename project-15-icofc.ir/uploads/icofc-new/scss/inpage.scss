@@ -1,0 +1,246 @@
+@import "news-default";
+
+.inpage-wraper {
+  width: 100vw;
+  .switch-wrapper {
+    display: none;
+  }
+  .sec__header {
+    position: relative;
+    background-color: #01193d;
+  }
+  .header__menu-bar {
+    margin-top: 0;
+    border-radius: 0;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      height: 100%;
+      width: 100vw;
+      transform: translateX(-50%);
+      background-color: rgba(235, 28, 47, 1);
+    }
+  }
+  .header__pics {
+    border-bottom: unset;
+  }
+  .header__fa-logo {
+    display: flex !important;
+  }
+  .sec {
+    &__footer {
+      margin-top: 50px;
+    }
+  }
+  .news-group {
+    padding-top: 0;
+    align-items: flex-start;
+    &__tabs {
+      padding: 0;
+    }
+    &__tab-content {
+      box-shadow: none;
+    }
+  }
+}
+#es-content .pagination {
+  display: flex;
+  justify-content: center;
+}
+ul.breadcrumb li + li::before {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.sidebar-page {
+  &__sidebar {
+    .section {
+      &__header {
+        padding-inline-start: 20px;
+        padding-inline-end: 20px;
+      }
+      &__content {
+        position: relative;
+      }
+    }
+    .movies {
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06);
+      .news-item {
+        padding-inline-start: 30px;
+        padding-inline-end: 30px;
+        &__date {
+          margin-bottom: 0;
+        }
+        &__bottom {
+          margin-top: 6px;
+        }
+        &__border {
+          margin-top: 6px;
+        }
+      }
+      .scrollbar {
+        height: 380px;
+      }
+    }
+
+    .section {
+      &__header {
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        position: relative;
+      }
+      &__title {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.banners {
+  &__list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  &__item {
+    border-radius: 20px;
+    overflow: hidden;
+    flex-basis: calc(50% - 15px);
+    @media (max-width: 767.98px) {
+      flex-basis: calc(100%);
+    }
+
+    position: relative;
+    &:hover {
+      .banners {
+        &__content {
+          opacity: 1;
+          bottom: 0;
+        }
+      }
+    }
+  }
+  &__pic {
+    position: relative;
+    aspect-ratio: 905/330;
+  }
+  &__content {
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    padding: 20px;
+    opacity: 0;
+    z-index: 10;
+    transition: all 0.2s ease-in;
+    background-color: rgba(0, 0, 0, 0.7);
+    align-items: flex-end;
+    display: flex;
+    justify-content: center;
+  }
+  &__title {
+    text-align: center;
+  }
+}
+.manager {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  &__item {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06);
+    flex-basis: calc(50% - 15px);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 15px;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  &__pic {
+    border-radius: 20px;
+    aspect-ratio: 327/218;
+    overflow: hidden;
+    flex-shrink: 0;
+    width: 170px;
+    position: relative;
+  }
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  &__data {
+    .label {
+      display: inline-block;
+    }
+    &.half {
+      flex-basis: calc(50% - 2.5px);
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      .label {
+        flex-shrink: 0;
+      }
+      .data {
+        display: inline-block;
+        margin-right: 3px;
+      }
+    }
+    &.full {
+      flex-basis: calc(100%);
+    }
+  }
+}
+.pagination-item.active__page a {
+  background-color: #eb1c2f !important;
+  color: white !important;
+  border-color: #eb1c2f !important;
+}
+
+@media (max-width: 1499.98px) {
+  .manager__data.half {
+    flex-direction: column;
+  }
+}
+@media (max-width: 1259.98px) and (min-width: 991.98px) {
+  .manager {
+    &__item {
+      flex-basis: calc(100%);
+    }
+  }
+}
+@media (max-width: 991.98px) {
+  .news-group__tabs li:not(:last-child) {
+    margin-left: 0;
+  }
+  .manager {
+    &__item {
+      flex-basis: calc(100%);
+    }
+  }
+}
+@media (max-width: 575.98px) {
+  .manager__pic {
+    width: 120px;
+  }
+}
+.news-group__tabs-container {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06);
+  padding: 20px;
+  border-radius: 10px;
+}
