@@ -1,0 +1,33 @@
+.webpay {
+    &__icon {
+        margin-bottom: 0;
+        margin-top: -4px;
+    }
+}
+.products {
+    &__tabs {
+        a {
+            img {
+                width: 101px;
+                max-width: 101px;
+                max-height: 65px;
+                transition: all 0.2s linear;
+                filter: grayscale(100);
+                opacity: 0.4;
+            }
+            &.active{
+                img{
+                    filter: unset;
+                    opacity: 1;
+                }
+            }
+            &:hover{
+                img{
+                    filter: unset;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
