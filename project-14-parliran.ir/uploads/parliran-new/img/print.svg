@@ -1,0 +1,17 @@
+<svg id="print" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Symbol_165_491" data-name="Symbol 165 – 491">
+    <path id="Path_5247" data-name="Path 5247" d="M0,0H24V24H0Z" fill="none"/>
+  </g>
+  <g id="vuesax_linear_printer" data-name="vuesax/linear/printer" transform="translate(-300 -188)">
+    <g id="printer">
+      <g id="Group_45426" data-name="Group 45426" transform="translate(0.465 0.516)">
+        <path id="Vector" d="M0,4.742H9.009v-1.9C9.009.948,8.3,0,6.164,0H2.845C.711,0,0,.948,0,2.845Z" transform="translate(307.03 190)" fill="none" stroke="#a19a91" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+        <path id="Vector-2" data-name="Vector" d="M7.587,0V3.793A2.515,2.515,0,0,1,4.742,6.638h-1.9A2.515,2.515,0,0,1,0,3.793V0Z" transform="translate(307.742 202.329)" fill="none" stroke="#a19a91" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+        <path id="Vector-3" data-name="Vector" d="M17.07,2.845V7.587a2.515,2.515,0,0,1-2.845,2.845h-1.9V7.587H4.742v2.845h-1.9A2.515,2.515,0,0,1,0,7.587V2.845A2.515,2.515,0,0,1,2.845,0h11.38A2.515,2.515,0,0,1,17.07,2.845Z" transform="translate(303 194.742)" fill="none" stroke="#a19a91" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+        <path id="Vector-4" data-name="Vector" d="M9.484,0H0" transform="translate(306.793 202.329)" fill="none" stroke="#a19a91" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+        <path id="Vector-5" data-name="Vector" d="M0,0H2.845" transform="translate(306.793 198.535)" fill="none" stroke="#a19a91" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+      </g>
+      <path id="Vector-6" data-name="Vector" d="M0,0H24V24H0Z" transform="translate(300 188)" fill="none" opacity="0"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,290 @@
+
+.type-box {
+    &:not(:last-child) {
+        margin-bottom: 24px;
+    }
+}
+.date-box {
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 1px 1px #a7a098;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-inline-start: 24px;
+    padding-inline-end: 24px;
+}
+.form {
+    &__item {
+        position: relative;
+        &.date {
+            input {
+                width: 104px;
+                text-align: center;
+            }
+        }
+        .label {
+            margin-bottom: 16px;
+        }
+        .input {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        input {
+            border-radius: 20px;
+            background-color: #fff;
+            border: 1px solid #c1ceda;
+            height: 40px;
+            font-size: 14px;
+            &::placeholder {
+                color: #4e4e4e;
+            }
+        }
+    }
+    &__submit {
+        margin-top: 16px;
+        button {
+            width: 100%;
+            height: 40px;
+            border-radius: 20px;
+            background: #eef3f4;
+            border: 1px solid #72aeac;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #016a63;
+            transition: all 0.2s ease-in-out;
+            &:hover {
+                background-color: #016a63;
+                color: white;
+            }
+        }
+    }
+}
+.text {
+    &__brown {
+        color: #776b5a;
+    }
+}
+.content-table {
+    &__list {
+    }
+    &__item {
+        padding: 15px 24px;
+        display: flex;
+        align-items: center;
+        min-height: 56px;
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 0px 1px 1px #a7a098;
+        .icon {
+            margin-inline-end: 8px;
+            flex-shrink: 0;
+        }
+        .title {
+        }
+        .button {
+            width: 56px;
+            height: 32px;
+            border-radius: 16px;
+            background: #eef3f4;
+            border: 1px solid #72aeac;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #016a63;
+            transition: all 0.2s ease-in-out;
+            &:hover {
+                background-color: #016a63;
+                color: white;
+            }
+        }
+        &:not(:last-child){
+            margin-bottom: 16px;
+        }
+    }
+    &__col {
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+        &:not(:last-child) {
+            margin-inline-end: 24px;
+        }
+    }
+}
+.taqnini-table {
+    .title {
+        width: 482px;
+    }
+    .type {
+        width: 98px;
+        margin-inline-end: 12px;
+    }
+}
+
+#es-content {
+    .pagination{
+        box-shadow: 0px 1px 1px #a7a098;
+        background-color: #fff;
+        height: 64px;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        width: 100%;
+        justify-content: center;
+        li{
+            margin-inline-start: 5px;
+            margin-inline-end: 5px;
+            border: none;
+            a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 32px;
+                height: 32px;
+                border-radius: 8px;
+                font-size: 18px;
+                background-color: white;
+                border: none;
+                &:hover{
+                    color: #1ebeb6 ;
+                    background-color: white;
+                }
+            }
+            &.active a{
+                background-color: #1ebeb6 !important;
+                color: white !important;
+            }
+        }
+    }
+}
+
+@include for_breakpoint("large"){
+    .content-table{
+        &__col{
+            &:not(:last-child){
+                margin-inline-end: 14px;
+            }
+        }
+    }
+    .taqnini-table{
+        .title{
+            width: 320px;
+        }
+    }
+}
+@include for_breakpoint("medium"){
+    .content-table{
+        &__col{
+            &:not(:last-child){
+                margin-inline-end: 24px;
+            }
+        }
+    }
+    .taqnini-table{
+        .title{
+            width: 352px;
+        }
+        .content-table{
+            &__col{
+               &:nth-child(2){
+                display: flex;
+                flex-direction: column  ;
+                justify-content: flex-start;
+                align-items: flex-start;
+               }
+            }
+        }
+    }
+}
+@include for_breakpoint("small"){
+    .content-table{
+        &__col{
+            &:not(:last-child){
+                margin-inline-end: 24px;
+            }
+        }
+    }
+    .taqnini-table{
+        .title{
+            width: auto;
+        }
+        .main-col{
+            width: 60%;
+        }
+        .meta{
+            width: 20%;
+        }
+        .file{
+            width: 15%;
+        }
+        .content-table{
+            &__col{
+               &:nth-child(2){
+                display: flex;
+                flex-direction: column  ;
+                justify-content: flex-start;
+                align-items: flex-start;
+               }
+            }
+        }
+    }
+    .pagination{
+        flex-wrap: wrap !important;
+    }
+}
+@include for_breakpoint("extraSmall"){
+    .pagination{
+        flex-wrap: wrap !important;
+        height: auto !important;
+    }
+    .content-table{
+        &__col{
+            &:not(:last-child){
+                margin-inline-end: 24px;
+            }
+        }
+    }
+    .taqnini-table{
+        
+        .icon{
+            display: none;
+        }
+        .title{
+            width: auto;
+        }
+        .main-col{
+            width: 100%;
+        }
+        .meta{
+            width: 100%;
+        }
+        .type{
+            width: auto;
+            margin-inline-end: 6px;
+            display: flex;
+        }
+
+        .file{
+            width: 100%;
+        }
+        .content-table{
+            &__item{
+                flex-direction: column;
+                justify-content: flex-start;
+            }
+            &__col{
+                flex-basis: 100%;
+                margin-inline-end: 0 !important;
+                &:not(:last-child){
+                    margin-bottom: 5px;
+                }
+               
+                .button{
+                    width: 100%;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}

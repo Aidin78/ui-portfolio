@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="33.2" height="33.2" viewBox="0 0 33.2 33.2">
+  <g id="clipboard-text" transform="translate(0.6 0.6)">
+    <path id="Vector" d="M32,0H0V32H32Z" fill="none" stroke="#fff" stroke-width="1.2" opacity="0"/>
+    <g id="Group_9600" data-name="Group 9600" transform="translate(-320 -416)">
+      <path id="Vector-2" data-name="Vector" d="M9.31,0H0" transform="translate(331.979 432.267)" fill="none" stroke="#fff" stroke-width="1.2"/>
+      <path id="Vector-3" data-name="Vector" d="M5.825,0H0" transform="translate(335.465 437.587)" fill="none" stroke="#fff" stroke-width="1.2"/>
+      <path id="Vector-4" data-name="Vector" d="M7.98,5.32H2.66C0,5.32,0,3.99,0,2.66,0,0,1.33,0,2.66,0H7.98c1.33,0,2.66,0,2.66,2.66S9.31,5.32,7.98,5.32Z" transform="translate(330.65 418.7)" fill="none" stroke="#fff" stroke-width="1.2"/>
+      <path id="Vector-5" data-name="Vector" d="M6.65,0C2.221.239,0,1.875,0,7.953v7.98c0,5.32,1.33,7.98,7.98,7.98h7.98c6.65,0,7.98-2.66,7.98-7.98V7.953C23.94,1.889,21.719.239,17.29,0" transform="translate(324 421.386)" fill="none" stroke="#fff" stroke-width="1.2"/>
+    </g>
+  </g>
+</svg>

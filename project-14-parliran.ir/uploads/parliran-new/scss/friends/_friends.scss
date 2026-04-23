@@ -1,0 +1,135 @@
+
+.members-box {
+    margin-bottom: 0;
+    &__main-title {
+        margin-bottom: 10px;
+        padding-inline-start: 8px;
+        padding-top: 4px;
+        color: #016a63;
+    }
+    .ostan-box {
+        &__scrollbar {
+            height: 307px;
+        }
+        &__input {
+            margin-bottom: 10px;
+        }
+    }
+}
+.inner-sec__content.simple {
+    background: none;
+    box-shadow: none;
+    padding: 0;
+}
+.friends-list {
+    padding-top: 8px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    &__item {
+        flex-shrink: 0;
+        height: 96px;
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 0px 1px 1px #a7a098;
+        padding: 20px 32px;
+        padding-inline-start: 48px;
+        position: relative;
+        &:nth-child(n + 2) {
+            margin-top: 24px;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            right: 32px;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 48px;
+            width: 1px;
+            background: rgba($color: #009c98, $alpha: 0.5);
+        }
+        transition: all 0.2s linear;
+        &:hover {
+            background-color: #f7f7f7;
+        }
+    }
+    &__title {
+        margin-bottom: 7px;
+    }
+    &__meta {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        li {
+            position: relative;
+            &:not(:last-child) {
+                padding-inline-end: 10px;
+                margin-inline-end: 10px;
+                &::before {
+                    content: "";
+                    height: 10px;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 0;
+                    display: flex;
+                    width: 1px;
+                    background-color: #97a7b7;
+                }
+            }
+        }
+    }
+    &__more {
+        margin-top: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 64px;
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 0px 1px 1px #a7a098;
+        transition: all 0.2s linear;
+        &:hover {
+            background-color: #f7f7f7;
+        }
+    }
+}
+.inner-sec__search {
+    pointer-events: all;
+}
+
+.phone-fitlers__btn {
+    pointer-events: all;
+}
+
+@media (max-width: 991.98px) {
+    .friends-list {
+        &__item {
+            width: 100%;
+            flex-basis: 100%;
+            margin-inline-start: 0 !important;
+            margin-inline-end: 0 !important;
+            &:not(:first-child) {
+                margin-top: 24px;
+            }
+        }
+    }
+}
+
+@include for_breakpoint("medium") {
+    .fraction-era {
+        .inner-sec__header {
+            padding-inline-start: 32px !important;
+            padding-inline-end: 125px;
+        }
+    }
+}
+@include for_breakpoint("small") {
+    .fraction-era {
+        .inner-sec__header {
+            padding-inline-end: 125px;
+            padding-inline-start: 32px !important;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+<svg id="document-upload" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="Group_9599" data-name="Group 9599" transform="translate(1 2)">
+    <path id="Vector" d="M3.156,7.467V0L0,3.156" transform="translate(8.844 13.934)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+    <path id="Vector-2" data-name="Vector" d="M0,0,3.156,3.156" transform="translate(12 13.934)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+  </g>
+  <path id="Vector-3" data-name="Vector" d="M26.667,10.667v6.667c0,6.667-2.667,9.333-9.333,9.333h-8C2.667,26.667,0,24,0,17.333v-8C0,2.667,2.667,0,9.333,0H16" transform="translate(2.667 2.667)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+  <path id="Vector-4" data-name="Vector" d="M10.667,10.667H5.333C1.333,10.667,0,9.333,0,5.333V0Z" transform="translate(18.667 2.667)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+  <g id="Vector-5" data-name="Vector" fill="none" opacity="0">
+    <path d="M0,0H32V32H0Z" stroke="none"/>
+    <path d="M 1.200000762939453 1.200000762939453 L 1.200000762939453 30.79999923706055 L 30.79999923706055 30.79999923706055 L 30.79999923706055 1.200000762939453 L 1.200000762939453 1.200000762939453 M 0 0 L 32 0 L 32 32 L 0 32 L 0 0 Z" stroke="none" fill="#fff"/>
+  </g>
+</svg>

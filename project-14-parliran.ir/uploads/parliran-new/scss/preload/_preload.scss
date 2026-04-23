@@ -1,0 +1,88 @@
+.preload {
+    &__item {
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0 !important;
+            right: unset !important;
+            top: 0 !important;
+            bottom: unset !important;
+            width: 100% !important;
+            height: 100% !important;
+            z-index: 10;
+            display: flex;
+            background-color: #dfe7e9;
+            transform: unset !important;
+            opacity: 1 !important;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 15%;
+            transform: translateY(-50%) translateX(-120%) rotate(15deg);
+            animation-name: preload;
+            animation-duration: 1.2s;
+            animation-iteration-count: infinite;
+            opacity: 1;
+            background-color: #e9edef;
+            opacity: 0.8;
+            z-index: 12;
+            height: 200%;
+        }
+        &.members__item {
+            margin-bottom: 12px;
+            max-width: 85%;
+            margin-inline-start: auto !important;
+            margin-inline-end: auto !important;
+            border-radius: 10px;
+        }
+        &.commission__item {
+            &::before {
+                background-color: rgb(236, 242, 246);
+            }
+            &::after {
+                background-color: rgb(244, 248, 250);
+            }
+        }
+        &.fraction__item {
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+            &:last-child {
+                display: none;
+            }
+            &::before {
+                background-color: rgb(236, 242, 246);
+            }
+            &::after {
+                background-color: rgb(244, 248, 250);
+            }
+        }
+        &.friends__item {
+            margin-bottom: 12px;
+            max-width: 85%;
+            margin-inline-start: auto !important;
+            margin-inline-end: auto !important;
+            border-radius: 10px;
+        }
+    }
+}
+@keyframes preload {
+    0% {
+        transform: translateY(-50%) translateX(-120%) rotate(15deg);
+        opacity: 0 !important;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 0 !important;
+        transform: translateY(-50%) translateX(120%) rotate(15deg);
+        left: 100%;
+    }
+}

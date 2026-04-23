@@ -1,0 +1,35 @@
+
+.error-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-top: 70px;
+    min-height: 60vh;
+    &__pic {
+        margin-bottom: 62px;
+    }
+    &__title {
+        margin-bottom: 6px;
+        color: #4e4e4e;
+    }
+    &__detail {
+        color: #4E4E4E;
+    }
+    &__button {
+        transition: all 0.2s linear;
+        min-width: 164px;
+        width: max-content;
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+        margin-top: 15px;
+        height: 32px;
+        border-radius: 16px;
+        background: #fff;
+        border: 1px solid #e4dfd8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -1,0 +1,10 @@
+<svg id="serach" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Symbol_165_491" data-name="Symbol 165 – 491">
+    <path id="Path_5247" data-name="Path 5247" d="M0,0H24V24H0Z" fill="none"/>
+  </g>
+  <g id="Ellipse_362" data-name="Ellipse 362" transform="translate(5 5)" fill="none" stroke="#a19a91" stroke-width="1.2">
+    <circle cx="6" cy="6" r="6" stroke="none"/>
+    <circle cx="6" cy="6" r="5.4" fill="none"/>
+  </g>
+  <line id="Line_571" data-name="Line 571" x1="3.607" y1="3.607" transform="translate(15.057 15.057)" fill="none" stroke="#a19a91" stroke-linecap="round" stroke-width="1.2"/>
+</svg>

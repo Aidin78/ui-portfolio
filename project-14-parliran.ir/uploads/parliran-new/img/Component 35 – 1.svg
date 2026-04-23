@@ -1,0 +1,21 @@
+<svg id="Component_35_1" data-name="Component 35 – 1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="Component_37_2" data-name="Component 37 – 2">
+    <g id="folder-open">
+      <g id="folder-open-2" data-name="folder-open" transform="translate(-492 -188)">
+        <g id="Vector" transform="translate(524 220) rotate(180)" fill="none" opacity="0">
+          <path d="M0,0H32V32H0Z" stroke="none"/>
+          <path d="M 1.200000762939453 1.200000762939453 L 1.200000762939453 30.79999923706055 L 30.79999923706055 30.79999923706055 L 30.79999923706055 1.200000762939453 L 1.200000762939453 1.200000762939453 M 0 0 L 32 0 L 32 32 L 0 32 L 0 0 Z" stroke="none" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+    <g id="vuesax_linear_search-status" data-name="vuesax/linear/search-status" transform="translate(-682.429 -186.429)">
+      <g id="search-status" transform="translate(684 188)">
+        <path id="Vector-2" data-name="Vector" d="M7.286,0H0" transform="translate(10.928 10.928)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+        <path id="Vector-3" data-name="Vector" d="M3.643,0H0" transform="translate(14.571 15.786)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+        <path id="Vector-4" data-name="Vector" d="M3.131,3.131,0,0" transform="translate(23.858 23.858)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+        <path id="Vector-5" data-name="Vector" d="M0,0H29.143V29.143H0Z" fill="none" opacity="0"/>
+        <path id="Vector-6" data-name="Vector" d="M23.071,11.536A11.536,11.536,0,1,1,11.536,0,11.536,11.536,0,0,1,23.071,11.536Z" transform="translate(2.429 2.429)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+      </g>
+    </g>
+  </g>
+</svg>

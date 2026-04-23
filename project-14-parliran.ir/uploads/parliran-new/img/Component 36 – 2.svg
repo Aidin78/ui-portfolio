@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33">
+  <g id="Component_36_2" data-name="Component 36 – 2" transform="translate(0.5 0.5)">
+    <path id="Vector" d="M32,0H0V32H32Z" fill="none" stroke="#fff" stroke-width="1" opacity="0"/>
+    <g id="vuesax_linear_people" data-name="vuesax/linear/people" transform="translate(-619 -251)">
+      <g id="people" transform="translate(620 252)">
+        <g id="Group" transform="translate(19.163 3.676)">
+          <path id="Vector-2" data-name="Vector" d="M3.337,6.45a.757.757,0,0,0-.237,0,3.231,3.231,0,1,1,.237,0Z" transform="translate(0 0)" fill="none" stroke="#fff" stroke-width="1"/>
+          <path id="Vector-3" data-name="Vector" d="M.038,6.175a7.043,7.043,0,0,0,4.925-.9A2.389,2.389,0,0,0,4.963,1,7.087,7.087,0,0,0,0,.113" transform="translate(2.012 8.198)" fill="none" stroke="#fff" stroke-width="1"/>
+        </g>
+        <g id="Group-2" data-name="Group" transform="translate(2.503 3.676)">
+          <path id="Vector-4" data-name="Vector" d="M3.113,6.45a.757.757,0,0,1,.237,0,3.231,3.231,0,1,0-.237,0Z" transform="translate(1.847 0)" fill="none" stroke="#fff" stroke-width="1"/>
+          <path id="Vector-5" data-name="Vector" d="M6.247,6.175a7.043,7.043,0,0,1-4.925-.9A2.389,2.389,0,0,1,1.322,1,7.087,7.087,0,0,1,6.284.113" transform="translate(0 8.198)" fill="none" stroke="#fff" stroke-width="1"/>
+        </g>
+        <g id="Group-3" data-name="Group" transform="translate(10.041 13.014)">
+          <path id="Vector-6" data-name="Vector" d="M3.337,6.45a.757.757,0,0,0-.237,0,3.231,3.231,0,1,1,.237,0Z" transform="translate(1.622 -1)" fill="none" stroke="#fff" stroke-width="1"/>
+          <path id="Vector-7" data-name="Vector" d="M1.322.994a2.389,2.389,0,0,0,0,4.275,7.1,7.1,0,0,0,7.275,0A2.389,2.389,0,0,0,8.6.994,7.154,7.154,0,0,0,1.322.994Z" transform="translate(0 8.217)" fill="none" stroke="#fff" stroke-width="1"/>
+        </g>
+        <path id="Vector-8" data-name="Vector" d="M0,0H30V30H0Z" fill="none" opacity="0"/>
+      </g>
+    </g>
+  </g>
+</svg>

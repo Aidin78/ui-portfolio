@@ -1,0 +1,12 @@
+<svg id="zoom-out" xmlns="http://www.w3.org/2000/svg" width="23.984" height="24" viewBox="0 0 23.984 24">
+  <g id="Group_45427" data-name="Group 45427">
+    <g id="Symbol_165_491" data-name="Symbol 165 – 491">
+      <path id="Path_5247" data-name="Path 5247" d="M0,0H23.984V24H0Z" fill="none"/>
+    </g>
+  </g>
+  <g id="Ellipse_518" data-name="Ellipse 518" transform="translate(2.016 2)" fill="none" stroke="#a19a91" stroke-width="1.2">
+    <circle cx="10" cy="10" r="10" stroke="none"/>
+    <circle cx="10" cy="10" r="9.4" fill="none"/>
+  </g>
+  <line id="Line_665" data-name="Line 665" x2="7" transform="translate(8.516 12)" fill="none" stroke="#a19a91" stroke-linecap="round" stroke-width="1.2"/>
+</svg>

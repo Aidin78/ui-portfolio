@@ -1,0 +1,9 @@
+<svg id="warning" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="Vector" fill="none" opacity="0">
+    <path d="M32,0H0V32H32Z" stroke="none"/>
+    <path d="M 1.200000762939453 1.200000762939453 L 1.200000762939453 30.79999923706055 L 30.79999923706055 30.79999923706055 L 30.79999923706055 1.200000762939453 L 1.200000762939453 1.200000762939453 M 0 0 L 32 0 L 32 32 L 0 32 L 0 0 Z" stroke="none" fill="#fff"/>
+  </g>
+  <path id="Polygon_1_-_Outline" data-name="Polygon 1 - Outline" d="M17.536,6.135a3.916,3.916,0,0,0-3.411,1.954L5.518,22.772a3.953,3.953,0,0,0,3.411,5.953H26.143a3.953,3.953,0,0,0,3.411-5.953L20.946,8.089a3.916,3.916,0,0,0-3.411-1.954m0-1.248a5.154,5.154,0,0,1,4.488,2.571L30.63,22.141a5.2,5.2,0,0,1-4.488,7.832H8.929a5.2,5.2,0,0,1-4.488-7.832L13.048,7.458A5.154,5.154,0,0,1,17.536,4.887Z" transform="translate(-1.536 -1.486)" fill="#fff"/>
+  <path id="Vector-2" data-name="Vector" d="M5.389,0H0" transform="translate(16 12.611) rotate(90)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  <path id="Path_14197" data-name="Path 14197" d="M1.347-.773a1,1,0,1,1-1,1A1,1,0,0,1,1.347-.773Z" transform="translate(14.653 21.773)" fill="#fff"/>
+</svg>

@@ -1,0 +1,11 @@
+<svg id="Component_118_83" data-name="Component 118 – 83" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Group_9050" data-name="Group 9050" transform="translate(3.75 2.25)">
+    <path id="Vector" d="M0,0H5.4" transform="translate(5.887 6.772)" fill="none" stroke="#a19a91" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Vector-2" data-name="Vector" d="M0,0H3.375" transform="translate(7.913 10.629)" fill="none" stroke="#a19a91" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Vector-3" data-name="Vector" d="M11.917-2C14.969-1.831,16.5-.636,16.5,3.784v7.9c0,3.875-.917,5.813-5.5,5.813H5.5C.917,17.5,0,15.562,0,11.687v-7.9C0-.636,1.531-1.821,4.583-2Z" transform="translate(0 2)" fill="none" stroke="#a19a91" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+  </g>
+  <g id="Vector-4" data-name="Vector" fill="none" opacity="0">
+    <path d="M0,0H24V24H0Z" stroke="none"/>
+    <path d="M 1.200000762939453 1.200000762939453 L 1.200000762939453 22.79999923706055 L 22.79999923706055 22.79999923706055 L 22.79999923706055 1.200000762939453 L 1.200000762939453 1.200000762939453 M 0 0 L 24 0 L 24 24 L 0 24 L 0 0 Z" stroke="none" fill="#a19a91"/>
+  </g>
+</svg>

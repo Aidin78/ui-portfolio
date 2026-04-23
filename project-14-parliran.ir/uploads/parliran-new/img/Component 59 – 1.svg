@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64.001" height="64" viewBox="0 0 64.001 64">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.949" y1="0.241" x2="0.048" y2="0.926" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#efe8df"/>
+      <stop offset="1" stop-color="#d2cabe"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.051" y1="0.241" x2="0.952" y2="0.926" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="0" y1="0.139" x2="0.87" y2="0.834" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-4" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1ec8c4"/>
+      <stop offset="1" stop-color="#016a63"/>
+    </linearGradient>
+  </defs>
+  <g id="Component_59_1" data-name="Component 59 – 1" transform="translate(0)">
+    <rect id="Rectangle_2018" data-name="Rectangle 2018" width="64" height="64" fill="none"/>
+    <g id="Component_60_4" data-name="Component 60 – 4">
+      <rect id="Rectangle_2018-2" data-name="Rectangle 2018" width="64" height="64" transform="translate(0.001)" fill="none"/>
+      <g id="Group_9516" data-name="Group 9516" transform="translate(0.001 1.143)">
+        <path id="Rectangle_2013" data-name="Rectangle 2013" d="M13.5,0h0A13.5,13.5,0,0,1,27,13.5V28a0,0,0,0,1,0,0H13.5A13.5,13.5,0,0,1,0,14.5v-1A13.5,13.5,0,0,1,13.5,0Z" transform="translate(0 -0.143)" fill="url(#linear-gradient)"/>
+        <path id="Path_14140" data-name="Path 14140" d="M10.585,0c9.048,0,8.46,10.667,8.46,10.667s-3.686.21-7.864,0S2.037,9.061,2.506,6.876C3.12,4,5.048,0,10.585,0Z" transform="translate(3.032 16.88)" fill="#fff"/>
+        <ellipse id="Ellipse_368" data-name="Ellipse 368" cx="3.5" cy="4" rx="3.5" ry="4" transform="translate(10 6.857)" fill="#fff"/>
+      </g>
+      <g id="Group_9517" data-name="Group 9517" transform="translate(35.429 1.143)">
+        <path id="Rectangle_2013-2" data-name="Rectangle 2013" d="M14,0h0A14,14,0,0,1,28,14v0A14,14,0,0,1,14,28H0a0,0,0,0,1,0,0V14A14,14,0,0,1,14,0Z" transform="translate(-0.429 -0.143)" fill="url(#linear-gradient-2)"/>
+        <path id="Path_14140-2" data-name="Path 14140" d="M10.942,0c-9.048,0-8.46,10.667-8.46,10.667s3.686.21,7.864,0,9.144-1.606,8.675-3.791C18.408,4,16.48,0,10.942,0Z" transform="translate(3.276 16.88)" fill="#fff"/>
+        <ellipse id="Ellipse_368-2" data-name="Ellipse 368" cx="3.5" cy="4" rx="3.5" ry="4" transform="translate(10.571 6.857)" fill="#fff"/>
+      </g>
+      <g id="Group_9518" data-name="Group 9518" transform="translate(35.679 33.84)">
+        <path id="Rectangle_2013-3" data-name="Rectangle 2013" d="M0,0H13.977A13.977,13.977,0,0,1,27.954,13.977v0A13.977,13.977,0,0,1,13.977,27.954h0A13.977,13.977,0,0,1,0,13.977V0A0,0,0,0,1,0,0Z" transform="translate(0 0)" fill="url(#linear-gradient-3)"/>
+        <path id="Path_14140-3" data-name="Path 14140" d="M10.585,0c5.166,0,7.423,4.714,8.264,7.912-.033.233-2.9,2.564-8.264,2.831s-8.232-2.361-8.156-2.6C3.043,5.265,5.048,0,10.585,0Z" transform="translate(3.395 17.287)" fill="#fff"/>
+        <ellipse id="Ellipse_368-3" data-name="Ellipse 368" cx="3.678" cy="3.678" rx="3.678" ry="3.678" transform="translate(10.299 7.356)" fill="#fff"/>
+      </g>
+      <g id="Group_9519" data-name="Group 9519" transform="translate(0.001 34.285)">
+        <path id="Subtraction_4" data-name="Subtraction 4" d="M-1003.3,8481.234a13.62,13.62,0,0,1-4.142-4.719,13.522,13.522,0,0,1-1.558-6.3v-1a13.414,13.414,0,0,1,3.954-9.547,13.414,13.414,0,0,1,9.547-3.954H-982v14.5a13.483,13.483,0,0,1-4.776,10.3c-.386-1.754-2.115-7.474-8.248-7.474-5.578,0-7.667,5.654-8.306,8.085a.14.14,0,0,0,.031.1Z" transform="translate(1009 -8456)" fill="url(#linear-gradient-4)"/>
+        <circle id="Ellipse_368-4" data-name="Ellipse 368" cx="3.5" cy="3.5" r="3.5" transform="translate(10 6.715)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

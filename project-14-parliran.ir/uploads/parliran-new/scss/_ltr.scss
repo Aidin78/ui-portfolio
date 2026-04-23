@@ -1,0 +1,260 @@
+
+body[dir="ltr"] {
+  text-align: left;
+  font-family: OpenSans;
+  .text {
+    &__medium {
+      font-weight: 500;
+    }
+    &__bold{
+      font-weight: bold;
+    }
+    &__black {
+      font-weight: 900;
+    }
+    &__pinar-bold {
+      font-family: OpenSans;
+      font-weight: bold;
+    }
+    &__pinar-semibold {
+      font-family: OpenSans;
+      font-weight: 500;
+    }
+    &__pinar-medium {
+      font-family: OpenSans;
+    }
+  }
+  .fraction__item::before {
+    right: unset;
+    left: 12px;
+  }
+  .side-menu__submenu {
+    right: unset;
+    left: calc(100% + 10px);
+  }
+  nav.mega-menu > ul > li.drop-down > ul {
+    right: unset;
+    left: 0;
+  }
+  .header__search button {
+    left: unset;
+    right: 0;
+  }
+  .about-page__detail {
+    left: unset;
+    right: 0;
+  }
+  .structure-list__item {
+    margin-left: -96px;
+  }
+
+  .about-page__tabs .sub-menu a {
+    border-inline-start: unset;
+    border-left: 4px solid transparent;
+  }
+  .about-page__tabs .sub-menu a.active {
+    border-left: 4px solid #72aeac;
+  }
+  .back-shadow {
+    left: 100%;
+  }
+  &.mm-wrapper_opened .back-shadow {
+    left: 0;
+  }
+  .about-page__detail .content img {
+    margin-left: -96px;
+  }
+  .fraction-list__item::before {
+    right: unset;
+    left: 32px;
+  }
+  .fraction-list__meta li:not(:last-child)::before {
+    left: unset;
+    right: 0;
+  }
+  .friends-list__meta li:not(:last-child)::before {
+    left: unset;
+    right: 0;
+  }
+  ul.breadcrumb li + li::before {
+    transform: scale(-1);
+  }
+  .agent-data__list {
+  }
+  .group-sec__item::before {
+    right: unset;
+    left: 13px;
+  }
+  .contact-ways__item .item::before {
+    right: unset;
+    left: 0px;
+  }
+  .news-collection__cell .news-item__meta li:first-child::before {
+    left: unset;
+    right: 0;
+  }
+  .inner-sec__search button {
+    left: unset;
+    right: 15px;
+  }
+  .inner-sec__search--phone .close {
+    display: none;
+  }
+  .comission-era__meta li:not(:last-child)::before {
+    left: unset;
+    right: 0;
+  }
+  .text-news__item::before {
+    right: unset;
+    left: 0;
+  }
+  .friends-list__item::before {
+    right: unset;
+    left: 32px;
+  }
+  .side-menu i {
+    transform: scale(-1);
+  }
+  .samaneh__item::before {
+    left: unset;
+    right: 0;
+  }
+  .members__search button {
+    left: unset;
+    right: 47px;
+  }
+  .friends__search button {
+    left: unset;
+    right: 46px;
+  }
+  .friends__item::before {
+    right: unset;
+    left: 39px;
+  }
+  .news-list__item .news-item__meta li:not(:last-child)::before {
+    left: unset;
+    right: 0;
+  }
+  .project__data::before {
+    right: unset;
+    left: 0;
+  }
+  .page__header::before {
+    left: unset;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  .nezarat-ostan .page__header::after {
+    right: unset;
+    left: 50%;
+  }
+
+  .nezarat-ostan .page__time::before {
+    right: unset;
+    left: 0;
+  }
+  @media (max-width: 1199.98px) and (min-width: 992px) {
+    .structure-list__item {
+      margin-left: -60px;
+    }
+    .about-page__detail .content img {
+      margin-left: -60px;
+    }
+    .fraction__item::before {
+      right: unset;
+      left: 15px;
+    }
+  }
+  @media (min-width: 992px) {
+    .multimedia__tabs a::before {
+      transform: scale(-1);
+    }
+    .multimedia__tabs a::after {
+      left: unset !important;
+      right: 0;
+      transform: translateX(50%) translateY(-50%) scale(-1);
+    }
+    .about-page__tabs .main-menu > li > a.active::before {
+      left: unset;
+      right: -10px;
+      transform: scale(-1);
+    }
+  }
+  @media (max-width: 991.98px) {
+    .fraction__item::before {
+      right: unset;
+      left: 15px;
+    }
+    .mm-btn_next::after {
+      left: unset !important;
+      right: 16px !important;
+      transform: scale(-1) !important;
+    }
+    .mm-searchfield::before {
+      left: unset;
+      right: 39px;
+    }
+    .phone-era__container .era-box {
+      left: unset;
+      right: 0;
+    }
+  }
+  @media (max-width: 991.98px) and (min-width: 768px) {
+    .structure-list__item {
+      margin-left: -60px;
+    }
+    .about-page__detail .content img {
+      margin-left: -60px;
+    }
+    .inner-sec__search.open button:not(.close) {
+      left: unset;
+      right: 1px;
+    }
+    .fraction__item::before {
+      right: unset;
+      left: 15px;
+    }
+  }
+  @media (max-width: 767.98px) {
+    .header-pic__phone-links a {
+      padding-right: 0;
+    }
+  }
+  @media (max-width: 767.98px) and (min-width: 576px) {
+    .structure-list__item {
+      margin-left: -60px;
+    }
+    .about-page__detail .content img {
+      margin-left: -60px;
+    }
+    .inner-sec__search.open button:not(.close) {
+      left: unset;
+      right: 1px;
+    }
+  }
+  @media (max-width: 575.98px) {
+    .friends__item::before {
+      left: 19px;
+    }
+    .header__search {
+      display: none;
+    }
+    .header-pic__top .header-hamburger-btn a {
+      margin-right: 0;
+    }
+    .structure-list__item {
+      margin-left: -40px;
+    }
+    .about-page__detail .content img {
+      margin-left: -40px;
+    }
+    .about-page__detail {
+      transform: translateX(-15px);
+    }
+
+    .inner-sec__search.open button:not(.close) {
+      left: unset !important;
+      right: 15px !important;
+    }
+  }
+}

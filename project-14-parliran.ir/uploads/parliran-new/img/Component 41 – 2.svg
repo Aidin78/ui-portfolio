@@ -1,0 +1,15 @@
+<svg id="Component_41_2" data-name="Component 41 – 2" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="folder-open">
+    <g id="folder-open-2" data-name="folder-open" transform="translate(-492 -188)">
+      <g id="Vector" transform="translate(524 220) rotate(180)" fill="none" opacity="0">
+        <path d="M0,0H32V32H0Z" stroke="none"/>
+        <path d="M 1.200000762939453 1.200000762939453 L 1.200000762939453 30.79999923706055 L 30.79999923706055 30.79999923706055 L 30.79999923706055 1.200000762939453 L 1.200000762939453 1.200000762939453 M 0 0 L 32 0 L 32 32 L 0 32 L 0 0 Z" stroke="none" fill="#efeee8"/>
+      </g>
+    </g>
+  </g>
+  <g id="Group_9602" data-name="Group 9602" transform="translate(-75.283 -413.109)">
+    <path id="Vector-2" data-name="Vector" d="M25.411,4.333,24.886,10.9c-.2,2.009-.354,3.545-3.913,3.545H4.457C.9,14.443.741,12.907.544,10.9L.019,4.333A3.98,3.98,0,0,1,.872,1.457L.9,1.431A3.905,3.905,0,0,1,3.931,0H21.5a3.892,3.892,0,0,1,3.007,1.4c.013.013.026.026.026.039A3.841,3.841,0,0,1,25.411,4.333Z" transform="translate(78.566 427.777)" fill="none" stroke="#efeee8" stroke-width="1.2"/>
+    <path id="Vector-3" data-name="Vector" d="M0,12.342V5.58C0,1.116,1.116,0,5.58,0H7.247A2.648,2.648,0,0,1,9.926,1.339l1.667,2.232a1.775,1.775,0,0,0,1.786.893h3.348c4.464,0,5.58,1.116,5.58,5.58v2.35" transform="translate(80.122 416)" fill="none" stroke="#efeee8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+    <text id="_۲۳۴" data-name="۲۳۴" transform="translate(91.283 438.109)" fill="#fff" font-size="10" font-family="IRANYekan-Light, IRANYekan" font-weight="300" opacity="0.7"><tspan x="-9.032" y="0">۲۳۴</tspan></text>
+  </g>
+</svg>

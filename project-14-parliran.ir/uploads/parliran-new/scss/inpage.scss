@@ -1,0 +1,112 @@
+@use "sass:string";
+// mixin
+@import "mixin";
+
+@import "news-default";
+
+.sec {
+    &__breadcrumb {
+        background-color: #f7f7f7;
+        ul {
+            padding-inline-start: 0;
+            padding-inline-end: 0;
+        }
+    }
+    &__inpage {
+        min-height: 26.5vh;
+        background-color: #f7f7f7;
+        padding-bottom: 120px;
+    }
+}
+header {
+    margin-bottom: 0;
+}
+.header {
+    &__search {
+        input {
+            padding-inline-start: 0;
+        }
+    }
+}
+ul.breadcrumb {
+    padding-top: 24px;
+    margin-bottom: 30px;
+    padding-bottom: 0;
+    li {
+        & + li::before {
+            content: "\e91e";
+            font-family: "parliran";
+            font-size: 10px;
+            display: inline-block;
+            margin-inline-start: 8px;
+            margin-inline-end: 8px;
+        }
+        &:last-child {
+            a {
+                color: #016a63;
+            }
+        }
+    }
+    a {
+        font-size: 14px;
+        &:hover {
+            color: #016a63;
+            text-decoration: none !important;
+        }
+    }
+}
+.pointer-events--off {
+    pointer-events: none;
+}
+@media (max-width: 991.98px) {
+    .sec {
+        &__breadcrumb {
+            position: relative;
+            padding-bottom: 20px;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 100vw;
+                height: 1px;
+                bottom: 20px;
+                background-color: #e4dfd8;
+            }
+            ul {
+                display: flex;
+                width: 100%;
+                padding-inline-start: 0;
+                padding-inline-end: 0;
+                overflow-x: auto;
+                flex-wrap: nowrap !important;
+                margin-bottom: 17px !important;
+
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+                -ms-overflow-style: none; /* IE and Edge */
+                scrollbar-width: none; /* Firefox */
+                li {
+                    display: flex;
+                    align-items: center;
+                    min-width: max-content;
+                }
+                a {
+                    min-width: max-content;
+                }
+            }
+        }
+    }
+}
+@import "agents/agents-era";
+@import "agents/agents-detail";
+@import "comission/commission-era";
+@import "comission/commission-detail";
+@import "fraction/fraction-era";
+@import "fraction/fraction-detail";
+@import "friends/friends";
+@import "news/news";
+@import "nezarat/nezarat";
+@import "datatables/datatables";
+@import "small-pages/404";
+@import "small-pages/stream";
+@import "about/about";
