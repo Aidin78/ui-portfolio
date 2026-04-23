@@ -1,0 +1,15 @@
+.main-slider__small-pic {
+  flex: 50%;
+}
+.news-pic__overlay-back {
+  display: none;
+}
+.news-pic--big .news-pic__overlay,
+.news-pic__overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  right: 0%;
+}
+.news-pic--big .news-pic__overlay{
+    padding: 10px 15px;
+}
