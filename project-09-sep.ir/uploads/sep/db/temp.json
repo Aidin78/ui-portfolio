@@ -1,0 +1,173 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "ideas": [
+          {
+            "type": "Feature",
+            "displayname": "Place 1",
+            "phone": "051123456789",
+            "address": "Tehran, valiAsr square",
+            "website": "###"
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.68571584427575, 30.87420647426065, 10.949612003783066
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "ideas": [
+          {
+            "type": "Feature",
+            "displayname": "Place 2",
+            "phone": "051123456789",
+            "address": "Tehran, valiAsr square",
+            "website": "###"
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.68571584427575, 33.87420647426065, 10.949612003783066
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "ideas": [
+          {
+            "type": "Feature",
+            "displayname": "Place 3",
+            "phone": "051123456789",
+            "address": "Tehran, valiAsr square",
+            "website": "###"
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.68571584427575, 33.87420647426065, 10.949612003783066
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "ideas": [
+          {
+            "type": "Feature",
+            "displayname": "Place 4",
+            "phone": "051123456789",
+            "address": "Tehran, valiAsr square",
+            "website": "###"
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.68571584427575, 33.87420647426065, 10.949612003783066
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "ideas": [
+          {
+            "type": "Feature",
+            "displayname": "Place 5",
+            "phone": "051123456789",
+            "address": "Tehran, valiAsr square",
+            "website": "###"
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.68571584427575, 40.87420647426065, 10.949612003783066
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "ideas": [
+          {
+            "type": "Feature",
+            "displayname": "Place 5",
+            "phone": "051123456789",
+            "address": "Tehran, valiAsr square",
+            "website": "###"
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          66.68571584427575, 30.87420647426065, 10.949612003783066
+        ]
+      }
+    }
+    ,
+
+    {
+      "type": "Feature",
+      "properties": {
+        "ideas": [
+          {
+            "type": "Feature",
+            "displayname": "Place 6",
+            "phone": "051123456789",
+            "address": "Tehran, valiAsr square",
+            "website": "###"
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.68571584427575, 36.87420647426065, 10.949612003783066
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "ideas": [
+          {
+            "type": "Feature",
+            "displayname": "Place 7",
+            "phone": "051123456789",
+            "address": "Tehran, valiAsr square",
+            "website": "###"
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.68571584427575, 40.87420647426065, 10.949612003783066
+        ]
+      }
+    }
+  ]
+}

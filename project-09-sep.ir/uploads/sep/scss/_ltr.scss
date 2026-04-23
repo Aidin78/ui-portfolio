@@ -1,0 +1,136 @@
+body[dir="ltr"] {
+    direction: ltr;
+    text-align: left;
+    .header {
+        &__menu {
+            margin-right: 0;
+            margin-left: 72px;
+        }
+        &__lang {
+            margin-right: 0;
+            margin-left: 15px;
+            i {
+                right: 0;
+                left: unset;
+            }
+        }
+    }
+    .webpay {
+        &__detail {
+            margin-left: 0;
+            margin-right: 45px;
+            .subtitle {
+                &::before {
+                    margin-left: 0;
+                    margin-right: 8px;
+                }
+            }
+        }
+        &__item{
+            &:not(:first-child){
+                margin-right: 0;
+                margin-left: 20px;
+            }
+        }
+    }
+    .gift-card {
+        &__detail {
+            margin-left: 0;
+            margin-right: 50px;
+            &::before {
+                right: unset;
+                left: -600px;
+            }
+            ul {
+                li {
+                    padding-right: 0;
+                    padding-left: 20px;
+                    &::before {
+                        right: unset;
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+    .box-link {
+        .news-item {
+            &:not(:last-child) {
+                margin-left: 0;
+                margin-right: 30px;
+            }
+        }
+    }
+    .news-sec {
+        &__cell {
+            &:not(:last-child) {
+                margin-left: 0;
+                margin-right: 30px;
+            }
+        }
+    }
+    .products {
+        &__pic {
+            padding-left: 0;
+            padding-right: 45px;
+        }
+    }
+    .sm-simple > li > a {
+        margin-left: 0;
+        margin-right: 22px;
+    }
+    .sm .niafam {
+        margin-right: 0;
+        margin-left: 5px;
+    }
+    .sm-simple li li .niafam {
+        transform: rotate(-90deg);
+    }
+    .sm-simple ul {
+        left: 0 !important;
+    }
+    .header__logIn {
+        margin-right: 0;
+        margin-left: auto;
+    }
+    .footer{
+        &__top {
+            .right{
+                margin-left: 0;
+                margin-right: auto;
+                .button{
+                    &:not(:last-child){
+                        margin-left: 0;
+                        margin-right: 20px;
+                    }
+                }
+            }
+            .left{
+                margin-right: 0;
+                margin-left: auto;
+            }
+        }
+        &__logo{
+            margin-left: 0;
+            margin-right: 42px;
+        }
+        &__company{
+            &:not(:last-child){
+                margin-left: 0;
+                margin-right: 18px;
+            }
+        }
+        &__col{
+            &:not(:nth-child(5)){
+                margin-left: 0;
+                margin-right: auto;
+            }
+            
+        }
+        &__social {
+            ul {
+                
+            }
+        }
+    }
+}
