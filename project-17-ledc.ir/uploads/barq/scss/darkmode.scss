@@ -1,0 +1,167 @@
+.sun {
+  transition: all 0.2s linear;
+}
+.night {
+  transition: all 0.1s linear;
+  transform: translateX(-50%);
+}
+.header__theme {
+  transition: all 0.4s linear;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  width: 57px;
+  height: 30px;
+  border-radius: 15px;
+  padding: 0 7px;
+  background: linear-gradient(90deg, #fee45a 0%, #f6e585 44.34%, transparent 100%);
+  .night {
+    opacity: 0;
+  }
+}
+.night-on {
+  background: linear-gradient(-90deg, #0a3382 0%, #0a3382 44.75%, rgba(10, 51, 130, 0) 100%) !important;
+
+  .sun {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  .night {
+    transition-delay: 0.18s;
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+.dark-theme {
+  background-color: #3f3f40;
+  color: #fff;
+  .moving-slide__back {
+    filter: brightness(0.25);
+  }
+  .box-link {
+    &__item {
+      color: white;
+      &::after {
+        background: #333;
+      }
+      &::before {
+        background: #000;
+        opacity: 1;
+      }
+    }
+    &__icon {
+      background-color: #555555;
+    }
+  }
+  .box,
+  .tabs__header .nav-link,
+  .tabs__header .nav-link::after,
+  .tabs__header .nav-link::before,
+  .tabs__content,
+  .sidemenu,
+  .map-sec__tabs,
+  .breadcrumb,
+  .wrapper--inpage .header__bottom-container,
+  .es-form-control,
+  .es-news-box-similar,
+  .es-news-box-download,
+  .es-post-sub-page h3,
+  .es-post-sub-page .sub-page-items,
+  .justified-gallery,
+  .es-news-tags ul li a,
+  .news-lead,
+  .table-striped tbody tr:nth-of-type(2n + 1),
+  .simple-table .dataTables_wrapper .dataTables_paginate .paginate_button,
+  .simple-table .dataTables_wrapper .dataTables_paginate .paginate_button.current,
+  .simple-table .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover,
+  .design-detail__detail,
+  .simple-table tr:nth-child(2n) {
+    background: #333;
+  }
+  ul.breadcrumb li a,
+  .news-content,
+  .news-head h2,
+  .news-head h6,
+  .news-info li,
+  .extra-meta span,
+  .administrator-description h5,
+  .news-lead,
+  .administrator-description h4,
+  .es-news-tags ul li a,
+  .extra-meta,
+  .simple-table tbody td a,
+  .simple-table tbody td,
+  .simple-table .dataTables_wrapper .dataTables_paginate .paginate_button,
+  .simple-table .dataTables_wrapper .dataTables_paginate .paginate_button.current,
+  .simple-table .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover,
+  .design-detail__detail .label {
+    color: white;
+  }
+  .simple-table .dataTables_wrapper .dataTables_paginate .paginate_button,
+  .simple-table .dataTables_wrapper .dataTables_paginate .paginate_button.current,
+  .simple-table .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    background: #333 !important;
+    color: white !important;
+  }
+  .main-slider__content {
+    color: #1e1e1e;
+  }
+  .scrollbar .news:not(:last-child),
+  .links__item:not(:last-child),
+  .table-bordered td,
+  .table-bordered th,
+  .table td,
+  .table th,
+  .es-form-control,
+  .es-posts .es-post-item:not(:last-child),
+  .es-post-sub-page h3,
+  .es-post-sub-page .sub-page-items,
+  .administrator-info,
+  .es-post-gallery,
+  .meta-list,
+  .news-content img,
+  .simple-table table td,
+  .simple-table tr:nth-child(2n) {
+    border-color: #555555;
+  }
+
+  .table,
+  ul.breadcrumb li + li::before,
+  .es-form-control,
+  .es-news-box-similar ul li a,
+  .es-news-box-download ul li a,
+  .es-post-item .es-post-title a,
+  .es-posts .es-post-kicker,
+  .es-post-item .es-post-meta .es-meta,
+  .es-posts .es-post-summary {
+    color: #fff;
+  }
+  .map-sec__map a > path {
+    fill: #333 !important;
+  }
+  .map-sec__map a:hover {
+    > path {
+      fill: #000 !important;
+    }
+  }
+  .map-sec__map a g > path {
+    fill: #fff !important;
+  }
+  .map-sec__nav .nav-link.active {
+    color: #1e1e1e;
+  }
+  .introduction__detail {
+    background: #3f3f40;
+    color: white;
+  }
+  .introduction__detail .label {
+    color: white;
+  }
+  .os-theme-dark > .os-scrollbar > .os-scrollbar-track > .os-scrollbar-handle {
+    background: rgba(255, 255, 255, 0.4);
+  }
+  .table-hover tbody tr:hover {
+    color: white;
+  }
+}

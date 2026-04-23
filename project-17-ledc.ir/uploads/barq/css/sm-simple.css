@@ -1,0 +1,321 @@
+:root {
+  --background-color: inherit;
+  --text-color: #000;
+  --font-size: 1em;
+  --font-weight: 500;
+  --padding: 0px;
+}
+.sm-simple.sm-rtl > li:last-child > a {
+  padding-left: 0;
+  margin-left: 0;
+}
+.sm-simple {
+  background: #f2f5ff;
+}
+.sm .niafam {
+  margin-right: 5px;
+  font-size: 0.625em !important;
+  font-weight: 600;
+  margin-bottom: -3px;
+}
+.sm-simple a {
+  padding: 13px 20px;
+}
+.sm-simple a,
+.sm-simple a:hover,
+.sm-simple a:focus,
+.sm-simple a:active {
+  color: #555555;
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  line-height: 17px;
+  text-decoration: none;
+}
+.sm-simple a.current {
+  background: #555555;
+  color: #fff;
+}
+.sm-simple a.disabled {
+  color: #cccccc;
+}
+.sm-simple a .sub-arrow {
+  position: absolute;
+  top: 50%;
+  margin-top: -17px;
+  left: auto;
+  right: 4px;
+  width: 34px;
+  height: 34px;
+  overflow: hidden;
+  font: bold 14px/34px monospace !important;
+  text-align: center;
+  text-shadow: none;
+  background: rgba(0, 0, 0, 0.08);
+}
+.sm-simple a .sub-arrow::before {
+  content: "+";
+}
+.sm-simple a.highlighted .sub-arrow::before {
+  content: "-";
+}
+.sm-simple li {
+}
+.sm-simple > li:first-child {
+  border-top: 0;
+}
+.sm-simple ul {
+  background:  #383f48;
+}
+.sm-simple ul a,
+.sm-simple ul a:hover,
+.sm-simple ul a:focus,
+.sm-simple ul a:active {
+  font-size: var(--font-size);
+}
+
+@media (min-width: 768px) {
+  /* Switch to desktop layout
+  -----------------------------------------------
+     These transform the menu tree from
+     collapsible to desktop (navbar + dropdowns)
+  -----------------------------------------------*/
+  /* start... (it's not recommended editing these rules) */
+  .sm-simple ul {
+    position: absolute;
+    width: 12em;
+  }
+
+  .sm-simple li {
+    float: left;
+  }
+
+  .sm-simple.sm-rtl li {
+    float: right;
+  }
+
+  .sm-simple ul li,
+  .sm-simple.sm-rtl ul li,
+  .sm-simple.sm-vertical li {
+    float: none;
+  }
+
+  .sm-simple a {
+    white-space: nowrap;
+  }
+
+  .sm-simple ul a,
+  .sm-simple.sm-vertical a {
+    white-space: normal;
+  }
+
+  .sm-simple .sm-nowrap > li > a,
+  .sm-simple .sm-nowrap > li > :not(ul) a {
+    white-space: nowrap;
+  }
+
+  /* ...end */
+  .sm-simple {
+    background: transparent;
+  }
+  .sm-simple a {
+    padding: 11px 20px;
+  }
+  .sm-simple a,
+  .sm-simple a:hover,
+  .sm-simple a:focus,
+  .sm-simple a:active,
+  .sm-simple a.highlighted {
+    padding-right: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    color: var(--text-color);
+  }
+  .sm-simple > li > a:not(:last-child) {
+  }
+  .sm-simple ul a,
+  .sm-simple ul a:hover,
+  .sm-simple ul a:focus,
+  .sm-simple ul a:active,
+  .sm-simple ul a.highlighted {
+    color: #fff;
+    width: 100%;
+  }
+  .sm-simple ul a {
+    padding-right: 10px;
+  }
+
+  .sm-simple a:hover,
+  .sm-simple a:focus,
+  .sm-simple a:active,
+  .sm-simple a.highlighted {
+    background: var(--background-color);
+  }
+  .sm-simple > li > a {
+    display: flex;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-right: 0;
+    margin-left: 20px;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+  .sm-simple li:last-child > a {
+    border-left: none;
+  }
+  .sm-simple a.current {
+    background: #555555;
+    color: #fff;
+  }
+  .sm-simple a.disabled {
+    background: #fff;
+    color: #cccccc;
+  }
+  .sm-simple li > a .sm-simple a .sub-arrow {
+    top: 50%;
+    margin-top: -8px;
+    right: 20px;
+    width: 8px;
+    height: 16px;
+    font: 14px/16px monospace !important;
+    background: transparent;
+  }
+  .sm-simple a.highlighted .sub-arrow::before {
+    content: "+";
+  }
+  .sm-simple > li {
+    border-top: 0;
+  }
+  .sm-simple > li:first-child {
+    border-left: 0;
+  }
+  .sm-simple ul {
+    background:  #383f48;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  }
+  .sm-simple ul a {
+    border: 0 !important;
+  }
+
+  .sm-simple ul a .sub-arrow {
+    left: 8px;
+    right: auto;
+  }
+  .sm-simple ul > li {
+    border-left: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+  }
+  .sm-simple ul > li:first-child {
+    border-top: 0;
+  }
+  .sm-simple .scroll-up,
+  .sm-simple .scroll-down {
+    position: absolute;
+    display: none;
+    visibility: hidden;
+    overflow: hidden;
+    background: #023047;
+    height: 20px;
+  }
+  .sm-simple .scroll-up-arrow,
+  .sm-simple .scroll-down-arrow {
+    position: absolute;
+    top: -2px;
+    left: 50%;
+    margin-left: -8px;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border-width: 8px;
+    border-style: dashed dashed solid dashed;
+    border-color: transparent transparent #555555 transparent;
+  }
+  .sm-simple .scroll-down-arrow {
+    top: 6px;
+    border-style: solid dashed dashed dashed;
+    border-color: #555555 transparent transparent transparent;
+  }
+
+  .sm-simple.sm-rtl a .sub-arrow {
+    position: unset;
+    margin-right: 7px;
+  }
+
+  .sm-simple.sm-rtl.sm-vertical a .sub-arrow {
+    left: auto;
+    right: 8px;
+  }
+  .sm-simple.sm-rtl > li:first-child {
+  }
+  .sm-simple.sm-rtl > li:last-child {
+    border-left: 0;
+  }
+
+  .sm-simple.sm-rtl ul a .sub-arrow {
+    left: auto;
+    right: 8px;
+  }
+  .sm-simple.sm-vertical a .sub-arrow {
+    left: 8px;
+    right: auto;
+  }
+  .sm-simple.sm-vertical li {
+    border-left: 0;
+  }
+  .sm-simple.sm-vertical > li:first-child {
+    border-top: 0;
+  }
+}
+.sm-simple ul a {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+/*# sourceMappingURL=sm-simple.css.map */
+.sm-simple ul {
+  left: 30px !important;
+  top: 36px !important;
+}
+.sm-simple .niafam {
+  font-size: 1.125em;
+  padding-right: 1px;
+  display: inline-block;
+  margin-top: 1px;
+}
+.sm-simple li li .niafam {
+  transform: rotate(90deg);
+  margin-right: auto;
+}
+.sm-simple > li > a,
+.sm-simple li li {
+  transition: all 0.2s linear;
+}
+.sm-simple > li > a:hover {
+  color: #fff;
+}
+.sm-simple > li > .highlighted {
+  color: #fff;
+}
+.sm-simple li li:hover,
+.highlighted {
+  background-color: #ffb703;
+}
+.sm-simple li li:hover > a,
+.highlighted > a {
+  color: #f2f5ff;
+}
+.sm-simple > li > a.highlighted {
+  color: rgb(63, 63, 63);
+}
+.sm-simple > li > a:hover {
+  color: #fb8500;
+}
+.sm-simple li li a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 15px;
+}
+.sm-simple ul {
+  border-radius: 15px;
+}
