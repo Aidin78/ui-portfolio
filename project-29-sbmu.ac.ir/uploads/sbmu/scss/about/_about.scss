@@ -1,0 +1,604 @@
+@use "sass:string";
+/* Media Queries */
+$media_queries: (
+    "xSmall": "only screen and (max-width: 575.98px)",
+    "small": "only screen and (min-width: 576px) and (max-width: 767.98px)",
+    "medium": "only screen and (min-width: 768px) and (max-width: 991.98px)",
+    "large": "only screen and (min-width: 992px) and (max-width: 1199.98px)",
+    "xLarge": "only screen and (min-width: 1200px) and (max-width: 1399.98px)",
+    "xxLarge": "only screen and (min-width: 1400px)",
+);
+
+@mixin for_breakpoint($breakpoints) {
+    $conditions: ();
+    @each $breakpoint in $breakpoints {
+        // If the key exists in the map
+        $conditions: append($conditions, #{inspect(string.unquote(map-get($media_queries, $breakpoint)))}, comma);
+    }
+
+    @media #{$conditions} {
+        @content;
+    }
+}
+
+.about-page {
+    &__main-pic {
+        position: relative;
+        min-height: calc(100vh - 102px);
+
+        .pic {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100vw;
+            height: 100%;
+            top: 0;
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                background-color: rgba($color: #000000, $alpha: 0.5);
+                z-index: 3;
+            }
+        }
+        .content {
+            position: absolute;
+            left: 50%;
+            bottom: 80px;
+            transform: translateX(-50%);
+        }
+        .detail {
+            margin-top: 4px;
+        }
+    }
+    &__info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        border-top: 1px solid #d6d6d6;
+        border-bottom: 1px solid #d6d6d6;
+        flex-wrap: wrap;
+        padding-right: 10%;
+        padding-left: 10%;
+        .item {
+            flex-basis: calc(50%);
+            display: flex;
+            align-items: center;
+            &:nth-child(even) {
+                justify-content: flex-end;
+                .icon-container {
+                    order: 2;
+                    padding-right: 15px;
+                    margin-right: 15px;
+                    &::before {
+                        right: 0;
+                    }
+                }
+                .content {
+                    order: 1;
+                    text-align: left;
+                }
+            }
+            &:nth-child(odd) {
+                .icon-container {
+                    order: 1;
+                    padding-left: 15px;
+                    margin-left: 15px;
+                    &::before {
+                        left: 0;
+                    }
+                }
+                .content {
+                    order: 2;
+                    text-align: right;
+                }
+            }
+            &:nth-child(n + 3) {
+                margin-top: 40px;
+            }
+        }
+        .icon-container {
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                width: 2px;
+                height: 80%;
+                border-radius: 5px;
+                transform: translateY(-50%);
+                background-color: rgb(241, 241, 241);
+            }
+        }
+        .title {
+            margin-bottom: 2px;
+        }
+        .icon {
+            width: 65px;
+            height: 65px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #287379;
+            border-radius: 50%;
+            img {
+                width: 70%;
+            }
+        }
+        .content {
+        }
+        .title {
+        }
+        .num {
+        }
+    }
+}
+.about-history {
+    &__title {
+        margin-bottom: 30px;
+    }
+    &__pic {
+        height: 520px;
+        width: 100%;
+        position: relative;
+        border-radius: 4px;
+        overflow: hidden;
+        box-shadow: 0 0 3px rgba($color: #000000, $alpha: 0.2);
+    }
+    &__links {
+        margin-top: -100px;
+        display: flex;
+        justify-content: center;
+
+        align-items: center;
+        width: 100%;
+        .item {
+            max-width: 215px;
+            position: relative;
+            &:not(:first-child) {
+                margin-right: 62px;
+            }
+            &:not(:last-child) {
+                margin-left: 62px;
+            }
+            *:not(.cover-link) {
+                position: relative;
+                z-index: 2;
+            }
+            padding-bottom: 20px;
+            img {
+                max-width: 50%;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                background-color: #8d1516;
+                border-radius: 50%;
+                height: 215px;
+                transition: all 0.2s ease-in-out;
+            }
+            .cover-link {
+                z-index: 5;
+            }
+            &:hover {
+                &::before {
+                    height: 100%;
+                    border-radius: 10px;
+                }
+                .title {
+                    color: #fff;
+                }
+            }
+        }
+        .icon {
+            width: 215px;
+            height: 215px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        .title {
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            margin-left: -7px;
+            transition: all 0.2s ease-in-out;
+
+            i {
+                font-size: 7px;
+                margin-right: 6px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+.about-honors {
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-top: 80px;
+    display: flex;
+    &::before {
+        content: "";
+        position: absolute;
+        display: flex;
+        top: 0;
+        left: 50%;
+        width: 100vw;
+        height: 100%;
+        transform: translateX(-50%);
+        background-color: #2f2323;
+    }
+    &__content {
+        position: relative;
+        z-index: 2;
+        background-color: #fff;
+        padding: 40px;
+        padding-left: 80px;
+        flex-grow: 1;
+        margin-left: -60px;
+        border-radius: 4px;
+        height: max-content;
+        min-height: 260px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__title {
+        margin-bottom: 6px;
+    }
+    &__lead {
+        margin-bottom: 8px;
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        color: #226ea0;
+        i {
+            padding-top: 2px;
+            display: flex;
+            font-size: 8px;
+            font-weight: bold;
+            margin-right: 4px;
+        }
+    }
+    &__pic {
+        margin-top: 60px;
+        flex-shrink: 0;
+        width: 595px;
+        height: 350px;
+        border-radius: 4px;
+        overflow: hidden;
+        box-shadow: 0 0 3px rgba($color: #000000, $alpha: 0.15);
+        position: relative;
+        z-index: 2;
+    }
+}
+.about-sima {
+    padding-top: 60px;
+    min-height: 1020px;
+    position: relative;
+    &__main-title {
+        margin-bottom: 30px;
+        position: relative;
+        z-index: 2;
+    }
+    &__pic {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        width: 100vw;
+        height: 100%;
+        overflow: hidden;
+        img {
+            min-height: auto;
+            height: auto;
+            top: unset;
+            bottom: -50px;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+@include for_breakpoint("large") {
+    .about-history {
+        &__pic {
+            height: 428px;
+        }
+        &__links {
+            .item {
+                &::before {
+                    height: 175px;
+                }
+            }
+            .icon {
+                height: 175px;
+                width: 175px;
+            }
+        }
+    }
+    .about-honors {
+        &__pic {
+            width: 500px;
+            height: 294px;
+        }
+    }
+    .about-sima {
+        min-height: 770px;
+    }
+}
+@include for_breakpoint("medium") {
+    .about-page {
+        &__info {
+            margin-bottom: 60px;
+            margin-top: 60px;
+        }
+    }
+    .about-history {
+        &__pic {
+            height: 319px;
+        }
+        &__links {
+            margin-top: -60px;
+            .item {
+                &::before {
+                    height: 125px;
+                }
+                &:not(:last-child) {
+                    margin-left: 50px;
+                }
+                &:not(:first-child) {
+                    margin-right: 50px;
+                }
+            }
+            .icon {
+                height: 125px;
+                width: 125px;
+            }
+        }
+    }
+    .about-honors {
+        &__pic {
+            width: 400px;
+            height: 235px;
+        }
+        &__lead {
+            -webkit-line-clamp: 6;
+        }
+    }
+    .about-sima {
+        padding-bottom: 80px;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0;
+            width: 100vw;
+            height: 100%;
+            background-color: rgba(249, 246, 239, 0.9);
+            z-index: 2;
+        }
+        min-height: auto;
+        .club-news{
+            position: relative;
+            z-index: 5;
+        }
+        &__pic{
+            img{
+                min-height: 100%;
+            }
+        }
+    }
+}
+@include for_breakpoint("small") {
+    .about-page {
+        &__info {
+            margin-bottom: 60px;
+            margin-top: 60px;
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+    .about-history {
+        &__pic {
+            height: 236px;
+        }
+        &__links {
+            margin-top: -60px;
+            .item {
+                flex-shrink: 0;
+                width: 120px;
+                &::before {
+                    height: 120px;
+                }
+                &:not(:last-child) {
+                    margin-left: 20px;
+                }
+                &:not(:first-child) {
+                    margin-right: 20px;
+                }
+            }
+            .icon {
+                height: 120px;
+                width: 120px;
+            }
+        }
+    }
+    .about-honors {
+        flex-direction: column;
+        &__pic {
+            order: 1;
+            width: 100%;
+            height: 304px;
+            margin-bottom: 30px;
+            margin-top: 0;
+        }
+        &__content {
+            order: 2;
+            margin-left: 0;
+            padding: 30px;
+            height: auto;
+            min-height: auto;
+        }
+        &__lead {
+            -webkit-line-clamp: 4;
+            font-size: 14px;
+        }
+    }
+    .about-sima {
+        padding-bottom: 80px;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0;
+            width: 100vw;
+            height: 100%;
+            background-color: rgba(249, 246, 239, 0.9);
+            z-index: 2;
+        }
+        min-height: auto;
+        .club-news{
+            position: relative;
+            z-index: 5;
+        }
+        &__pic{
+            img{
+                min-height: 100%;
+            }
+        }
+    }
+}
+@include for_breakpoint("xSmall") {
+    .about-page {
+        &__info {
+            margin-bottom: 60px;
+            margin-top: 60px;
+            flex-direction: column;
+            padding-right: 0;
+            padding-left: 0;
+            .item {
+                width: 100%;
+                &:not(:first-child) {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+    .about-history {
+        position: relative;
+        &__pic {
+            height: 560px;
+            margin-right: -15px;
+            margin-left: -15px;
+            width: calc(100vw + 30px);
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(249, 246, 239, 0.8);
+                z-index: 5;
+            }
+        }
+        &__links {
+            margin-top: -60px;
+            flex-direction: column;
+            position: absolute;
+            top: 180px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            .item {
+                flex-shrink: 0;
+                width: 110px;
+                &::before {
+                    height: 110px;
+                }
+                &:not(:last-child) {
+                    margin-left: 0px;
+                }
+                &:not(:first-child) {
+                    margin-right: 0px;
+                }
+            }
+            .icon {
+                height: 110px;
+                width: 110px;
+            }
+            .title {
+                font-size: 14px;
+            }
+            &__pic{
+                img{
+                    min-height: 100%;
+                }
+            }
+        }
+    }
+    .about-honors {
+        flex-direction: column;
+        &__pic {
+            order: 1;
+            width: 100%;
+            height: 55vw;
+            margin-bottom: 30px;
+            margin-top: 0;
+        }
+        &__content {
+            order: 2;
+            margin-left: 0;
+            padding: 30px;
+            height: auto;
+            min-height: auto;
+        }
+        &__lead {
+            -webkit-line-clamp: 4;
+            font-size: 14px;
+        }
+    }
+    .about-sima {
+        padding-bottom: 80px;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0;
+            width: 100vw;
+            height: 100%;
+            background-color: rgba(249, 246, 239, 0.9);
+            z-index: 2;
+        }
+        min-height: auto;
+        .club-news{
+            position: relative;
+            z-index: 5;
+        }
+        &__pic{
+            img{
+                min-height: 100%;
+            }
+        }
+    }
+}

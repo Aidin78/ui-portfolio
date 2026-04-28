@@ -1,0 +1,528 @@
+@use "sass:string";
+/* Media Queries */
+$media_queries: (
+    "xSmall": "only screen and (max-width: 575.98px)",
+    "small": "only screen and (min-width: 576px) and (max-width: 767.98px)",
+    "medium": "only screen and (min-width: 768px) and (max-width: 991.98px)",
+    "large": "only screen and (min-width: 992px) and (max-width: 1199.98px)",
+    "xLarge": "only screen and (min-width: 1200px) and (max-width: 1399.98px)",
+    "xxLarge": "only screen and (min-width: 1400px)",
+);
+
+@mixin for_breakpoint($breakpoints) {
+    $conditions: ();
+    @each $breakpoint in $breakpoints {
+        // If the key exists in the map
+        $conditions: append($conditions, #{inspect(string.unquote(map-get($media_queries, $breakpoint)))}, comma);
+    }
+
+    @media #{$conditions} {
+        @content;
+    }
+}
+
+.place-detail {
+    &__main {
+    }
+    &__content {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: flex;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            width: 100vw;
+            top: 0;
+            transform: translateX(-50%);
+            background-color: #f2f2ea;
+            height: 100%;
+        }
+        * {
+            position: relative;
+            z-index: 2;
+        }
+    }
+    &__right {
+        flex-basis: calc(50% - 90px);
+        margin-left: 90px;
+        & > .title {
+            text-shadow: 0 0 1px #b2040e;
+        }
+    }
+    &__left {
+        flex-basis: calc(50% - 15px);
+        margin-right: 15px;
+    }
+    &__hospital-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #52284e;
+        height: 42px;
+        border-radius: 4px;
+        margin-top: 60px;
+        &:hover {
+            color: #fff;
+            padding-left: 20px;
+            i {
+                opacity: 1;
+            }
+        }
+        i {
+            font-size: 9px;
+            opacity: 0;
+            transition: all 0.2s linear;
+            &:first-child {
+                margin-right: 8px;
+                font-weight: bold;
+            }
+            &:last-child {
+                margin-right: -4px;
+                font-weight: bold;
+            }
+        }
+    }
+    &__relate-hospitals {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba($color: #000000, $alpha: 0.9);
+        z-index: 90;
+        .container {
+            position: relative;
+        }
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+        transition: all 0.2s linear;
+        &.active {
+            opacity: 1;
+            pointer-events: all;
+            visibility: visible;
+        }
+    }
+}
+.place-main {
+    position: relative;
+    height: 600px;
+
+    &__pic {
+        overflow: hidden;
+        position: absolute;
+        width: 100vw;
+        left: 50%;
+        top: 0;
+        height: 100%;
+        transform: translateX(-50%);
+    }
+    &__content-container {
+        position: absolute;
+        bottom: 60px;
+        width: 1160px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &__content {
+        width: 400px;
+        background-color: #fff;
+        border-radius: 4px;
+        padding: 30px;
+    }
+    &__title {
+        margin-bottom: 8px;
+    }
+    &__lead {
+        line-height: 26px;
+    }
+}
+.place-links {
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100vw;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0;
+        height: 100%;
+        background-color: #b2040e;
+    }
+    * {
+        position: relative;
+        z-index: 2;
+    }
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__label {
+        margin-left: 20px;
+        padding-left: 20px;
+        font-size: 16px;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 2px;
+            border-radius: 2px;
+            background-color: #fff;
+            height: 18px;
+        }
+    }
+    ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+    li {
+        &:not(:last-child) {
+            margin-left: 25px;
+        }
+    }
+    a {
+        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-right: 5px;
+        padding-left: 5px;
+        font-size: 16px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            transform: scale(0);
+            transition: all 0.2s linear;
+            height: 2px;
+            background-color: white;
+        }
+        &:hover {
+            color: white;
+            &::before {
+                transform: scale(1);
+            }
+        }
+    }
+}
+.place-services {
+    //max-width: 420px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    &__item {
+        display: flex;
+        align-items: center;
+        .icon {
+            border-radius: 4px;
+            width: 45px;
+            height: 45px;
+            background-color: #52284e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10px;
+            img {
+                max-width: 32px;
+                max-height: 32px;
+            }
+        }
+        .title {
+            color: #1e1e1e;
+        }
+
+        flex-basis: calc(50% - 10px);
+        &:nth-child(odd) {
+            margin-left: 10px;
+        }
+        &:nth-child(even) {
+            margin-right: 10px;
+        }
+        &:nth-child(n + 3) {
+            margin-top: 15px;
+        }
+    }
+}
+.place-map {
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 0 3px rgba($color: #000000, $alpha: 0.15);
+    background-color: #fff;
+    #mapagency {
+        width: 100%;
+        height: 360px;
+    }
+    &__content {
+        background-color: #fff;
+        color: #b2040e;
+        padding: 30px;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+        i {
+            font-size: 15px;
+            display: flex;
+            margin-left: 10px;
+            width: 12px;
+            color: #b2040e;
+            &.niafam-Vector-11 {
+                font-size: 20px;
+            }
+            &::before {
+                color: #b2040e;
+            }
+        }
+        img {
+            width: 15px;
+            margin-left: 8px;
+        }
+        .data {
+            color: black;
+        }
+        .link {
+            color: #2471a9;
+            position: relative;
+            padding-bottom: 3px;
+            padding-top: 3px;
+            margin-top: -3px;
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 1.5px;
+                border-radius: 3px;
+                background-color: #2471a9;
+                transform: scale(0);
+                transition: all 0.2s linear;
+            }
+            &:hover {
+                &::before {
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+}
+.relate-hospitals {
+    padding-top: 110px;
+    &__close-btn {
+        position: absolute;
+        top: 50px;
+        right: -50px;
+        color: white;
+        font-size: 35px;
+    }
+    &__title {
+        margin-bottom: 25px;
+    }
+    ul {
+        list-style-position: inside;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    li {
+        font-size: 14px;
+        flex-basis: calc(33.333% - 10px);
+        margin-right: 7.5px;
+        margin-left: 7.5px;
+        &:nth-child(3n) {
+            margin-left: 0;
+        }
+        &:nth-child(3n + 1) {
+            margin-right: 0;
+        }
+        &:nth-child(n + 4) {
+            margin-top: 15px;
+        }
+    }
+}
+ 
+@include for_breakpoint("large") {
+    .place-detail {
+        &__right {
+            margin-left: 15px;
+            flex-basis: calc(50% - 15px);
+        }
+    }
+    .place-main {
+        height: 500px;
+        &__content-container {
+            width: 938px;
+        }
+    }
+    .place-map {
+        #mapagency {
+            height: 300px;
+        }
+    }
+}
+
+@include for_breakpoint("medium") {
+    .relate-hospitals {
+        &__close-btn {
+            right: 15px;
+        }
+    }
+    .place-detail {
+        &__right {
+            margin-left: 15px;
+            flex-basis: calc(50% - 15px);
+        }
+    }
+    .place-main {
+        height: 400px;
+        &__content-container {
+            width: 699px;
+        }
+        &__title {
+            font-size: 17px;
+        }
+        &__lead {
+            font-size: 13px;
+        }
+    }
+    .place-map {
+        #mapagency {
+            height: 300px;
+        }
+    }
+}
+
+@include for_breakpoint("small") {
+    .relate-hospitals {
+        padding-top: 60px;
+        &__close-btn {
+            right: 15px;
+            top: 10px;
+        }
+        ul {
+            overflow: auto;
+            max-height: calc(100vh - 160px);
+        }
+        li {
+            flex-basis: calc(50% - 7.5px);
+            &:nth-child(odd) {
+                margin-right: 0;
+                margin-left: 7.5px;
+            }
+            &:nth-child(even) {
+                margin-right: 7.5px;
+                margin-left: 0;
+            }
+            &:nth-child(n + 3) {
+                margin-top: 10px;
+            }
+        }
+    }
+    .place-detail {
+        &__content {
+            flex-wrap: wrap;
+        }
+        &__right {
+            margin-left: 0;
+            width: 100%;
+            flex-basis: 100%;
+            margin-bottom: 30px;
+        }
+        &__left {
+            margin-right: 0;
+            width: 100%;
+            flex-basis: 100%;
+        }
+    }
+    .place-main {
+        height: 400px;
+        &__content-container {
+            width: 520px;
+        }
+        &__title {
+            font-size: 17px;
+        }
+        &__lead {
+            font-size: 13px;
+        }
+    }
+    .place-map {
+        #mapagency {
+            height: 300px;
+        }
+        &__item {
+            .data {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@include for_breakpoint("xSmall") {
+    .place-detail {
+        &__content {
+            flex-wrap: wrap;
+        }
+        &__right {
+            margin-left: 0;
+            width: 100%;
+            flex-basis: 100%;
+            margin-bottom: 30px;
+        }
+        &__left {
+            margin-right: 0;
+            width: 100%;
+            flex-basis: 100%;
+        }
+    }
+    .place-main {
+        height: 400px;
+        &__content-container {
+            width: 100vw;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+    }
+    .place-map {
+        #mapagency {
+            height: 300px;
+        }
+        &__item {
+            .data {
+                font-size: 14px;
+            }
+        }
+    }
+    .place-services {
+        &__item {
+            .icon {
+                width: 35px;
+                height: 35px;
+                img {
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+        }
+    }
+    .place-links {
+        &__label {
+            margin-left: 10px;
+            padding-left: 10px;
+        }
+        li:not(:last-child) {
+            margin-left: 15px;
+        }
+    }
+}

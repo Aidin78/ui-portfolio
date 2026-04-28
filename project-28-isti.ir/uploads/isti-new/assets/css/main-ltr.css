@@ -1,0 +1,61 @@
+body[dir=ltr] {
+  text-align: left;
+}
+body[dir=ltr] .search {
+  right: unset;
+  left: 100%;
+  padding-inline-start: 5px;
+  padding-inline-end: 10px;
+}
+body[dir=ltr] .lang__link {
+  right: unset;
+  left: 100%;
+  border-radius: 0 15px 15px 0;
+}
+body[dir=ltr] .new__search {
+  right: unset;
+  left: 20px;
+}
+body[dir=ltr] .new__search .new__search__input {
+  border-radius: 20px 0 0 20px;
+}
+body[dir=ltr] .new__search button {
+  border-radius: 0 20px 20px 0;
+}
+body[dir=ltr] .search::before {
+  left: unset;
+  right: 0;
+}
+body[dir=ltr] .sys-tabs__link::before {
+  right: unset;
+  left: 103%;
+  transform: scale(-1) translateY(50%);
+}
+body[dir=ltr] .news__arch i {
+  margin-right: 0;
+  margin-left: 5px;
+}
+body[dir=ltr] .footer-logo-box::before {
+  border-radius: 80px 0 0 80px;
+  right: unset;
+  left: -50px;
+}
+body[dir=ltr] .footer__link::before {
+  margin-left: 0;
+  margin-right: 5px;
+  transform: scale(-1);
+}
+body[dir=ltr] .contact__item i {
+  margin-right: 5px;
+  margin-left: 0;
+}
+body[dir=ltr] .sub__miz2 {
+  left: unset;
+  right: 30px;
+}
+body[dir=ltr] .sub__miz2 ul li a::before {
+  margin-left: 0px;
+  margin-right: 5px;
+  left: unset;
+  right: 0;
+}/*# sourceMappingURL=main-ltr.css.map */

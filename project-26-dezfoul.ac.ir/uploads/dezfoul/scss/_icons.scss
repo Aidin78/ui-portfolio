@@ -1,0 +1,362 @@
+i.niafam , span.niafam{
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "niafam" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.niafam-success:before {
+  content: "\e902";
+  color: #0064b9;
+}
+.niafam-research:before {
+  content: "\e903";
+  color: #0064b9;
+}
+.niafam-video-call:before {
+  content: "\e906";
+  color: #0064b9;
+}
+.niafam-calendar-s:before {
+  content: "\e907";
+  color: #0064b9;
+}
+.niafam-student-1:before {
+  content: "\e908";
+  color: #0064b9;
+}
+.niafam-accessibility:before {
+  content: "\e909";
+}
+.niafam-add:before {
+  content: "\e910";
+}
+.niafam-apple:before {
+  content: "\e911";
+}
+.niafam-bed:before {
+  content: "\e912";
+}
+.niafam-calendar:before {
+  content: "\e913";
+}
+.niafam-camera:before {
+  content: "\e914";
+}
+.niafam-class:before {
+  content: "\e916";
+}
+.niafam-complaint:before {
+  content: "\e917";
+}
+.niafam-contact-form:before {
+  content: "\e918";
+}
+.niafam-down-arrow .path1:before {
+  content: "\e919";
+  color: rgb(255, 193, 7);
+}
+.niafam-down-arrow .path2:before {
+  content: "\e91b";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.niafam-email:before {
+  content: "\e91c";
+}
+.niafam-envelope:before {
+  content: "\e91f";
+}
+.niafam-forms:before {
+  content: "\e921";
+}
+.niafam-graduated:before {
+  content: "\e922";
+}
+.niafam-group:before {
+  content: "\e923";
+}
+.niafam-hospital:before {
+  content: "\e924";
+}
+.niafam-hospital-2:before {
+  content: "\e925";
+}
+.niafam-instagram:before {
+  content: "\e926";
+}
+.niafam-left-arrow:before {
+  content: "\e927";
+}
+.niafam-left-arrow-2:before {
+  content: "\e928";
+}
+.niafam-microscope:before {
+  content: "\e929";
+}
+.niafam-microscope-1:before {
+  content: "\e92a";
+}
+.niafam-minus:before {
+  content: "\e92b";
+}
+.niafam-notification .path1:before {
+  content: "\e92c";
+  color: rgb(232, 237, 252);
+}
+.niafam-notification .path2:before {
+  content: "\e92d";
+  margin-left: -1em;
+  color: rgb(202, 217, 252);
+}
+.niafam-notification .path3:before {
+  content: "\e92e";
+  margin-left: -1em;
+  color: rgb(202, 217, 252);
+}
+.niafam-notification .path4:before {
+  content: "\e92f";
+  margin-left: -1em;
+  color: rgb(232, 237, 252);
+}
+.niafam-notification .path5:before {
+  content: "\e930";
+  margin-left: -1em;
+  color: rgb(232, 237, 252);
+}
+.niafam-notification .path6:before {
+  content: "\e931";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.niafam-notification .path7:before {
+  content: "\e932";
+  margin-left: -1em;
+  color: rgb(164, 194, 247);
+}
+.niafam-notification .path8:before {
+  content: "\e933";
+  margin-left: -1em;
+  color: rgb(127, 172, 250);
+}
+.niafam-notification .path9:before {
+  content: "\e934";
+  margin-left: -1em;
+  color: rgb(202, 217, 252);
+}
+.niafam-notification .path10:before {
+  content: "\e935";
+  margin-left: -1em;
+  color: rgb(164, 194, 247);
+}
+.niafam-notification .path11:before {
+  content: "\e936";
+  margin-left: -1em;
+  color: rgb(232, 237, 252);
+}
+.niafam-notification .path12:before {
+  content: "\e937";
+  margin-left: -1em;
+  color: rgb(202, 217, 252);
+}
+.niafam-notification .path13:before {
+  content: "\e938";
+  margin-left: -1em;
+  color: rgb(202, 217, 252);
+}
+.niafam-notification .path14:before {
+  content: "\e939";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.niafam-notification .path15:before {
+  content: "\e93a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.niafam-notification .path16:before {
+  content: "\e93b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.niafam-notification .path17:before {
+  content: "\e93c";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.niafam-notification .path18:before {
+  content: "\e93d";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.niafam-notification .path19:before {
+  content: "\e93e";
+  margin-left: -1em;
+  color: rgb(66, 141, 255);
+}
+.niafam-notification .path20:before {
+  content: "\e93f";
+  margin-left: -1em;
+  color: rgb(66, 141, 255);
+}
+.niafam-notification .path21:before {
+  content: "\e940";
+  margin-left: -1em;
+  color: rgb(66, 141, 255);
+}
+.niafam-notification .path22:before {
+  content: "\e941";
+  margin-left: -1em;
+  color: rgb(66, 141, 255);
+}
+.niafam-notification .path23:before {
+  content: "\e942";
+  margin-left: -1em;
+  color: rgb(66, 141, 255);
+}
+.niafam-notification .path24:before {
+  content: "\e943";
+  margin-left: -1em;
+  color: rgb(66, 141, 255);
+}
+.niafam-notification .path25:before {
+  content: "\e945";
+  margin-left: -1em;
+  color: rgb(66, 141, 255);
+}
+.niafam-notification .path26:before {
+  content: "\e946";
+  margin-left: -1em;
+  color: rgb(66, 141, 255);
+}
+.niafam-online-learning:before {
+  content: "\e948";
+}
+.niafam-photo-camera:before {
+  content: "\e949";
+}
+.niafam-pin:before {
+  content: "\e94a";
+}
+.niafam-play:before {
+  content: "\e94b";
+}
+.niafam-right-arrow:before {
+  content: "\e94c";
+}
+.niafam-right-arrow-2:before {
+  content: "\e94d";
+}
+.niafam-search:before {
+  content: "\e94e";
+}
+.niafam-sitemap:before {
+  content: "\e94f";
+}
+.niafam-telephone:before {
+  content: "\e950";
+}
+.niafam-up-arrow-2:before {
+  content: "\e951";
+}
+.niafam-video-camera:before {
+  content: "\e952";
+}
+.niafam-web:before {
+  content: "\e953";
+}
+.niafam-website:before {
+  content: "\e954";
+}
+.niafam-play-stroke:before {
+  content: "\e900";
+}
+.niafam-camera1:before {
+  content: "\e905";
+}
+.niafam-bale:before {
+  content: "\e90a";
+}
+.niafam-bisphon:before {
+  content: "\e955";
+}
+.niafam-instagram2:before {
+  content: "\e956";
+}
+.niafam-eita:before {
+  content: "\e90d";
+}
+.niafam-soroush:before {
+  content: "\e90e";
+}
+.niafam-telegram1:before {
+  content: "\e90f";
+}
+.niafam-play1:before {
+  content: "\e915";
+}
+.niafam-telegram:before {
+  content: "\e91d";
+}
+.niafam-video-camera1:before {
+  content: "\e957";
+}
+.niafam-whatsapp:before {
+  content: "\e920";
+}
+.niafam-gap:before {
+  content: "\e944";
+}
+.niafam-aparat:before {
+  content: "\e947";
+}
+.niafam-rubika:before {
+  content: "\e964";
+}
+.niafam-email1:before {
+  content: "\e901";
+}
+.niafam-communications:before {
+  content: "\e904";
+}
+.niafam-information:before {
+  content: "\e90b";
+}
+.niafam-instagram1:before {
+  content: "\e90c";
+}
+.niafam-paper:before {
+  content: "\e958";
+}
+.niafam-photo-camera1:before {
+  content: "\e959";
+}
+.niafam-play2:before {
+  content: "\e95a";
+}
+.niafam-question:before {
+  content: "\e95b";
+}
+.niafam-rss-symbol:before {
+  content: "\e95c";
+}
+.niafam-settings:before {
+  content: "\e95d";
+}
+.niafam-sitemap1:before {
+  content: "\e91a";
+}
+.niafam-web1:before {
+  content: "\e95e";
+}
+.niafam-rrow_left:before {
+  content: "\e91e";
+}

@@ -1,0 +1,360 @@
+@use "sass:string";
+/* Media Queries */
+$media_queries: (
+    "xSmall": "only screen and (max-width: 575.98px)",
+    "small": "only screen and (min-width: 576px) and (max-width: 767.98px)",
+    "medium": "only screen and (min-width: 768px) and (max-width: 991.98px)",
+    "large": "only screen and (min-width: 992px) and (max-width: 1199.98px)",
+    "xLarge": "only screen and (min-width: 1200px) and (max-width: 1399.98px)",
+    "xxLarge": "only screen and (min-width: 1400px)",
+);
+
+@mixin for_breakpoint($breakpoints) {
+    $conditions: ();
+    @each $breakpoint in $breakpoints {
+        // If the key exists in the map
+        $conditions: append($conditions, #{inspect(string.unquote(map-get($media_queries, $breakpoint)))}, comma);
+    }
+
+    @media #{$conditions} {
+        @content;
+    }
+}
+
+.phone-book {
+    &__attention {
+        position: relative;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 0;
+            width: 100vw;
+            height: 100%;
+            background-color: #f4f4f4;
+            transform: translateX(-50%);
+        }
+        * {
+            position: relative;
+            z-index: 2;
+        }
+        .title {
+            margin-bottom: 5px;
+        }
+    }
+    &__header {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        display: flex;
+        align-items: center;
+        form {
+            display: flex;
+            align-items: center;
+        }
+        input {
+            width: 455px;
+            background: #f4f4f4;
+            height: 40px;
+            border: 1px solid #d9d9d9;
+            margin-left: 20px;
+            font-size: 14px;
+            border-radius: 4px;
+
+            &::placeholder {
+                font-weight: bold;
+            }
+        }
+        button {
+            width: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            border: unset;
+            height: 40px;
+            margin-left: 50px;
+            border-radius: 4px;
+            background-color: #8d1516;
+            i {
+                display: flex;
+                transform: rotateY(180deg);
+                font-size: 18px;
+            }
+        }
+        select {
+            width: 100%;
+            border-radius: 4px !important;
+            overflow: hidden !important;
+            border: unset !important;
+            background-color: #605750;
+            color: white;
+            cursor: pointer;
+        }
+    }
+    &__select {
+        flex-grow: 1;
+        position: relative;
+        i {
+            border-radius: 4px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 35px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            z-index: 2;
+            pointer-events: none;
+            font-size: 5px;
+            background-color: #605750;
+        }
+    }
+    &__title {
+        margin-left: 20px;
+        flex-shrink: 0;
+    }
+    &__form {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+    }
+    &__content {
+        display: flex;
+        position: relative;
+        min-height: 600px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    &__pic {
+        overflow: hidden;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 100vw;
+        height: 100%;
+        transform: translateX(-50%);
+        img {
+            filter: blur(5px);
+            min-height: calc(100vh + 45px);
+            min-width: calc(100vw + 45px);
+        }
+    }
+    &__main-item {
+        display: flex;
+        align-items: center;
+        border-radius: 4px;
+        overflow: hidden;
+        margin-bottom: 20px;
+        box-shadow: 0 0 3px rgba($color: #000, $alpha: 0.15);
+        max-width: max-content;
+        margin-right: 40px;
+        margin-left: 40px;
+        .label {
+            min-width: 200px;
+            padding: 0 10px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+        }
+        .phone {
+            min-width: 150px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 10px;
+            height: 45px;
+            background-color: #fffbd3;
+            direction: ltr;
+        }
+    }
+    &__detail {
+        padding-top: 40px;
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        border-radius: 4px;
+        overflow: hidden;
+        background-color: rgba($color: #fff, $alpha: 0.8);
+        box-shadow: 0 0 3px rgba($color: #000, $alpha: 0.15);
+        min-height: 100%;
+        width: 100%;
+        .scrollbar {
+            height: 360px;
+            padding: 0 40px;
+            .os-scrollbar-handle{
+                background-color: rgba(154, 154, 154, 0.349) !important;
+                &:hover,&:focus{
+                    background-color: rgba(154, 154, 154, 0.644) !important;
+                }
+            }
+        }
+        
+        ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        li {
+            flex-basis: calc(33.33% - 16px);
+            margin-right: 12px;
+            margin-left: 12px;
+            &:nth-child(3n) {
+                margin-left: 0;
+            }
+            &:nth-child(3n + 1) {
+                margin-right: 0;
+            }
+            &:nth-child(n + 4) {
+                border-top: 1px solid #ccc;
+            }
+        }
+        a {
+            display: flex;
+            align-items: center;
+            display: flex;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            transition: all 0.2s linear;
+            &:hover {
+                background-color: #fffbd3;
+                padding-right: 10px;
+                padding-left: 10px;
+                border-radius: 4px;
+                color: #000;
+            }
+        }
+        i {
+            font-size: 10px;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+    }
+}
+
+@include for_breakpoint("large"){
+    .phone-book{
+        &__header {
+            input{
+                width: 300px;
+            }
+        }
+    }
+}
+
+@include for_breakpoint("medium"){
+    .phone-book{
+        &__title{
+            flex-basis: 100%;
+            margin-bottom: 15px;
+        }
+        &__header {
+            flex-wrap: wrap;
+            input{
+                width: 380px;
+            }
+        }
+        &__detail{
+            li{
+                flex-basis: calc(50% - 12px);
+                &:nth-child(odd){
+                    margin-right: 0;
+                    margin-left: 12px;
+                }
+                &:nth-child(even){
+                    margin-right: 12px;
+                    margin-left: 0;
+                }
+                &:nth-child(n + 3) {
+                    border-top: 1px solid #ccc;
+                }
+            }
+        }
+    }
+}
+
+@include for_breakpoint("small"){
+    .phone-book{
+        &__title{
+            flex-basis: 100%;
+            margin-bottom: 15px;
+        }
+        &__header {
+            flex-wrap: wrap;
+            input{
+                width: 250px;
+            }
+        }
+        &__detail{
+            li{
+                flex-basis: calc(100%);
+                &:nth-child(odd){
+                    margin-right: 0;
+                    margin-left: 0px;
+                }
+                &:nth-child(even){
+                    margin-right: 0px;
+                    margin-left: 0;
+                }
+                &:nth-child(n + 2) {
+                    border-top: 1px solid #ccc;
+                }
+            }
+        }
+    }
+}
+
+@include for_breakpoint("xSmall"){
+    .phone-book{
+        &__main-item{
+            flex-wrap: wrap;
+            div{
+                flex-basis: 100%;
+                text-align: center;
+                justify-content: center;
+            }
+        }
+        &__title{
+            flex-basis: 100%;
+            margin-bottom: 15px;
+            margin-left: 0;
+        }
+        &__form{
+            flex-wrap: wrap;
+            max-width: 100%;
+        }
+        &__select{
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        &__header {
+            flex-wrap: wrap;
+            input{
+                width: 250px;
+            }
+        }
+        &__detail{
+            li{
+                flex-basis: calc(100%);
+                &:nth-child(odd){
+                    margin-right: 0;
+                    margin-left: 0px;
+                }
+                &:nth-child(even){
+                    margin-right: 0px;
+                    margin-left: 0;
+                }
+                &:nth-child(n + 2) {
+                    border-top: 1px solid #ccc;
+                }
+            }
+        }
+    }
+}

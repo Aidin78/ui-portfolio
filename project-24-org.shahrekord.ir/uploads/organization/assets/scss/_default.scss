@@ -1,0 +1,82 @@
+
+#searchmodal {
+    background: rgba($color: #000000, $alpha: 0.06);
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    display: none;
+  }
+  #searchmodal .modal-content {
+    background-color: unset;
+    border: none;
+  }
+  #searchmodal .close {
+    opacity: 1;
+    z-index: unset;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    font-size: 4em;
+    color: #fff;
+    background: 0 0;
+    border: none;
+  }
+  #searchmodal .form-container {
+    width: 50%;
+    margin: 10% auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  #searchmodal .form-container form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  #searchmodal .form-container form input {
+    padding: 10px 10px;
+    background: unset;
+    width: 100%;
+    max-width: 450px;
+    color: #fff;
+    border: none;
+    border-bottom: 3px solid #fff;
+    font-size: 1.5em;
+  }
+  #searchmodal .form-container form input::-webkit-input-placeholder {
+    color: #fff;
+  }
+  #searchmodal .form-container form input:-ms-input-placeholder {
+    color: #fff;
+  }
+  #searchmodal .form-container form input::-ms-input-placeholder {
+    color: #fff;
+  }
+  #searchmodal .form-container form input::placeholder {
+    color: #fff;
+  }
+  #searchmodal .form-container form input:focus {
+    outline: 2px double #e9c676;
+  }
+  #searchmodal .form-container form span {
+    margin-top: 0.7em;
+    font-size: 1.1em;
+    color: #fff;
+  }

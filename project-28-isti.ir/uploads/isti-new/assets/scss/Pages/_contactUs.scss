@@ -1,0 +1,234 @@
+main {
+  .contact-us {
+    position: relative;
+    z-index: 10;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0px 0px 40px rgba($color: #000000, $alpha: 0.1);
+    color: #58595b;
+    margin-bottom: 60px;
+    &__header {
+      transform: translateY(-50%);
+      padding: 0 30px;
+    }
+    &__label {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 30px;
+      height: 44px;
+      max-width: max-content;
+      padding: 4px 16px;
+      box-shadow: 0px 0px 3px rgba($color: #000000, $alpha: 0.1);
+    }
+    &__body {
+      padding: 0 30px;
+      display: flex;
+    }
+    &__info {
+      width: 360px;
+      display: flex;
+      flex-shrink: 0;
+      flex-direction: column;
+      gap: 40px;
+      padding-inline-end: 30px;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: -44px;
+        width: 1px;
+        height: calc(100% + 44px);
+        background-color: #b4b4b4;
+      }
+    }
+    &__info-row {
+      display: flex;
+      align-items: flex-start;
+      .label {
+      }
+      .data {
+      }
+      .icon {
+        display: inline-block;
+        margin-inline-end: 15px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+    &__form {
+      padding: 0 15px;
+      flex-grow: 1;
+      .es-form-label {
+        font-size: 18px;
+      }
+      input,
+      textarea {
+        background-color: #f8f8f9;
+        border-radius: 15px;
+        border: 1px solid #dddddd;
+      }
+      input {
+      }
+      textarea {
+        resize: none;
+      }
+      .es-row.es-form-group {
+      }
+      img {
+        max-height: 38px;
+      }
+      .es-btn-primary {
+        background-color: #00b8ba;
+        border-radius: 25px;
+        border: none;
+        font-size: 18px;
+        width: 275px;
+        margin-inline-start: -25px;
+        transition: all 0.2s linear;
+        i {
+          display: none;
+        }
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+      img {
+        min-height: 100%;
+      }
+    }
+  }
+  @media (max-width: 1390px) and (min-width: 1200px) {
+    .contact-us {
+      &__form {
+        .es-btn-primary {
+          max-width: 100% !important;
+        }
+      }
+    }
+  }
+  @media (max-width: 1199.98px) and (min-width: 992px) {
+    .contact-us {
+      &__form {
+        .es-btn-primary {
+          max-width: 100% !important;
+        }
+        .es-form-label {
+          font-size: 16px;
+        }
+      }
+      &__info {
+        width: 300px;
+        padding-inline-end: 15px;
+      }
+      &__body {
+        padding: 0 15px;
+      }
+      &__info-row {
+        font-size: 16px;
+      }
+    }
+  }
+  @media (max-width: 991.98px) {
+    .contact-us {
+      &__body {
+        flex-direction: column;
+      }
+      &__info {
+        width: 100%;
+        padding: 16px 0px;
+        margin-bottom: 16px;
+        flex-direction: row;
+        border-bottom: 1px solid #eaeaea;
+        &::before {
+          content: unset;
+        }
+      }
+      &__info-row {
+        font-size: 14px;
+        .icon {
+          font-size: 16px;
+        }
+      }
+      &__form {
+        padding: 0;
+        .es-container {
+          padding: 0;
+        }
+        .es-form-label {
+          font-size: 15px;
+        }
+        .es-btn-primary {
+          max-width: 100%;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  @media (max-width: 767.98px) and (min-width: 576px) {
+    .contact-us {
+      &__body {
+      }
+      &__info {
+        flex-wrap: wrap;
+        gap: 20px;
+        .icon {
+        }
+      }
+      &__info-row {
+        &:first-child {
+          flex-basis: 100%;
+        }
+      }
+      &__form {
+      }
+    }
+  }
+  @media (max-width: 767.98px) {
+    .contact-us {
+      &__body {
+      }
+      &__info {
+        .icon {
+        }
+      }
+      &__info-row {
+      }
+      &__form {
+        .es-form-label {
+          margin-bottom: 8px;
+        }
+        .es-btn-primary {
+          margin-inline-start: auto;
+          margin-inline-end: auto;
+        }
+        .form-control-row {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+  @media (max-width: 575.98px) {
+    .contact-us {
+      &__body {
+        padding: 0 20px;
+      }
+      &__info {
+        padding-top: 0;
+        flex-wrap: wrap;
+        gap: 20px;
+        .icon {
+        }
+      }
+      &__info-row {
+        &:first-child {
+          flex-basis: 100%;
+        }
+      }
+      &__form {
+      }
+    }
+  }
+}

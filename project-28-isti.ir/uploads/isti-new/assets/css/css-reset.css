@@ -1,0 +1,8 @@
+*,::after,::before{box-sizing:border-box}
+blockquote,body,dd,dl,figure,h1,h2,h3,h4,p{margin:0}
+html:focus-within{scroll-behavior:smooth}
+body{min-height:100vh;text-rendering:optimizeSpeed;line-height:1}
+a:not([class]){text-decoration-skip-ink:auto}
+button,input,select,textarea{font:inherit}
+a{text-decoration:none}
+button{cursor:pointer}

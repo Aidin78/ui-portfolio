@@ -1,0 +1,14 @@
+.post__keywords .es-news-tags ul {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.es-news-tags {
+  flex: 1;
+}
+.post__keywords .es-news-tags ul li {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.post__keywords .meta-list {
+  align-items: first baseline;
+}

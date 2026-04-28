@@ -1,0 +1,140 @@
+body[dir="ltr"] {
+  direction: ltr;
+  text-align: left;
+
+  .isti-menu {
+    &__logo {
+      right: unset;
+      left: 0;
+    }
+  }
+
+  .footer-logo-box::before {
+    right: unset;
+    left: -50px;
+    border-radius: 80px 0px 0px 80px;
+  }
+
+  .contact__item i {
+    margin-left: 0;
+    margin-right: 5px;
+  }
+
+  .footer__link::before {
+    transform: scale(-1);
+    margin-right: 5px;
+    margin-left: 0px;
+  }
+
+  .inpages.header--clip-path .header::after,
+  .inpages.header--clip-path .header-bg::after {
+    clip-path: polygon(0 150px, 100% 90px, 100% 0px, 0px 0px);
+  }
+
+  .slider-container .arrow-right {
+    right: unset;
+    left: 200px;
+    transform: translate3d(-100%, -50%, 0) scale(1);
+  }
+
+  .slider-container .arrow-left {
+    right: 200px;
+    left: unset;
+    transform: translate3d(100%, -50%, 0);
+  }
+
+  .niafam-left-arrow {
+    transform: scale(-1);
+  }
+
+  main .contact-us__info::before {
+    left: unset;
+    right: 0;
+  }
+
+  .contents-news__header::after,
+  .contents-news__header::before {
+    left: calc(50% - 185px);
+  }
+
+  .contents-news__static-sidebar {
+    right: unset;
+    left: 0;
+  }
+
+  .resaneh-tabs__item.active .resaneh-tabs__icon-container {
+    right: unset;
+    left: 1px;
+    transform: translateY(-50%) translateX(-100%);
+  }
+
+  .resaneh-tabs__item.active .resaneh-tabs__icon-container::after {
+    transform: translateY(-50%) scale(-1);
+    left: unset;
+    right: -12px;
+  }
+
+  .resaneh-tabs {
+    box-shadow: 8px 0 8px rgba(0, 0, 0, 0.09);
+    z-index: 10;
+  }
+
+  .resaneh__content .scrollbar .os-scrollbar-vertical {
+    left: unset;
+    right: 12px;
+  }
+
+  .resaneh__content::before {
+    left: unset;
+    right: 0;
+  }
+
+  .main-intro__pic {
+    left: unset;
+    right: 0;
+  }
+
+  .publisher-group__content a::before {
+    right: unset;
+    left: 0;
+  }
+
+  .rules-archive__bg::before {
+    right: 0;
+    left: unset;
+  }
+
+  .e-service__content .scrollbar .os-scrollbar-vertical {
+    left: unset;
+    right: 10px;
+  }
+
+  .service-detail {
+    direction: ltr;
+  }
+
+  .service-detail__download i {
+    &::before {
+      transform: scale(-1);
+    }
+  }
+
+  .service-detail__boxes .service-box__title::before {
+    left: 0;
+    right: unset;
+  }
+
+  .service-detail__boxes .service-box__link i {
+    transform: scale(-1);
+    padding-bottom: 8px;
+  }
+
+  .history__boxes li::before {
+    right: unset;
+    left: 0;
+  }
+  .default-table tbody td:not(:last-child){
+    border-left: unset;
+    border-right: 1px solid #e4e4e4;
+  }
+}

@@ -1,0 +1,61 @@
+.es-post-item .es-post-title a {
+    color: #065fd4;
+    font-weight: normal;
+    font-size: 18px;
+}
+.es-post-kicker {
+    color: #cd2122;
+    font-weight: normal;
+    margin-bottom: 6px;
+    font-size: 12px !important;
+}
+.es-posts .es-post-thumb {
+    min-width: 180px;
+    width: 180px;
+}
+.es-post-summary p {
+    font-size: 14px;
+    color: #484848;
+}
+.es-post-meta li {
+    color: #484848;
+    font-size: 14px;
+}
+.single-post-wrap p {
+    line-height: 32px;
+}
+.news-info-wrap::before {
+    content: unset;
+}
+.news-info-wrap {
+    border-bottom: none;
+}
+.news-info-wrap ul li i {
+    color: #d54956;
+}
+.news-info span {
+    font-size: 13px;
+    color: #5a5a5a;
+}
+.news-head h6 {
+    font-size: 14px;
+}
+.news-tools ul li i {
+    color: #00366c;
+}
+.news-tools ul li {
+    margin-left: 5px;
+}
+.extra-meta .content-groups{
+    font-size: 15px;
+
+}
+.extra-meta .content-groups span {
+    color: #dc3545;
+    font-weight: 600;
+    font-size: 15px;
+}
+.es-form-simple input[type="text"],
+.es-position-relative .es-form-control{
+    font-size: 14px;
+}

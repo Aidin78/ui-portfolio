@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34.153" height="36.516" viewBox="0 0 34.153 36.516">
+  <g id="rainy-1" transform="translate(1.2 1.2)">
+    <g id="Group_91" data-name="Group 91">
+      <g id="Group_89" data-name="Group 89">
+        <g id="Group_88" data-name="Group 88">
+          <g id="Group_80" data-name="Group 80" transform="translate(11.65 20.387)">
+            <line id="Line_9" data-name="Line 9" y2="2.912" fill="none" stroke="orange" stroke-linecap="round" stroke-width="2.4"/>
+          </g>
+          <g id="Group_81" data-name="Group 81" transform="translate(5.471 17.828) rotate(45)">
+            <line id="Line_10" data-name="Line 10" y2="2.912" fill="none" stroke="orange" stroke-linecap="round" stroke-width="2.4"/>
+          </g>
+          <g id="Group_82" data-name="Group 82" transform="translate(2.912 11.65) rotate(90)">
+            <line id="Line_11" data-name="Line 11" y2="2.912" fill="none" stroke="orange" stroke-linecap="round" stroke-width="2.4"/>
+          </g>
+          <g id="Group_83" data-name="Group 83" transform="translate(5.471 5.471) rotate(135)">
+            <line id="Line_12" data-name="Line 12" y2="2.912" fill="none" stroke="orange" stroke-linecap="round" stroke-width="2.4"/>
+          </g>
+          <g id="Group_84" data-name="Group 84" transform="translate(11.65 2.912) rotate(180)">
+            <line id="Line_13" data-name="Line 13" y2="2.912" fill="none" stroke="orange" stroke-linecap="round" stroke-width="2.4"/>
+          </g>
+          <g id="Group_85" data-name="Group 85" transform="translate(17.828 5.471) rotate(-135)">
+            <line id="Line_14" data-name="Line 14" y2="2.912" fill="none" stroke="orange" stroke-linecap="round" stroke-width="2.4"/>
+          </g>
+          <g id="Group_86" data-name="Group 86" transform="translate(20.387 11.65) rotate(-90)">
+            <line id="Line_15" data-name="Line 15" y2="2.912" fill="none" stroke="orange" stroke-linecap="round" stroke-width="2.4"/>
+          </g>
+          <g id="Group_87" data-name="Group 87" transform="translate(17.828 17.828) rotate(-45)">
+            <line id="Line_16" data-name="Line 16" y2="2.912" fill="none" stroke="orange" stroke-linecap="round" stroke-width="2.4"/>
+          </g>
+        </g>
+        <circle id="Ellipse_2" data-name="Ellipse 2" cx="4.854" cy="4.854" r="4.854" transform="translate(6.796 6.796)" fill="orange" stroke="orange" stroke-width="2.4"/>
+      </g>
+      <g id="Group_90" data-name="Group 90" transform="translate(10.586 9.445)">
+        <path id="Path_6" data-name="Path 6" d="M35.415,27.833a5.62,5.62,0,0,0-5.639-5.639,5.966,5.966,0,0,0-1.925.344,4.578,4.578,0,0,0-9.146.344,5.858,5.858,0,0,0,.275,1.582,2.339,2.339,0,0,0-.688-.069,4.608,4.608,0,0,0-.138,9.215H29.982A5.943,5.943,0,0,0,35.415,27.833Z" transform="translate(-13.685 -18.275)" fill="#57a0ee" stroke="#fff" stroke-linejoin="round" stroke-width="1.275"/>
+      </g>
+    </g>
+    <g id="Group_92" data-name="Group 92" transform="translate(18.336 26.19) rotate(10)">
+      <line id="Line_17" data-name="Line 17" y2="6.472" transform="translate(0 1.618)" fill="none" stroke="#91c0f8" stroke-linecap="round" stroke-width="2" stroke-dasharray="4 7"/>
+      <line id="Line_18" data-name="Line 18" y2="6.472" transform="translate(4.854 0)" fill="none" stroke="#91c0f8" stroke-linecap="round" stroke-width="2" stroke-dasharray="4 7"/>
+    </g>
+  </g>
+</svg>

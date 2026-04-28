@@ -1,0 +1,371 @@
+.event_left {
+    margin-right: 0;
+    margin-left: 15px;
+}
+.event__related::before {
+    left: -12.5px;
+    border-right: unset;
+    border-left: 60px solid #0b4b88;
+    transform: scale(-1);
+}
+.sidebar__header::before {
+    margin-left: 0;
+    margin-right: 9px;
+}
+.news-item--vertical-small .news-item__content {
+    padding-right: 0;
+    padding-left: 20px;
+}
+.news-item__title {
+    text-align: left;
+}
+.elem__metas .metas__item:not(:last-child) {
+    margin-left: 0;
+    margin-right: 10px;
+}
+.elem__metas .metas__item i {
+    margin-left: 0;
+    margin-right: 5px;
+}
+.event_right {
+    margin-left: 0;
+    margin-right: 15px;
+}
+.event-main__content {
+    padding-right: 80px;
+    padding-left: 30px;
+    text-align: left;
+}
+.header__hamburger-btn {
+    margin-left: 0;
+    margin-right: 15px;
+}
+.header__meta li:not(:first-child) {
+    margin-right: 0;
+    margin-left: 5px;
+}
+.section__title i {
+    margin-left: 0;
+    margin-right: 15px;
+}
+.section__arch i {
+    padding-left: 0;
+    padding-right: 15px;
+    transform: scale(-1);
+    display: flex;
+    &::before {
+        transform: scale(-1);
+        display: flex;
+    }
+}
+.event__related .news-item--vertical-small::before {
+    right: unset;
+    left: 0;
+    transform: translateX(-100%);
+}
+
+.event-slide .flickity-prev-next-button.previous {
+    right: unset;
+    left: -43px;
+    &::before {
+        transform: scale(-1);
+        display: flex;
+    }
+}
+.event-slide .flickity-prev-next-button.next {
+    left: unset;
+    right: -43px;
+    &::before {
+        transform: unset;
+        display: flex;
+    }
+}
+.event-slide__title,
+.event-slide__date {
+    text-align: left;
+}
+.news-item__detail {
+    text-align: left;
+}
+.news-item--vertical-3to2 .news-item__content,
+.news-item--vertical-16to9 .news-item__content,
+.news-item--square .news-item__content {
+    padding-left: 0;
+    padding-right: 30px;
+}
+.news-item--square-reverse .news-item__content {
+    padding-right: 0;
+    padding-left: 30px;
+}
+.courses__slider .carousel-nav .flickity-prev-next-button.previous {
+    left: -40px;
+    right: unset;
+    &::before {
+        transform: scale(-1);
+    }
+}
+.courses__slider .carousel-nav .flickity-prev-next-button.next {
+    right: -40px;
+    left: unset;
+    &::before {
+        transform: unset;
+    }
+}
+.courses__slider .news-item--overlay .news-item__content {
+    padding-right: 40px;
+}
+.courses__slider .news-item--overlay .news-item__title::before {
+    margin-left: 0;
+    margin-right: 15px;
+}
+.sell-item__title {
+    text-align: left;
+}
+
+.elem__label-data i {
+    margin-left: 0;
+    margin-right: 11px;
+}
+.elem__rate i {
+    margin-right: unset;
+    margin-left: 5px;
+}
+.footer .text__title2 {
+    text-align: left;
+}
+.text__title2::before {
+    right: unset;
+    left: 0;
+}
+.text__title2::after {
+    left: 37px;
+    right: unset;
+}
+.news-item--vertical-small .news-item__content {
+    text-align: left;
+}
+.suggest__detail {
+    text-align: left;
+    input {
+        text-align: left;
+    }
+}
+.es-form-simple .es-has-icon-right > input[type] {
+    padding-left: 20px;
+    text-align: left;
+}
+.special-menu__container {
+    transform: translateX(-100%);
+    right: unset;
+    left: 0;
+}
+.animate-body__in {
+    transform: translateX(350px);
+}
+.special-menu__content i {
+    margin-left: 0;
+    margin-right: 15px;
+}
+.art-page__title {
+    text-align: left;
+}
+.art-page__links a:not(:last-child) {
+    margin-left: 0;
+    margin-right: 5px;
+}
+.art-page__detail .text__detail {
+    text-align: left;
+}
+.simple-table td {
+    text-align: left;
+}
+.link-group__content i {
+    margin-left: 0;
+    margin-right: 8px;
+    &::before {
+        display: flex;
+        transform: scale(-1);
+    }
+}
+.flickity-prev-next-button.previous {
+    left: unset;
+    right: 10px;
+}
+.places .flickity-prev-next-button.previous {
+    left: calc(50% - 50px);
+    top: calc(100% + 50px);
+}
+.places .flickity-prev-next-button.next {
+    right: calc(50% - 50px);
+    top: calc(100% + 50px);
+}
+.places .flickity-prev-next-button {
+    background: none;
+    color: #35bbca;
+    background-color: none;
+    font-family: "niafam" !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    font-size: 28px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.simple-table td {
+    padding-left: 15px;
+}
+.places .flickity-prev-next-button.previous::before {
+    content: "\e90c";
+}
+.places .flickity-prev-next-button.next::before {
+    content: "\e91c";
+}
+.flickity-prev-next-button .flickity-button-icon {
+    display: none;
+}
+
+.calendar .niafam-left-arrow::before {
+    display: flex;
+    transform: scale(-1);
+}
+.calendar .niafam-right-arrow::before {
+    transform: scale(-1);
+    display: flex;
+}
+.sale-perc {
+    margin-right: 0;
+    margin-left: 13px;
+}
+.ai-course .teacher-box i {
+    margin-left: 0;
+    margin-right: 4px;
+}
+.ai-course .course-students i {
+    margin-right: 5px !important;
+    margin-left: 0;
+}
+.ai-course-detail .deal_timer_single .deal-text span {
+    margin-right: 0;
+    margin-left: 5px;
+}
+.product-info-box .price del {
+    margin-right: 0;
+    margin-left: 8px;
+}
+body {
+    .meta-info-unit .icon {
+        margin-left: 0;
+        margin-right: 20px;
+    }
+    .meta-info-unit ul {
+        padding-right: 0;
+        padding-left: 15px;
+    }
+    text-align: left;
+    .std-box-view .es {
+        margin-left: 0;
+        margin-right: 4px;
+    }
+    .captcha img {
+        margin-left: 0;
+        margin-right: 15px;
+    }
+    .product-views {
+        padding-left: 0;
+        padding-right: 10px;
+        margin-left: 0;
+        margin-right: 10px;
+        border-right: 1px solid #e5e5e5;
+        border-left: unset;
+    }
+    font-family: Arial, Helvetica, sans-serif;
+    .average-rating-sidebar .avareage-rating-inner .average-rating-stars {
+        float: right;
+    }
+    .course-section .panel-group .course-panel-heading .panel-heading-left .badge-item {
+        margin-right: 0;
+        margin-left: 6px;
+    }
+    .ai-course-detail .add-to-wishlist i {
+        margin-left: 0;
+        margin-right: 5px;
+    }
+    .course-teacher-details .top-part .name {
+        padding-right: 0 !important;
+        padding-left: 20px !important;
+        text-align: left;
+    }
+    .product-info-box .total_sales i {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+    .product-info-box .total_sales span {
+        margin-right: unset !important;
+        margin-left: auto;
+    }
+    .animated-counter .counter-text .counter-number,
+    .product-meta-info-list .meta-info-unit .icon,
+    .product-reviews-stats .detailed-ratings .detailed-ratings-inner .course-rating .bar,
+    .product-reviews-stats .detailed-ratings .detailed-ratings-inner .course-rating .number,
+    .product-single-main .product-single-top-part .before-gallery-unit .icon,
+    unit .icon {
+        margin-left: 0;
+        margin-right: 15px;
+    }
+    .product-meta-info-list .meta-info-unit {
+        text-align: left;
+    }
+    .course-content h1,
+    .course-content h2,
+    .course-content h3,
+    .course-content h4,
+    .course-content h5,
+    .course-content h6 {
+        text-align: left;
+    }
+    .course-content {
+        text-align: left;
+    }
+    .course-details h4 p {
+        text-align: left;
+    }
+    h5.course-section-title .es {
+        left: unset;
+        right: 40px;
+    }
+    .product-reviews .product-review-title {
+        text-align: left;
+    }
+    .products .course-item .course-item-inner .course-thumbnail-holder img {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    .es-form-simple .es-has-icon-right > input[type]::placeholder {
+        text-align: left;
+    }
+    .archive-page.archive-page--sidebar .arc-list__item:nth-child(2n + 1) {
+        margin-right: 15px !important;
+        margin-left: 0 !important;
+    }
+    .archive-page.archive-page--sidebar .arc-list__item:nth-child(2n){
+        margin-left: 15px !important;
+        margin-right: 0 !important;
+    }
+    .archive-page.archive-page--sidebar .archive-page__content{
+        margin-left: 0;
+        margin-right: 15px;
+    }
+    .archive-page.archive-page--sidebar .archive-page__sidebar{
+        margin-right: 0;
+        margin-left: 15px;
+    }
+    .administrator-description{
+        margin-right: 0;
+        margin-left: 15px;
+    }
+}

@@ -1,0 +1,91 @@
+.calendar {
+    .group {
+        &:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        vertical-align: baseline;
+    }
+    a {
+        text-decoration: none;
+    }
+    .calendar-wrapper {
+        width: 360px;
+        margin: 3em auto;
+        padding: 2em;
+        border: 1px solid #dcdcff;
+        border-radius: 5px;
+        background: #fff;
+    }
+    header {
+        position: relative;
+        z-index: 10;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        a {
+            width: 30px;
+            max-width: 30px;
+        }
+    }
+    .days td {
+        font-weight: bold;
+        font-size: 16px;
+    }
+    table {
+        clear: both;
+        width: 100%;
+        border: 1px solid #dcdcff;
+        border-radius: 3px;
+        border-collapse: collapse;
+        color: #444;
+    }
+    td.not-current {
+        opacity: 0;
+    }
+    td {
+        height: 48px;
+        text-align: center;
+        vertical-align: middle;
+        width: 14.285714285714%;
+        &.not-current {
+            color: #c0c0c0;
+        }
+        &.today {
+            font-weight: 700;
+            color: #28283b;
+            font-size: 15px;
+        }
+    }
+    td {
+        font-size: 15px;
+    }
+    thead {
+        td {
+            border: none;
+            color: #28283b;
+            text-transform: uppercase;
+            font-size: 15px;
+            font-weight: bold;
+        }
+    }
+    table {
+        color: white;
+    }
+    thead td {
+        min-width: 100%;
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+        text-align: center;
+    }
+    table {
+        border: none;
+        margin-top: -50px;
+    }
+}
