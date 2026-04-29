@@ -29,6 +29,13 @@ Example (VS Code / Cursor): install **Live Server** and “Go Live” from the p
 - **project-20-shora.rasht.ir**: [`index.html`](./project-20-shora.rasht.ir/index.html)
 - **project-21-yed.co.ir**: [`index.html`](./project-21-yed.co.ir/index.html)
 - **project-22-sep.ir**: [`index.html`](./project-22-sep.ir/index.html)
+- **project-23-news.shahrekord.ir**: [`index.html`](./project-23-news.shahrekord.ir/index.html)
+- **project-24-org.shahrekord.ir**: [`index.html`](./project-24-org.shahrekord.ir/index.html)
+- **project-25-behdasht.tums.ir**: [`index.html`](./project-25-behdasht.tums.ir/index.html)
+- **project-26-dezfoul.ac.ir**: [`index.html`](./project-26-dezfoul.ac.ir/index.html)
+- **project-27-icro.ir**: [`index.html`](./project-27-icro.ir/index.html)
+- **project-28-isti.ir**: [`index.html`](./project-28-isti.ir/index.html)
+- **project-29-sbmu.ac.ir**: [`index.html`](./project-29-sbmu.ac.ir/index.html)
 
 ## Notes
 
