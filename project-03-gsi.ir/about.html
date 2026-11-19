@@ -48,7 +48,7 @@
                     <div class="col-12">
                         <div class="header__container">
                             <div class="header__logo">
-                                <img src="uploads/gsi/img/logo-ico.png" alt="" width="69" height="74">
+                                <img src="uploads/gsi/img/logo-gsi.svg" alt="" width="69" height="74">
                                 <div class="header__text text__red">
                                     <h1 class="text__18 text__bold text__center">
                                         سازمان زمین‌شناسی و اکتشافات معدنی کشور
@@ -66,40 +66,39 @@
                                     </div>
                                     <ul class="header__social">
                                         <li>
-                                            <a href="">
-                                                <i class="niafam niafam-rubika"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="">
+                                            <a>
                                                 <i class="niafam niafam-eita"></i>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="">
+                                            <a>
                                                 <i class="niafam niafam-bale"></i>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="">
+                                            <a>
                                                 <i class="niafam niafam-aparat"></i>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="">
-                                                <i class="niafam niafam-soroush"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="">
-                                                <i class="niafam niafam-user-1"></i>
-                                            </a>
+                                            <button type="button" class="header__cart" aria-label="سبد خرید" aria-expanded="false" aria-controls="header-cart-panel">
+                                                <img src="uploads/gsi/img/cart.svg" width="21" height="21" alt="">
+                                                <span class="header-cart-badge" data-header-cart-count hidden></span>
+                                            </button>
+                                            <section class="header-cart-panel" id="header-cart-panel" popover="manual" aria-labelledby="header-cart-title" hidden>
+                                                <div class="header-cart-panel__head"><h2 id="header-cart-title">سبد خرید</h2><button type="button" data-close-cart aria-label="بستن سبد خرید">×</button></div>
+                                                <div data-header-cart-items></div>
+                                                <div class="header-cart-panel__foot" data-header-cart-footer hidden>
+                                                    <p><span>جمع سبد</span><strong data-header-cart-total></strong></p>
+                                                    <a href="basket.html">مشاهده و ویرایش سبد</a>
+                                                </div>
+                                            </section>
                                         </li>
                                     </ul>
-                                    <a href="" class="header__lang text__15 text__bold">
+                                    <a class="header__lang text__15 text__bold">
                                         EN
                                     </a>
-                                    <a href="" class="header__search">
+                                    <a href="#searchmodal" class="header__search" data-toggle="modal" aria-label="جست‌وجو">
                                         <i class="niafam niafam-search"></i>
                                     </a>
                                     <div id="mainMenu-trigger">
@@ -108,29 +107,25 @@
                                 </div>
                                 <div class="header__menu">
                                     <nav class="menu__desktop es-navbar es-navbar-default" id="espritmenu" aria-label="منوی اصلی">
-                                            <ul class="sm sm-rtl sm-simple">
-                                                <li><a href="index.html">صفحهٔ اصلی</a></li>
-                                                <li><a href="news.html">اخبار و اطلاع‌رسانی</a></li>
-                                                <li><a href="about.html" class="active" aria-current="page">دربارهٔ سازمان</a>
-                                                    <ul>
-                                                        <li><a href="assistants.html">معاونت‌ها و مدیریت‌ها</a></li>
-                                                        <li><a href="oraganization.html">نمودار سازمانی</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="eservice.html">میز خدمت الکترونیک</a>
-                                                    <ul>
-                                                        <li><a href="eservice-info.html">بازدید از موزهٔ علوم زمین</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="books.html">کتاب‌ها و نشریات</a></li>
-                                                <li><a href="regurlations.html">اسناد و فراخوان‌ها</a>
-                                                    <ul>
-                                                        <li><a href="regurlations.html">آیین‌نامه‌ها و فرم‌ها</a></li>
-                                                        <li><a href="tenders.html">مناقصات و مزایدات</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </nav>
+                                        <ul class="sm sm-rtl sm-simple">
+                                            <li><a href="index.html">صفحهٔ اصلی</a></li>
+                                            <li><a href="about.html" class="active" aria-current="page">سازمان</a>
+                                                <ul>
+                                                    <li><a href="news.html">اخبار و اطلاع‌رسانی</a></li>
+                                                    <li><a href="assistants.html">معاونت‌ها و مدیریت‌ها</a></li>
+                                                    <li><a href="oraganization.html">نمودار سازمانی</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="eservice.html">خدمات</a>
+                                                <ul>
+                                                    <li><a href="eservice-info.html">بازدید از موزهٔ علوم زمین</a></li>
+                                                    <li><a href="regurlations.html">آیین‌نامه‌ها و فرم‌ها</a></li>
+                                                    <li><a href="tenders.html">مناقصات و مزایدات</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="books.html">کتاب‌ها و نشریات</a></li>
+                                        </ul>
+                                    </nav>
                                 </div>
                             </div>
                         </div>
@@ -191,27 +186,27 @@
                                             <p>برای اطلاعات بیشتر به صفحات زیر مراجعه کنید :</p>
                                             <ul>
                                                 <li>
-                                                    <a href="">
+                                                    <a>
                                                         معرفی سازمان
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="">
+                                                    <a>
                                                         تاریخچه سازمان
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="">
+                                                    <a>
                                                         عملکرد سازمان
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="">
+                                                    <a>
                                                         راهبرد
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="">
+                                                    <a>
                                                         چشم انداز و اهداف
                                                     </a>
                                                 </li>
@@ -221,17 +216,17 @@
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="">
+                                                    <a>
                                                         مراکز سازمانی
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="">
+                                                    <a>
                                                         روسای سازمان
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="">
+                                                    <a>
                                                         قوانین و آیین نامه ها
                                                     </a>
                                                 </li>
@@ -355,7 +350,7 @@
                                                     <div class="offices__subtitle text__14 line-clamp__2 text__medium">
                                                         پارک موزه،  پترولوژی و اکتشاف فلزات گرانبها
                                                     </div>
-                                                    <a href="" class="cover-link"></a>
+                                                    <a class="cover-link"></a>
                                                 </div>
                                             </div>
                                             <div class="offices__cell">
@@ -367,7 +362,7 @@
                                                         زمین شناسی ساختمانی، لرزه زمین ساخت و اکتشاف پرلیت، دیاتومیت و
                                                         زئولیت
                                                     </div>
-                                                    <a href="" class="cover-link"></a>
+                                                    <a class="cover-link"></a>
                                                 </div>
                                             </div>
                                             <div class="offices__cell">
@@ -378,7 +373,7 @@
                                                     <div class="offices__subtitle text__14 line-clamp__2 text__medium">
                                                         زمین شناسی زاگرس چین خورده، آبهای زیر زمینی و اکتشاف آبهای ژرف
                                                     </div>
-                                                    <a href="" class="cover-link"></a>
+                                                    <a class="cover-link"></a>
                                                 </div>
                                             </div>
                                             <div class="offices__cell">
@@ -389,7 +384,7 @@
                                                     <div class="offices__subtitle text__14 line-clamp__2 text__medium">
                                                         پارک موزه،  پترولوژی و اکتشاف فلزات گرانبها
                                                     </div>
-                                                    <a href="" class="cover-link"></a>
+                                                    <a class="cover-link"></a>
                                                 </div>
                                             </div>
                                             <div class="offices__cell">
@@ -401,7 +396,7 @@
                                                         زمین شناسی ساختمانی، لرزه زمین ساخت و اکتشاف پرلیت، دیاتومیت و
                                                         زئولیت
                                                     </div>
-                                                    <a href="" class="cover-link"></a>
+                                                    <a class="cover-link"></a>
                                                 </div>
                                             </div>
                                             <div class="offices__cell">
@@ -412,7 +407,7 @@
                                                     <div class="offices__subtitle text__14 line-clamp__2 text__medium">
                                                         زمین شناسی زاگرس چین خورده، آبهای زیر زمینی و اکتشاف آبهای ژرف
                                                     </div>
-                                                    <a href="" class="cover-link"></a>
+                                                    <a class="cover-link"></a>
                                                 </div>
                                             </div>
                                             <div class="offices__cell">
@@ -423,7 +418,7 @@
                                                     <div class="offices__subtitle text__14 line-clamp__2 text__medium">
                                                         پارک موزه،  پترولوژی و اکتشاف فلزات گرانبها
                                                     </div>
-                                                    <a href="" class="cover-link"></a>
+                                                    <a class="cover-link"></a>
                                                 </div>
                                             </div>
                                             <div class="offices__cell">
@@ -435,7 +430,7 @@
                                                         زمین شناسی ساختمانی، لرزه زمین ساخت و اکتشاف پرلیت، دیاتومیت و
                                                         زئولیت
                                                     </div>
-                                                    <a href="" class="cover-link"></a>
+                                                    <a class="cover-link"></a>
                                                 </div>
                                             </div>
                                             <div class="offices__cell">
@@ -446,7 +441,7 @@
                                                     <div class="offices__subtitle text__14 line-clamp__2 text__medium">
                                                         زمین شناسی زاگرس چین خورده، آبهای زیر زمینی و اکتشاف آبهای ژرف
                                                     </div>
-                                                    <a href="" class="cover-link"></a>
+                                                    <a class="cover-link"></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -464,7 +459,7 @@
                     <div class="col-12">
                         <div class="footer__container">
                             <div class="footer__content">
-                                <div class="footer__col footer__contact">
+                                <div class="footer__col footer__contact" id="contact">
                                     <div class="footer__header text__16 text__bold">
                                         اطلاعات تماس
                                     </div>
@@ -482,27 +477,27 @@
                                         <div class="contact__social">
                                             <ul>
                                                 <li>
-                                                    <a href="">
+                                                    <a>
                                                         <i class="niafam niafam-aparat"></i>
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="">
+                                                    <a>
                                                         <i class="niafam niafam-eita"></i>
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="">
+                                                    <a>
                                                         <i class="niafam niafam-soroush"></i>
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="">
+                                                    <a>
                                                         <i class="niafam niafam-telegram"></i>
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="">
+                                                    <a>
                                                         <i class="niafam niafam-bale"></i>
                                                     </a>
                                                 </li>
@@ -510,11 +505,11 @@
                                         </div>
                                         <div class="footer__meta">
                                             <div class="footer__enamad">
-                                                <a href="" class="cover-link"></a>
+                                                <a class="cover-link"></a>
                                                 <img src="uploads/gsi/img/enamad.png" alt="">
                                             </div>
                                             <div class="footer__samaneh">
-                                                <a href="" class="cover-link"></a>
+                                                <a class="cover-link"></a>
                                                 <img src="uploads/gsi/img/samaneh.png" alt="">
                                             </div>
                                         </div>
@@ -527,32 +522,32 @@
                                         </div>
                                         <ul>
                                             <li>
-                                                <a href="" class="text__14 line-clamp__2">
+                                                <a class="text__14 line-clamp__2">
                                                     بیانیه توافق سطح خدمات
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="" class="text__14 line-clamp__2">
+                                                <a class="text__14 line-clamp__2">
                                                     بیانیه حفظ حریم خصوصی
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="" class="text__14 line-clamp__2">
+                                                <a class="text__14 line-clamp__2">
                                                     دستورالعمل بروزرسانی
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="" class="text__14 line-clamp__2">
+                                                <a class="text__14 line-clamp__2">
                                                     مالکیت معنوی و حق انتشار
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="" class="text__14 line-clamp__2">
+                                                <a class="text__14 line-clamp__2">
                                                     امنیت اطلاعات
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="" class="text__14 line-clamp__2">
+                                                <a class="text__14 line-clamp__2">
                                                     سامانه شفافیت
                                                 </a>
                                             </li>
@@ -564,32 +559,32 @@
                                         </div>
                                         <ul>
                                             <li>
-                                                <a href="" class="text__14 line-clamp__2">
+                                                <a class="text__14 line-clamp__2">
                                                     دفتر مقام معظم رهبری
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="" class="text__14 line-clamp__2">
+                                                <a class="text__14 line-clamp__2">
                                                     ریاست جمهوری
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="" class="text__14 line-clamp__2">
+                                                <a class="text__14 line-clamp__2">
                                                     وزارت نیرو
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="" class="text__14 line-clamp__2">
+                                                <a class="text__14 line-clamp__2">
                                                     توانیر
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="" class="text__14 line-clamp__2">
+                                                <a class="text__14 line-clamp__2">
                                                     پایگاه فرهنگ ایثار شهادت
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="" class="text__14 line-clamp__2">
+                                                <a class="text__14 line-clamp__2">
                                                     سایر پیوندها
                                                 </a>
                                             </li>
@@ -603,32 +598,32 @@
                                         </div>
                                         <ul>
                                             <li>
-                                                <a href="" class="text__14 line-clamp__2">
+                                                <a class="text__14 line-clamp__2">
                                                     راهبرد مشارکت مصوب
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="" class="text__14 line-clamp__2">
+                                                <a class="text__14 line-clamp__2">
                                                     نظرسنجی خدمات
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="" class="text__14 line-clamp__2">
+                                                <a class="text__14 line-clamp__2">
                                                     پیشنهادها و انتقاد ها
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="" class="text__14 line-clamp__2">
+                                                <a class="text__14 line-clamp__2">
                                                     نظرسنجی سایت
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="" class="text__14 line-clamp__2">
+                                                <a class="text__14 line-clamp__2">
                                                     رسیدگی به شکایات
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="" class="text__14 line-clamp__2">
+                                                <a class="text__14 line-clamp__2">
                                                     نظرسنجی فرآیندها و تصمیمات
                                                 </a>
                                             </li>
@@ -640,22 +635,22 @@
                                         </div>
                                         <ul>
                                             <li>
-                                                <a href="" class="text__14 line-clamp__2">
+                                                <a class="text__14 line-clamp__2">
                                                     سامانه مدیریت خدمات دولت
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="" class="text__14 line-clamp__2">
+                                                <a class="text__14 line-clamp__2">
                                                     درگاه ملی خدمات دولت
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="" class="text__14 line-clamp__2">
+                                                <a class="text__14 line-clamp__2">
                                                     درگاه ملی خدمات دولت هوشمند
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="" class="text__14 line-clamp__2">
+                                                <a class="text__14 line-clamp__2">
                                                     سامانه انتشار و دسترسی آزاد به اطلاعات
                                                 </a>
                                             </li>
@@ -664,61 +659,29 @@
                                 </div>
                                 <div class="footer__col">
                                     <div class="footer__header text__16 text__bold">
-                                        نطرسنجی
+                                        نظرسنجی
                                     </div>
                                     <div class="footer__poll">
-                                        <div id="pollContent-2" class="poll-content">
-                                            <div class="es-row title-row">
-                                                <h3 class="es-col-12 title">
-                                                    از طراحی و کار با سایت چقدر راضی هستید؟
-                                                </h3>
-                                            </div>
-                                            <div class="es-row">
-                                                <div class="es-col-12 answers">
-                                                    <div class="radio"> <label> <input name="vote" value="1"
-                                                                type="radio"><span></span> بسیار خوب</label> </div>
-                                                    <div class="radio"><label><input name="vote" value="1" type="radio">
-                                                            <span></span> خوب</label> </div>
-                                                    <div class="radio"> <label> <input name="vote" value="2"
-                                                                type="radio"><span></span> متوسط</label> </div>
-                                                    <div class="radio"> <label> <input name="vote" value="3"
-                                                                type="radio"><span></span> ضعیف</label> </div>
+                                        <form class="poll-form">
+                                            <fieldset>
+                                                <legend>از طراحی و کار با سایت چقدر راضی هستید؟</legend>
+                                                <div class="poll-options">
+                                                    <label><input type="radio" name="vote" value="excellent" required> بسیار خوب</label>
+                                                    <label><input type="radio" name="vote" value="good" required> خوب</label>
+                                                    <label><input type="radio" name="vote" value="average" required> متوسط</label>
+                                                    <label><input type="radio" name="vote" value="poor" required> ضعیف</label>
                                                 </div>
-                                            </div>
-                                            <div class="es-row">
-                                                <div class="es-col-12"> <button class="es-btn es-btn-primary"
-                                                        name="submitpoll" type="submit">ثبت نظر</button> </div>
-                                            </div>
-                                        </div>
+                                            </fieldset>
+                                            <button type="submit">ثبت نظر</button>
+                                            <p class="poll-feedback" role="status"></p>
+                                        </form>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="footer__visits">
-                                <ul>
-                                    <li class="text__15">
-                                        تاریخ بروز رسانی : 1402/09/18
-                                    </li>
-                                    <li class="text__15">
-                                        کل بازدید : 1858440 نفر
-                                    </li>
-                                    <li class="text__15">
-                                        بازدید این صفحه : 766622 نفر
-                                    </li>
-                                    <li class="text__15">
-                                        بازدیدکنندگان آنلاین : 2 نفر
-                                    </li>
-                                    <li class="text__15">
-                                        سیستم عامل: Windows
-                                    </li>
-                                    <li class="text__15">
-                                        آدرس آی پی: 46.209.26.198
-                                    </li>
-                                </ul>
                             </div>
                             <div class="footer__copy text__14">
                                 <div class="copy">کلیه حقوق متعلق به وبسایت سازمان زمین‌شناسی و اکتشافات معدنی کشور
                                     می‌باشد.</div>
-                                <a href="" class="niafam">پرتال سازمانی نیافام</a>
+                                <a class="niafam">پرتال سازمانی نیافام</a>
                             </div>
                         </div>
                     </div>
@@ -734,16 +697,16 @@
         </button>
         <div class="form-container modal-dialog">
             <div class="modal-content">
-                <form action="" method="POST">
+                <form role="search">
                     <label for="q" class="d-none">جست‌وجو</label>
                     <input type="text" name="q" placeholder="جستجو ..." id="q">
-                    <span>عبارت خود را درج و جهت جستجو "Enter" را بفشارید</span>
+                    <span>عنوان صفحه را بنویسید.</span>
+                    <ul class="gsi-search-results" aria-live="polite"></ul>
                 </form>
             </div>
         </div>
     </article>
-    <a target="_blank" class="go-top" href="###" aria-label="sample" target="_blank" aria-label="Sample" target="_self"
-        aria-label="title" target="_blank" aria-label="default">
+    <a class="go-top" href="#top" aria-label="بازگشت به بالای صفحه">
         <i class="niafam niafam-up-arrow-2"></i>
     </a>
     <!--Blindness begin-->
@@ -768,7 +731,7 @@
                 <p class="text-custom-info text__16">تغییر رنگ پس زمینه:</p>
                 <div class="bgcolorbtns">
                     <button data-bgcolor="#f9f9f9" data-bgcolor2="#002158" id="bgcolor1" class="bgcolorbtndef"
-                        style="background-color:#f9f9f9" aria-label="default">اولیه</button>
+                        style="background-color:#f9f9f9">اولیه</button>
                     <button data-bgcolor="#d8d8d8" data-bgcolor2="#4f4f4f" id="bgcolor2" class="bgcolorbtn"
                         style="background-color:#d8d8d8" aria-label="default"></button>
                     <button data-bgcolor="#333333" data-bgcolor2="#121212" id="bgcolor3" class="bgcolorbtn"
@@ -789,33 +752,33 @@
             <div class="sec">
                 <p class="text-custom-info text__16">تغییر فاصله بین کلمات:</p>
                 <div class="text-customize">
-                    <button class="button-item  text__16" id="addws" aria-label="default">+</button>
-                    <button class="button-item  text__16" id="defws" aria-label="default">اولیه</button>
-                    <button class="button-item  text__16" id="subws" aria-label="default">-</button>
+                    <button class="button-item  text__16" id="addws">+</button>
+                    <button class="button-item  text__16" id="defws">اولیه</button>
+                    <button class="button-item  text__16" id="subws">-</button>
                 </div>
             </div>
             <div class="sec">
                 <p class="text-custom-info text__16">تغییر فاصله بین خطوط:</p>
                 <div class="text-customize">
-                    <button class="button-item text__16" id="addlh" aria-label="default">+</button>
-                    <button class="button-item text__16" id="deflh" aria-label="default">اولیه</button>
-                    <button class="button-item text__16" id="sublh" aria-label="default">-</button>
+                    <button class="button-item text__16" id="addlh">+</button>
+                    <button class="button-item text__16" id="deflh">اولیه</button>
+                    <button class="button-item text__16" id="sublh">-</button>
                 </div>
             </div>
             <div class="sec">
                 <p class="text-custom-info text__16">تغییر نوع موس:</p>
                 <div class="text-customize">
-                    <button class="button-item  text__16" id="cur1" aria-label="default">بزرگ</button>
-                    <button class="button-item  text__16" id="curdef" aria-label="default">اولیه</button>
-                    <button class="button-item  text__16" id="cur2" aria-label="default">کوچک</button>
+                    <button class="button-item  text__16" id="cur1">بزرگ</button>
+                    <button class="button-item  text__16" id="curdef">اولیه</button>
+                    <button class="button-item  text__16" id="cur2">کوچک</button>
                 </div>
             </div>
             <div class="sec">
                 <p class="text-custom-info text__16">تغییر فونت</p>
                 <div class="text-customize">
-                    <button class="button-item font-change  text__16" id="Sahel" aria-label="default">ساحل</button>
-                    <button class="button-item font-change  text__16" id="Vazir" aria-label="default">وزیر</button>
-                    <button class="button-item font-change  text__16" id="Shabnam" aria-label="default">شبنم</button>
+                    <button class="button-item font-change  text__16" id="Sahel">ساحل</button>
+                    <button class="button-item font-change  text__16" id="Vazir">وزیر</button>
+                    <button class="button-item font-change  text__16" id="Shabnam">شبنم</button>
                 </div>
             </div>
             <div class="sec">
@@ -830,23 +793,15 @@
                         </p>
                     </div>
 
-                    <a target="_blank" class="button-item" id="colorblind1" rel="noopener" href="###"
-                        aria-label="sample" target="_blank" aria-label="title" target="_blank">سرخ کوری</a>
-                    <a target="_blank" class="button-item" id="colorblind4" rel="noopener" href="###"
-                        aria-label="sample" target="_blank" aria-label="title" target="_blank">سبز کوری</a>
-                    <a target="_blank" class="button-item " id="colorblind6" rel="noopener" href="###"
-                        aria-label="sample" target="_blank" aria-label="title" target="_blank">آبی کوری</a>
-                    <a target="_blank" class="button-item" id="colorblind2" rel="noopener" href="###"
-                        aria-label="sample" target="_blank" aria-label="title" target="_blank">سرخ دشوار بینی</a>
-                    <a target="_blank" class="button-item" id="colorblind3" rel="noopener" href="###"
-                        aria-label="sample" target="_blank" aria-label="title" target="_blank">سبز دشوار بینی</a>
-                    <a target="_blank" class="button-item" id="colorblind5" rel="noopener" href="###"
-                        aria-label="sample" target="_blank" aria-label="title" target="_blank">آبی دشوار بینی</a>
+                    <a class="button-item" id="colorblind1" href="#top">سرخ کوری</a>
+                    <a class="button-item" id="colorblind4" href="#top">سبز کوری</a>
+                    <a class="button-item " id="colorblind6" href="#top">آبی کوری</a>
+                    <a class="button-item" id="colorblind2" href="#top">سرخ دشوار بینی</a>
+                    <a class="button-item" id="colorblind3" href="#top">سبز دشوار بینی</a>
+                    <a class="button-item" id="colorblind5" href="#top">آبی دشوار بینی</a>
 
-                    <a target="_blank" class="button-item" id="colorblind7" rel="noopener" href="###"
-                        aria-label="sample" target="_blank" aria-label="title" target="_blank">تک رنگ بینی</a>
-                    <a target="_blank" class="button-item" id="colorblind8" rel="noopener" href="###"
-                        aria-label="sample" target="_blank" aria-label="title" target="_blank">تک رنگ بینی مخروطی</a>
+                    <a class="button-item" id="colorblind7" href="#top">تک رنگ بینی</a>
+                    <a class="button-item" id="colorblind8" href="#top">تک رنگ بینی مخروطی</a>
 
 
 
@@ -855,8 +810,8 @@
         </div>
     </div>
     <div class="accessibility">
-        <a target="_blank" href="###" aria-label="sample" target="_blank" aria-label="title" target="_blank"
-            id="blindness" class="accessibility__btn">
+        <a href="#top"
+            id="blindness" class="accessibility__btn" aria-label="تنظیمات نمایش">
             <img src="uploads/gsi/img/disabled.svg" alt="">
             <div class="accessibility__tooltip">تنظیمات قالب</div>
         </a>
@@ -902,6 +857,8 @@
             }
         })
     </script>
+    <script src="uploads/gsi/js/books-catalog.js"></script>
+    <script src="uploads/gsi/js/demo-cart.js"></script>
 </body>
 
 </html>

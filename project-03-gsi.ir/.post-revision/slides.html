@@ -1,0 +1,84 @@
+﻿<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>نمونه‌کار پرتال GSI | @aidin_studio</title>
+<link rel="stylesheet" href="../../brand/brand.css">
+<link rel="stylesheet" href="slides.css">
+</head>
+<body>
+<main id="slides"></main>
+<script>
+const slides = [
+  {
+    kind: 'cover', kicker: 'نمونه‌کار · پرتال سازمان زمین‌شناسی',
+    title: 'یک پرتال پرمحتوا،<br><em>چند مسیر روشن</em>',
+    content: browser('home-desktop', 'صفحهٔ اصلی پرتال GSI') + phone('home-mobile', 'صفحهٔ اصلی در موبایل')
+  },
+  {
+    kind: 'home', kicker: 'صفحهٔ اصلی', title: 'از صفحهٔ اول،<br><em>مسیرت رو پیدا کن</em>',
+    summary: 'اخبار، خدمات و معرفی سازمان از همین صفحه در دسترس‌اند.',
+    content: browser('home-desktop', 'نمای صفحهٔ اصلی و پیوندهای خدمات')
+  },
+  {
+    kind: 'news', kicker: 'اخبار و اطلاع‌رسانی', title: 'خبرهای سازمان،<br><em>در یک نگاه</em>',
+    summary: 'فهرست خبرها، دسته‌بندی و مسیر دسترسی به مطالب.',
+    content: browser('news-desktop', 'صفحهٔ اخبار و اطلاع‌رسانی')
+  },
+  {
+    kind: 'services', kicker: 'میز خدمت الکترونیک', title: 'برای هر خدمت،<br><em>یک نقطهٔ شروع</em>',
+    summary: 'با یک نگاه، عنوان خدمت و واحد ارائه‌دهنده را پیدا کن.',
+    content: browser('services-desktop', 'فهرست خدمات الکترونیک')
+  },
+  {
+    kind: 'books', kicker: 'کتاب‌ها و نشریات', title: 'از فهرست تا جزئیات،<br><em>یک مسیر منظم</em>',
+    summary: 'فیلتر سمت راست، کارت‌های خوانا و صفحهٔ کامل معرفی کتاب.',
+    content: browser('books-desktop', 'فهرست کتاب‌ها و نشریات علوم زمین')
+  },
+  {
+    kind: 'detail', kicker: 'معرفی کتاب', title: 'هر عنوان،<br><em>یک معرفی کامل</em>',
+    summary: 'جلد، پدیدآورنده، معرفی و خرید؛ کنار هم، با یک نگاه.',
+    content: browser('book-detail-desktop', 'صفحهٔ جزئیات کتاب')
+  },
+  {
+    kind: 'mobile', kicker: 'نمای موبایل', title: 'همین مسیرها،<br><em>روی صفحهٔ کوچک</em>',
+    summary: 'آرشیو و جزئیات کتاب، کنار صفحهٔ اصلی در چیدمان موبایل.',
+    content: '<div class="phones">' + phone('books-mobile', 'نشریات روی موبایل') +
+      phone('book-detail-mobile', 'جزئیات کتاب روی موبایل') + phone('home-mobile', 'صفحهٔ اصلی روی موبایل') + '</div>'
+  },
+  {
+    kind: 'end', title: 'سایت بعدی،<br>برای <em>کسب‌وکار تو؟</em>',
+    content: '<div class="disc"></div><div class="disc-small"></div><div class="laptop"><img class="mockup" src="assets/laptop.png" alt="قاب لپ‌تاپ"><div class="laptop-screen"><img src="assets/home-desktop.png" alt="صفحه اصلی GSI"></div></div>' +
+      '<svg class="end-arrow" viewBox="0 0 300 150" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 115C36 24 105 13 132 45C164 82 119 117 101 89C78 48 196 29 276 72 M255 49l25 25-35 10"/></svg>' +
+      '<div class="cta">برای سفارش سایت <em>دایرکت</em> بده</div><p class="sub">فالو کن؛ شاید نمونه‌کار بعدی، سایت تو باشه.</p>' +
+      '<div class="palette"><span style="background:#A71B24;color:#fff">#A71B24</span><span style="background:#2B2D42;color:#fff">#2B2D42</span><span style="background:#F2B58B">#F2B58B</span><span style="background:#FFF8F1">#FFF8F1</span></div>' +
+      '<div class="who"><img src="assets/avatar.png" alt="آیدین صاحبی"><div><b dir="ltr">@aidin_studio</b><span>آیدین صاحبی · طراح و توسعه‌دهندهٔ وب</span></div></div>'
+  }
+];
+
+function browser(name, alt) {
+  return '<div class="b-browser project-browser"><div class="bar"><i></i><i></i><i></i>' +
+    '<span>GSI · Portfolio</span></div><div class="screen">' +
+    '<img src="assets/' + name + '.png" alt="' + alt + '"></div></div>';
+}
+function phone(name, alt) {
+  return '<div class="phone"><img src="assets/' + name + '.png" alt="' + alt + '"></div>';
+}
+const fa = number => String(number).padStart(2, '0').replace(/\d/g, digit => '۰۱۲۳۴۵۶۷۸۹'[digit]);
+const signature = '<div class="b-sign"><i class="rule"></i><b>آیدین صاحبی</b><span>طراح و توسعه‌دهندهٔ وب</span></div>';
+
+document.querySelector('#slides').innerHTML = slides.map((slide, index) =>
+  '<section class="slide ' + slide.kind + '">' +
+    (index ? '<div class="counter">' + fa(index + 1) + ' از ' + fa(slides.length) + '</div>' : '') +
+    '<header>' + (slide.kicker ? '<p class="kicker">' + slide.kicker + '</p>' : '') +
+      '<h' + (index ? '2' : '1') + '>' + slide.title + '</h' + (index ? '2' : '1') + '>' +
+      (slide.summary ? '<p class="summary">' + slide.summary + '</p>' : '') + '</header>' +
+    '<div class="visual">' + slide.content + '</div>' +
+    '<footer>' + (index === 0 ? signature : '') +
+      '<b class="handle" dir="ltr">@aidin_studio</b></footer>' +
+  '</section>'
+).join('');
+</script>
+</body>
+</html>

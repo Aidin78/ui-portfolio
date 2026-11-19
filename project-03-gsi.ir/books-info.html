@@ -48,7 +48,7 @@
                     <div class="col-12">
                         <div class="header__container">
                             <div class="header__logo">
-                                <img src="uploads/gsi/img/logo-ico.png" alt="" width="69" height="74">
+                                <img src="uploads/gsi/img/logo-gsi.svg" alt="" width="69" height="74">
                                 <div class="header__text text__red">
                                     <h1 class="text__18 text__bold text__center">
                                         سازمان زمین‌شناسی و اکتشافات معدنی کشور
@@ -66,71 +66,39 @@
                                     </div>
                                     <ul class="header__social">
                                         <li>
-                                            <a href="">
-                                                <i class="niafam niafam-rubika"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="">
+                                            <a>
                                                 <i class="niafam niafam-eita"></i>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="">
+                                            <a>
                                                 <i class="niafam niafam-bale"></i>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="">
+                                            <a>
                                                 <i class="niafam niafam-aparat"></i>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="">
-                                                <i class="niafam niafam-soroush"></i>
-                                            </a>
-                                        </li>
-                                        <li class="shopping-cart">
-                                            <a href="" class="shopping-cart__btn">
-                                                <i class="niafam niafam-user-1"></i>
-                                            </a>
-                                            <div class="shopping-cart__drop">
-                                                <div class="shopping-cart__content scrollbar">
-                                                    <div class="shopping-cart__list">
-                                                        <div class="shopping-cart__item eshop__item">
-                                                            <div class="eshop__pic">
-                                                                <img src="uploads/gsi/img/b1.jpg" alt="" width="62"
-                                                                    height="90">
-                                                            </div>
-                                                            <div class="eshop__content">
-                                                                <div class="eshop__title text__16 text__medium">
-                                                                    پارینه‌لرزه‌شناسی
-                                                                </div>
-                                                                <div class="eshop__desc text__14">
-                                                                    سازمان زمین شناسی و اکتشفات معدنی کشور
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                            <button type="button" class="header__cart" aria-label="سبد خرید" aria-expanded="false" aria-controls="header-cart-panel">
+                                                <img src="uploads/gsi/img/cart.svg" width="21" height="21" alt="">
+                                                <span class="header-cart-badge" data-header-cart-count hidden></span>
+                                            </button>
+                                            <section class="header-cart-panel" id="header-cart-panel" popover="manual" aria-labelledby="header-cart-title" hidden>
+                                                <div class="header-cart-panel__head"><h2 id="header-cart-title">سبد خرید</h2><button type="button" data-close-cart aria-label="بستن سبد خرید">×</button></div>
+                                                <div data-header-cart-items></div>
+                                                <div class="header-cart-panel__foot" data-header-cart-footer hidden>
+                                                    <p><span>جمع سبد</span><strong data-header-cart-total></strong></p>
+                                                    <a href="basket.html">مشاهده و ویرایش سبد</a>
                                                 </div>
-                                                <div class="shopping-cart__footer">
-                                                    <div class="shopping-cart__total">
-                                                        <span class="text__12 text__gray">مبلغ قابل پرداخت</span>
-                                                        <span class="text__14 text__semibold">۹۶۴,۰۰۰ تومان</span>
-                                                    </div>
-                                                    <a href=""
-                                                        class="shopping-cart__submit text__14 text__semibold text__white">
-                                                        ثبت سفارش
-                                                    </a>
-                                                </div>
-                                            </div>
+                                            </section>
                                         </li>
-
                                     </ul>
-                                    <a href="" class="header__lang text__15 text__bold">
+                                    <a class="header__lang text__15 text__bold">
                                         EN
                                     </a>
-                                    <a href="" class="header__search">
+                                    <a href="#searchmodal" class="header__search" data-toggle="modal" aria-label="جست‌وجو">
                                         <i class="niafam niafam-search"></i>
                                     </a>
                                     <div id="mainMenu-trigger">
@@ -139,29 +107,25 @@
                                 </div>
                                 <div class="header__menu">
                                     <nav class="menu__desktop es-navbar es-navbar-default" id="espritmenu" aria-label="منوی اصلی">
-                                            <ul class="sm sm-rtl sm-simple">
-                                                <li><a href="index.html">صفحهٔ اصلی</a></li>
-                                                <li><a href="news.html">اخبار و اطلاع‌رسانی</a></li>
-                                                <li><a href="about.html">دربارهٔ سازمان</a>
-                                                    <ul>
-                                                        <li><a href="assistants.html">معاونت‌ها و مدیریت‌ها</a></li>
-                                                        <li><a href="oraganization.html">نمودار سازمانی</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="eservice.html">میز خدمت الکترونیک</a>
-                                                    <ul>
-                                                        <li><a href="eservice-info.html">بازدید از موزهٔ علوم زمین</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="books.html">کتاب‌ها و نشریات</a></li>
-                                                <li><a href="regurlations.html">اسناد و فراخوان‌ها</a>
-                                                    <ul>
-                                                        <li><a href="regurlations.html">آیین‌نامه‌ها و فرم‌ها</a></li>
-                                                        <li><a href="tenders.html">مناقصات و مزایدات</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </nav>
+                                        <ul class="sm sm-rtl sm-simple">
+                                            <li><a href="index.html">صفحهٔ اصلی</a></li>
+                                            <li><a href="about.html">سازمان</a>
+                                                <ul>
+                                                    <li><a href="news.html">اخبار و اطلاع‌رسانی</a></li>
+                                                    <li><a href="assistants.html">معاونت‌ها و مدیریت‌ها</a></li>
+                                                    <li><a href="oraganization.html">نمودار سازمانی</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="eservice.html">خدمات</a>
+                                                <ul>
+                                                    <li><a href="eservice-info.html">بازدید از موزهٔ علوم زمین</a></li>
+                                                    <li><a href="regurlations.html">آیین‌نامه‌ها و فرم‌ها</a></li>
+                                                    <li><a href="tenders.html">مناقصات و مزایدات</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="books.html" class="active">کتاب‌ها و نشریات</a></li>
+                                        </ul>
+                                    </nav>
                                 </div>
                             </div>
                         </div>
@@ -178,228 +142,65 @@
                                 <li>
                                     <a href="index.html">صفحه اصلی</a>
                                 </li>
-                                <li>کتاب ها</li>
+                                <li><a href="books.html">کتاب‌ها و نشریات</a></li>
+                                <li>جزئیات کتاب</li>
                             </ul>
-                            <h1 class="breadcrumb__page-title text__24 text__bold text__center">پارینه‌لرزه‌شناسی</h1>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="inpage inpage--simple">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="inpage__container">
-                            <div class="inpage__content">
-                                <div class="book-info">
-                                    <div class="book-info__book">
-                                        <div class="book-info__pic p-relative">
-                                            <img class="fixed-images" src="uploads/gsi/img/b1.jpg" alt="">
-                                        </div>
-                                        <div class="book-info__content">
-                                            <h1 class="book-info__title text__18 text__semibold">
-                                                پارینه‌لرزه‌شناسی
-                                            </h1>
-                                            <div class="book-info__info">
-                                                <div class="book-info__row half">
-                                                    <div class="book-info__label text__14 text__semibold">پدیدآور:</div>
-                                                    <div class="book-info__data text__14">سید علی آقانباتی</div>
-                                                </div>
-
-                                                <div class="book-info__row half">
-                                                    <div class="book-info__label text__14 text__semibold">دسته بندی:
-                                                    </div>
-                                                    <div class="book-info__data text__14">زمین شناسی</div>
-                                                </div>
-
-                                                <div class="book-info__row half">
-                                                    <div class="book-info__label text__14 text__semibold">مرحله تولید:
-                                                    </div>
-                                                    <div class="book-info__data text__14">چاپ</div>
-                                                </div>
-
-                                                <div class="book-info__row half">
-                                                    <div class="book-info__label text__14 text__semibold">گروه ها:
-                                                    </div>
-                                                    <div class="book-info__data text__14">سازمان زمین شناسی و اکتشفات
-                                                        معدنی کشور</div>
-                                                </div>
-
-                                                <div class="book-info__row full">
-                                                    <div class="book-info__label text__14 text__semibold">توضیحات :
-                                                    </div>
-                                                    <div class="book-info__data text__14">
-                                                        این کتاب روش شناسایی زمین‌لرزه‌های گذشته را با مطالعهٔ رسوبات و آثار جابه‌جایی گسل معرفی می‌کند. مطالعهٔ موردی آن به گسل قلعه‌سرخ در خاور ایران می‌پردازد.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="book-info__buy eshop__buy">
-                                                <a href="" class="text__14 text__semibold text__white"
-                                                    id="eshop__btn">افزودن به سبد
-                                                    خرید</a>
-                                                <div class="eshop__number">
-                                                    <span class="plus">+</span>
-                                                    <input type="text" value="1" />
-                                                    <span class="minus">-</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="book-info__about">
-                                        <h4 class="text__18 text__semibold">معرفی کتاب پارینه‌لرزه‌شناسی</h4>
-                                        <p>
-                                            چکیده در خاور ایران زمین­لرزه­های متعدد تاریخی و دستگاهی خسارت بار گزارش شده
-                                            است، لذا مطالعات دقیق ریخت­زمین­ساختی و پارینه­لرزه­شناسی نقش مهمی در تهیه
-                                            مدل لرزه­زمین­ساخت این بخش از ایران دارد. گسل قلعه­سرخ با داشتن سابقه
-                                            لرزه­خیزی و شواهد ریخت­زمین­ساخت جوان، نمونه مناسبی برای مطالعات
-                                            پارینه­لرزه­شناسی است. گسل قلعه­سرخ با راستای شمالی جنوبی و طول 57 کیلومتر و
-                                            سازوکار امتدادلغز راست­بر، یکی از گسل­های فعال و لرزه­زای بخش شمالی پهنه
-                                            زمین درز سیستان است. بررسی ریخت زمین­ساختی این گسل با تلفیق داده­های حاصل از
-                                            بررسی تصاویر ماهواره­ای، نقشه­های زمین­شناسی، مدل ارتفاعی زمین و بازدید
-                                            میدانی، بریدگی رسوبات کواترنر و جابجایی آبراهه­ها به صورت راست بر را نشان
-                                            می­دهد. به منظور بررسی های پارینه لرزه زمین­ساختی سایتی با موقعیت جغرافیایی
-                                            تقریبی 25 59°59 شرقی و 40 32°33 شمالی،  بر روی گسل قلعه­سرخ انتخاب شده است.
-                                            در این سایت یک ترانشه اصلی به طول 21 متر، عمق 5/4 متر و راستای N80°E، و دو
-                                            ترانشه جانبی جهت جستجوی شواهد بیشتر از عملکرد گسل حفر شده است. مقادیر برآورد
-                                            شده از ویژگی­های هندسی گسل قلعه سرخ همچون راستا و شیب، برابر N7°W و 72°E است
-                                            که نشانگر گسلی با سازوکار و لغزش راستالغز راست­بر و کمی مولفه معکوس است.
-                                        </p>
-                                    </div>
-                                    <div class="book-info__related related-book">
-                                        <div class="related-book__header text__18 text__semibold">
-                                            کتاب های مرتبط
-                                        </div>
-                                        <div class="related-book__slider">
-                                            <div class="related-book__cell">
-                                                <div class="related-book__item p-relative">
-                                                    <a href="" class="cover-link"></a>
-                                                    <div class="related-book__pic p-relative">
-                                                        <img class="fixed-images" src="uploads/gsi/img/b1.jpg" alt="">
-                                                    </div>
-                                                    <div class="related-book__content">
-                                                        <div
-                                                            class="related-book__title text__center line-clamp__2 text__14 text__semibold">
-                                                            پیش درآمدی بر اصول و مفاهیم ژئوگانزرویشن
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="related-book__cell">
-                                                <div class="related-book__item p-relative">
-                                                    <a href="" class="cover-link"></a>
-                                                    <div class="related-book__pic p-relative">
-                                                        <img class="fixed-images" src="uploads/gsi/img/b2.png" alt="">
-                                                    </div>
-                                                    <div class="related-book__content">
-                                                        <div
-                                                            class="related-book__title text__center line-clamp__2 text__14 text__semibold">
-                                                            کاتالوگ نقشه های سازمان زمین شناسی و اکتشافات معدنی
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="related-book__cell">
-                                                <div class="related-book__item p-relative">
-                                                    <a href="" class="cover-link"></a>
-                                                    <div class="related-book__pic p-relative">
-                                                        <img class="fixed-images" src="uploads/gsi/img/b3.png" alt="">
-                                                    </div>
-                                                    <div class="related-book__content">
-                                                        <div
-                                                            class="related-book__title text__center line-clamp__2 text__14 text__semibold">
-                                                            پیش درآمدی بر اصول و مفاهیم ژئوگانزرویشن
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="related-book__cell">
-                                                <div class="related-book__item p-relative">
-                                                    <a href="" class="cover-link"></a>
-                                                    <div class="related-book__pic p-relative">
-                                                        <img class="fixed-images" src="uploads/gsi/img/b4.png" alt="">
-                                                    </div>
-                                                    <div class="related-book__content">
-                                                        <div
-                                                            class="related-book__title text__center line-clamp__2 text__14 text__semibold">
-                                                            زمین ساخت ساختاری و زمین ساخت کاربری
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="related-book__cell">
-                                                <div class="related-book__item p-relative">
-                                                    <a href="" class="cover-link"></a>
-                                                    <div class="related-book__pic p-relative">
-                                                        <img class="fixed-images" src="uploads/gsi/img/b1.jpg" alt="">
-                                                    </div>
-                                                    <div class="related-book__content">
-                                                        <div
-                                                            class="related-book__title text__center line-clamp__2 text__14 text__semibold">
-                                                            پیش درآمدی بر اصول و مفاهیم ژئوگانزرویشن
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="related-book__cell">
-                                                <div class="related-book__item p-relative">
-                                                    <a href="" class="cover-link"></a>
-                                                    <div class="related-book__pic p-relative">
-                                                        <img class="fixed-images" src="uploads/gsi/img/b2.png" alt="">
-                                                    </div>
-                                                    <div class="related-book__content">
-                                                        <div
-                                                            class="related-book__title text__center line-clamp__2 text__14 text__semibold">
-                                                            کاتالوگ نقشه های سازمان زمین شناسی و اکتشافات معدنی
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="related-book__cell">
-                                                <div class="related-book__item p-relative">
-                                                    <a href="" class="cover-link"></a>
-                                                    <div class="related-book__pic p-relative">
-                                                        <img class="fixed-images" src="uploads/gsi/img/b3.png" alt="">
-                                                    </div>
-                                                    <div class="related-book__content">
-                                                        <div
-                                                            class="related-book__title text__center line-clamp__2 text__14 text__semibold">
-                                                            پیش درآمدی بر اصول و مفاهیم ژئوگانزرویشن
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="related-book__cell">
-                                                <div class="related-book__item p-relative">
-                                                    <a href="" class="cover-link"></a>
-                                                    <div class="related-book__pic p-relative">
-                                                        <img class="fixed-images" src="uploads/gsi/img/b4.png" alt="">
-                                                    </div>
-                                                    <div class="related-book__content">
-                                                        <div
-                                                            class="related-book__title text__center line-clamp__2 text__14 text__semibold">
-                                                            زمین ساخت ساختاری و زمین ساخت کاربری
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+        <main class="container publication-detail" data-book-detail>
+            <div class="publication-detail__topbar">
+                <a href="books.html">بازگشت به فهرست کتاب‌ها و نشریات</a>
+                <span data-book-code></span>
+            </div>
+            <article class="publication-feature">
+                <div class="publication-feature__media">
+                    <img data-book-cover width="182" height="244" alt="">
+                    <span>نسخهٔ چاپی</span>
+                </div>
+                <div class="publication-feature__body">
+                    <p class="publication-meta" data-book-subject></p>
+                    <h1 data-book-title>جزئیات کتاب</h1>
+                    <p class="publication-author" data-book-credit></p>
+                    <p class="publication-description" data-book-description></p>
+                    <ul class="publication-highlights" aria-label="اطلاعات کوتاه کتاب">
+                        <li>زبان فارسی</li>
+                        <li>انتشار چاپی</li>
+                        <li>منبع تخصصی علوم زمین</li>
+                    </ul>
+                    <div class="publication-purchase">
+                        <div><small>قیمت نسخهٔ چاپی</small><strong data-book-price></strong></div>
+                        <div class="publication-purchase__actions">
+                            <button type="button" class="shop-button" data-cart-add hidden>افزودن به سبد خرید</button>
+                            <a class="shop-outline-button" href="basket.html">مشاهدهٔ سبد خرید</a>
                         </div>
+                        <p data-book-price-note hidden>برای این عنوان قیمت خرید ثبت نشده است.</p>
+                        <p data-cart-status role="status"></p>
                     </div>
                 </div>
-            </div>
-        </div>
+            </article>
+            <section class="publication-specifications" aria-labelledby="specifications-title">
+                <h2 id="specifications-title">مشخصات کتاب</h2>
+                <dl class="publication-facts" data-book-facts></dl>
+            </section>
+            <section class="publication-overview" data-book-overview hidden aria-labelledby="overview-title">
+                <h2 id="overview-title">دربارهٔ مطالعهٔ کتاب</h2>
+                <p></p>
+            </section>
+            <section class="publication-related" aria-labelledby="related-title">
+                <div class="publication-related__heading"><h2 id="related-title">نشریات مرتبط</h2><a href="books.html">مشاهدهٔ همهٔ عنوان‌ها</a></div>
+                <div class="publication-grid" data-related-books></div>
+            </section>
+        </main>
         <footer class="footer">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <div class="footer__container">
                             <div class="footer__content">
-                                <div class="footer__col footer__contact">
+                                <div class="footer__col footer__contact" id="contact">
                                     <div class="footer__header text__16 text__bold">
                                         اطلاعات تماس
                                     </div>
@@ -417,27 +218,27 @@
                                         <div class="contact__social">
                                             <ul>
                                                 <li>
-                                                    <a href="">
+                                                    <a>
                                                         <i class="niafam niafam-aparat"></i>
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="">
+                                                    <a>
                                                         <i class="niafam niafam-eita"></i>
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="">
+                                                    <a>
                                                         <i class="niafam niafam-soroush"></i>
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="">
+                                                    <a>
                                                         <i class="niafam niafam-telegram"></i>
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="">
+                                                    <a>
                                                         <i class="niafam niafam-bale"></i>
                                                     </a>
                                                 </li>
@@ -445,11 +246,11 @@
                                         </div>
                                         <div class="footer__meta">
                                             <div class="footer__enamad">
-                                                <a href="" class="cover-link"></a>
+                                                <a class="cover-link"></a>
                                                 <img src="uploads/gsi/img/enamad.png" alt="">
                                             </div>
                                             <div class="footer__samaneh">
-                                                <a href="" class="cover-link"></a>
+                                                <a class="cover-link"></a>
                                                 <img src="uploads/gsi/img/samaneh.png" alt="">
                                             </div>
                                         </div>
@@ -462,32 +263,32 @@
                                         </div>
                                         <ul>
                                             <li>
-                                                <a href="" class="text__14 line-clamp__2">
+                                                <a class="text__14 line-clamp__2">
                                                     بیانیه توافق سطح خدمات
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="" class="text__14 line-clamp__2">
+                                                <a class="text__14 line-clamp__2">
                                                     بیانیه حفظ حریم خصوصی
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="" class="text__14 line-clamp__2">
+                                                <a class="text__14 line-clamp__2">
                                                     دستورالعمل بروزرسانی
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="" class="text__14 line-clamp__2">
+                                                <a class="text__14 line-clamp__2">
                                                     مالکیت معنوی و حق انتشار
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="" class="text__14 line-clamp__2">
+                                                <a class="text__14 line-clamp__2">
                                                     امنیت اطلاعات
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="" class="text__14 line-clamp__2">
+                                                <a class="text__14 line-clamp__2">
                                                     سامانه شفافیت
                                                 </a>
                                             </li>
@@ -499,32 +300,32 @@
                                         </div>
                                         <ul>
                                             <li>
-                                                <a href="" class="text__14 line-clamp__2">
+                                                <a class="text__14 line-clamp__2">
                                                     دفتر مقام معظم رهبری
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="" class="text__14 line-clamp__2">
+                                                <a class="text__14 line-clamp__2">
                                                     ریاست جمهوری
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="" class="text__14 line-clamp__2">
+                                                <a class="text__14 line-clamp__2">
                                                     وزارت نیرو
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="" class="text__14 line-clamp__2">
+                                                <a class="text__14 line-clamp__2">
                                                     توانیر
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="" class="text__14 line-clamp__2">
+                                                <a class="text__14 line-clamp__2">
                                                     پایگاه فرهنگ ایثار شهادت
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="" class="text__14 line-clamp__2">
+                                                <a class="text__14 line-clamp__2">
                                                     سایر پیوندها
                                                 </a>
                                             </li>
@@ -538,32 +339,32 @@
                                         </div>
                                         <ul>
                                             <li>
-                                                <a href="" class="text__14 line-clamp__2">
+                                                <a class="text__14 line-clamp__2">
                                                     راهبرد مشارکت مصوب
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="" class="text__14 line-clamp__2">
+                                                <a class="text__14 line-clamp__2">
                                                     نظرسنجی خدمات
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="" class="text__14 line-clamp__2">
+                                                <a class="text__14 line-clamp__2">
                                                     پیشنهادها و انتقاد ها
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="" class="text__14 line-clamp__2">
+                                                <a class="text__14 line-clamp__2">
                                                     نظرسنجی سایت
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="" class="text__14 line-clamp__2">
+                                                <a class="text__14 line-clamp__2">
                                                     رسیدگی به شکایات
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="" class="text__14 line-clamp__2">
+                                                <a class="text__14 line-clamp__2">
                                                     نظرسنجی فرآیندها و تصمیمات
                                                 </a>
                                             </li>
@@ -575,22 +376,22 @@
                                         </div>
                                         <ul>
                                             <li>
-                                                <a href="" class="text__14 line-clamp__2">
+                                                <a class="text__14 line-clamp__2">
                                                     سامانه مدیریت خدمات دولت
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="" class="text__14 line-clamp__2">
+                                                <a class="text__14 line-clamp__2">
                                                     درگاه ملی خدمات دولت
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="" class="text__14 line-clamp__2">
+                                                <a class="text__14 line-clamp__2">
                                                     درگاه ملی خدمات دولت هوشمند
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="" class="text__14 line-clamp__2">
+                                                <a class="text__14 line-clamp__2">
                                                     سامانه انتشار و دسترسی آزاد به اطلاعات
                                                 </a>
                                             </li>
@@ -599,102 +400,35 @@
                                 </div>
                                 <div class="footer__col">
                                     <div class="footer__header text__16 text__bold">
-                                        نطرسنجی
+                                        نظرسنجی
                                     </div>
                                     <div class="footer__poll">
-                                        <div id="pollContent-2" class="poll-content">
-                                            <div class="es-row title-row">
-                                                <h3 class="es-col-12 title">
-                                                    از طراحی و کار با سایت چقدر راضی هستید؟
-                                                </h3>
-                                            </div>
-                                            <div class="es-row">
-                                                <div class="es-col-12 answers">
-                                                    <div class="radio"> <label> <input name="vote" value="1"
-                                                                type="radio"><span></span> بسیار خوب</label> </div>
-                                                    <div class="radio"><label><input name="vote" value="1" type="radio">
-                                                            <span></span> خوب</label> </div>
-                                                    <div class="radio"> <label> <input name="vote" value="2"
-                                                                type="radio"><span></span> متوسط</label> </div>
-                                                    <div class="radio"> <label> <input name="vote" value="3"
-                                                                type="radio"><span></span> ضعیف</label> </div>
+                                        <form class="poll-form">
+                                            <fieldset>
+                                                <legend>از طراحی و کار با سایت چقدر راضی هستید؟</legend>
+                                                <div class="poll-options">
+                                                    <label><input type="radio" name="vote" value="excellent" required> بسیار خوب</label>
+                                                    <label><input type="radio" name="vote" value="good" required> خوب</label>
+                                                    <label><input type="radio" name="vote" value="average" required> متوسط</label>
+                                                    <label><input type="radio" name="vote" value="poor" required> ضعیف</label>
                                                 </div>
-                                            </div>
-                                            <div class="es-row">
-                                                <div class="es-col-12"> <button class="es-btn es-btn-primary"
-                                                        name="submitpoll" type="submit">ثبت نظر</button> </div>
-                                            </div>
-                                        </div>
+                                            </fieldset>
+                                            <button type="submit">ثبت نظر</button>
+                                            <p class="poll-feedback" role="status"></p>
+                                        </form>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="footer__visits">
-                                <ul>
-                                    <li class="text__15">
-                                        تاریخ بروز رسانی : 1402/09/18
-                                    </li>
-                                    <li class="text__15">
-                                        کل بازدید : 1858440 نفر
-                                    </li>
-                                    <li class="text__15">
-                                        بازدید این صفحه : 766622 نفر
-                                    </li>
-                                    <li class="text__15">
-                                        بازدیدکنندگان آنلاین : 2 نفر
-                                    </li>
-                                    <li class="text__15">
-                                        سیستم عامل: Windows
-                                    </li>
-                                    <li class="text__15">
-                                        آدرس آی پی: 46.209.26.198
-                                    </li>
-                                </ul>
                             </div>
                             <div class="footer__copy text__14">
                                 <div class="copy">کلیه حقوق متعلق به وبسایت سازمان زمین‌شناسی و اکتشافات معدنی کشور
                                     می‌باشد.</div>
-                                <a href="" class="niafam">پرتال سازمانی نیافام</a>
+                                <a class="niafam">پرتال سازمانی نیافام</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </footer>
-    </div>
-
-    <div class="modal fade show" id="shopModal" tabindex="-1" aria-labelledby="shopModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title text__semibold text__14 text__semibold" id="shopModalLabel">
-                        <img src="uploads/gsi/img/v-check.svg" alt="">این کالا به سبد خرید اضافه شد!
-                    </h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="بستن">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="eshop__list">
-                        <div class="eshop__item">
-                            <div class="eshop__pic">
-                                <img src="" alt="" width="62" height="90">
-                            </div>
-                            <div class="eshop__content">
-                                <div class="eshop__title text__16 text__medium">
-                                    پارینه‌لرزه‌شناسی
-                                </div>
-                                <div class="eshop__desc text__14">
-                                    سازمان زمین شناسی و اکتشفات معدنی کشور
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">مشاهده سبد خرید</button>
-                </div>
-            </div>
-        </div>
     </div>
 
     <article class="modal fade" id="searchmodal" tabindex="-1" role="dialog" aria-labelledby="searchmodalLabel"
@@ -704,16 +438,16 @@
         </button>
         <div class="form-container modal-dialog">
             <div class="modal-content">
-                <form action="" method="POST">
+                <form role="search">
                     <label for="q" class="d-none">جست‌وجو</label>
                     <input type="text" name="q" placeholder="جستجو ..." id="q">
-                    <span>عبارت خود را درج و جهت جستجو "Enter" را بفشارید</span>
+                    <span>عنوان صفحه را بنویسید.</span>
+                    <ul class="gsi-search-results" aria-live="polite"></ul>
                 </form>
             </div>
         </div>
     </article>
-    <a target="_blank" class="go-top" href="###" aria-label="sample" target="_blank" aria-label="Sample" target="_self"
-        aria-label="title" target="_blank" aria-label="default">
+    <a class="go-top" href="#top" aria-label="بازگشت به بالای صفحه">
         <i class="niafam niafam-up-arrow-2"></i>
     </a>
     <!--Blindness begin-->
@@ -738,7 +472,7 @@
                 <p class="text-custom-info text__16">تغییر رنگ پس زمینه:</p>
                 <div class="bgcolorbtns">
                     <button data-bgcolor="#f9f9f9" data-bgcolor2="#002158" id="bgcolor1" class="bgcolorbtndef"
-                        style="background-color:#f9f9f9" aria-label="default">اولیه</button>
+                        style="background-color:#f9f9f9">اولیه</button>
                     <button data-bgcolor="#d8d8d8" data-bgcolor2="#4f4f4f" id="bgcolor2" class="bgcolorbtn"
                         style="background-color:#d8d8d8" aria-label="default"></button>
                     <button data-bgcolor="#333333" data-bgcolor2="#121212" id="bgcolor3" class="bgcolorbtn"
@@ -759,33 +493,33 @@
             <div class="sec">
                 <p class="text-custom-info text__16">تغییر فاصله بین کلمات:</p>
                 <div class="text-customize">
-                    <button class="button-item  text__16" id="addws" aria-label="default">+</button>
-                    <button class="button-item  text__16" id="defws" aria-label="default">اولیه</button>
-                    <button class="button-item  text__16" id="subws" aria-label="default">-</button>
+                    <button class="button-item  text__16" id="addws">+</button>
+                    <button class="button-item  text__16" id="defws">اولیه</button>
+                    <button class="button-item  text__16" id="subws">-</button>
                 </div>
             </div>
             <div class="sec">
                 <p class="text-custom-info text__16">تغییر فاصله بین خطوط:</p>
                 <div class="text-customize">
-                    <button class="button-item text__16" id="addlh" aria-label="default">+</button>
-                    <button class="button-item text__16" id="deflh" aria-label="default">اولیه</button>
-                    <button class="button-item text__16" id="sublh" aria-label="default">-</button>
+                    <button class="button-item text__16" id="addlh">+</button>
+                    <button class="button-item text__16" id="deflh">اولیه</button>
+                    <button class="button-item text__16" id="sublh">-</button>
                 </div>
             </div>
             <div class="sec">
                 <p class="text-custom-info text__16">تغییر نوع موس:</p>
                 <div class="text-customize">
-                    <button class="button-item  text__16" id="cur1" aria-label="default">بزرگ</button>
-                    <button class="button-item  text__16" id="curdef" aria-label="default">اولیه</button>
-                    <button class="button-item  text__16" id="cur2" aria-label="default">کوچک</button>
+                    <button class="button-item  text__16" id="cur1">بزرگ</button>
+                    <button class="button-item  text__16" id="curdef">اولیه</button>
+                    <button class="button-item  text__16" id="cur2">کوچک</button>
                 </div>
             </div>
             <div class="sec">
                 <p class="text-custom-info text__16">تغییر فونت</p>
                 <div class="text-customize">
-                    <button class="button-item font-change  text__16" id="Sahel" aria-label="default">ساحل</button>
-                    <button class="button-item font-change  text__16" id="Vazir" aria-label="default">وزیر</button>
-                    <button class="button-item font-change  text__16" id="Shabnam" aria-label="default">شبنم</button>
+                    <button class="button-item font-change  text__16" id="Sahel">ساحل</button>
+                    <button class="button-item font-change  text__16" id="Vazir">وزیر</button>
+                    <button class="button-item font-change  text__16" id="Shabnam">شبنم</button>
                 </div>
             </div>
             <div class="sec">
@@ -800,23 +534,15 @@
                         </p>
                     </div>
 
-                    <a target="_blank" class="button-item" id="colorblind1" rel="noopener" href="###"
-                        aria-label="sample" target="_blank" aria-label="title" target="_blank">سرخ کوری</a>
-                    <a target="_blank" class="button-item" id="colorblind4" rel="noopener" href="###"
-                        aria-label="sample" target="_blank" aria-label="title" target="_blank">سبز کوری</a>
-                    <a target="_blank" class="button-item " id="colorblind6" rel="noopener" href="###"
-                        aria-label="sample" target="_blank" aria-label="title" target="_blank">آبی کوری</a>
-                    <a target="_blank" class="button-item" id="colorblind2" rel="noopener" href="###"
-                        aria-label="sample" target="_blank" aria-label="title" target="_blank">سرخ دشوار بینی</a>
-                    <a target="_blank" class="button-item" id="colorblind3" rel="noopener" href="###"
-                        aria-label="sample" target="_blank" aria-label="title" target="_blank">سبز دشوار بینی</a>
-                    <a target="_blank" class="button-item" id="colorblind5" rel="noopener" href="###"
-                        aria-label="sample" target="_blank" aria-label="title" target="_blank">آبی دشوار بینی</a>
+                    <a class="button-item" id="colorblind1" href="#top">سرخ کوری</a>
+                    <a class="button-item" id="colorblind4" href="#top">سبز کوری</a>
+                    <a class="button-item " id="colorblind6" href="#top">آبی کوری</a>
+                    <a class="button-item" id="colorblind2" href="#top">سرخ دشوار بینی</a>
+                    <a class="button-item" id="colorblind3" href="#top">سبز دشوار بینی</a>
+                    <a class="button-item" id="colorblind5" href="#top">آبی دشوار بینی</a>
 
-                    <a target="_blank" class="button-item" id="colorblind7" rel="noopener" href="###"
-                        aria-label="sample" target="_blank" aria-label="title" target="_blank">تک رنگ بینی</a>
-                    <a target="_blank" class="button-item" id="colorblind8" rel="noopener" href="###"
-                        aria-label="sample" target="_blank" aria-label="title" target="_blank">تک رنگ بینی مخروطی</a>
+                    <a class="button-item" id="colorblind7" href="#top">تک رنگ بینی</a>
+                    <a class="button-item" id="colorblind8" href="#top">تک رنگ بینی مخروطی</a>
 
 
 
@@ -825,8 +551,8 @@
         </div>
     </div>
     <div class="accessibility">
-        <a target="_blank" href="###" aria-label="sample" target="_blank" aria-label="title" target="_blank"
-            id="blindness" class="accessibility__btn">
+        <a href="#top"
+            id="blindness" class="accessibility__btn" aria-label="تنظیمات نمایش">
             <img src="uploads/gsi/img/disabled.svg" alt="">
             <div class="accessibility__tooltip">تنظیمات قالب</div>
         </a>
@@ -845,6 +571,7 @@
     <link rel="stylesheet" href="uploads/gsi/scss/eshop.css">
 
     <link rel="stylesheet" href="uploads/gsi/css/site-fixes.css">
+    <link rel="stylesheet" href="uploads/gsi/css/publications.css">
 
     <script src="uploads/gsi/js/jquery.js"></script>
     <script src="uploads/gsi/js/pagination.js"></script>
@@ -854,6 +581,8 @@
     <script src="uploads/gsi/js/persianDatepicker.min.js"></script>
     <script src="uploads/gsi/js/vendors.js"></script>
     <script src="uploads/gsi/js/main.js"></script>
+    <script src="uploads/gsi/js/books-catalog.js"></script>
+    <script src="uploads/gsi/js/book-pages.js"></script>
     <script src="uploads/gsi/js/demo-cart.js"></script>
 </body>
 </html>

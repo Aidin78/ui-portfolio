@@ -1128,17 +1128,6 @@ ul.breadcrumb li+li::before {
       line-height: normal;
     }
 
-    &::before {
-      content: "";
-      position: absolute;
-     inset-inline-end: 50%;
-      transform: translateX(-50%);
-      width: 100%;
-      min-width: 1400px;
-      height: 27px;
-      bottom: 0;
-      background-image: url("../img/Line 2.png");
-    }
   }
 }
 
@@ -1446,7 +1435,7 @@ ul.breadcrumb li+li::before {
     min-width: 1400px;
     height: 27px;
     top: 0;
-    background-image: url("../img/Line 2.png");
+    background-image: linear-gradient(90deg, transparent, #e1d3d3, transparent);
   }
 }
 

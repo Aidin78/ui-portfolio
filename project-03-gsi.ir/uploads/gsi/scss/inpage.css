@@ -943,17 +943,6 @@ ul.breadcrumb li + li::before {
   text-align: center;
   line-height: normal;
 }
-.breadcrumb__container::before {
-  content: "";
-  position: absolute;
-  inset-inline-end: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  min-width: 1400px;
-  height: 27px;
-  bottom: 0;
-  background-image: url("../img/Line 2.png");
-}
 
 .tenders {
   display: flex;
@@ -1187,7 +1176,7 @@ ul.breadcrumb li + li::before {
   min-width: 1400px;
   height: 27px;
   top: 0;
-  background-image: url("../img/Line 2.png");
+  background-image: linear-gradient(90deg, transparent, #e1d3d3, transparent);
 }
 
 .bosses {
@@ -1886,7 +1875,6 @@ h6 {
 }
 .breadcrumb__content {
   padding-bottom: 30px;
-  border-bottom: 1px solid #E1E1E1;
 }
 
 ul.breadcrumb li {
